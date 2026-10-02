@@ -7,6 +7,26 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.1.0] - 2026-10-02
+
+### Adicionado
+
+- Instalador para o servidor (`deploy/install.sh`), no mesmo modelo do PWA
+  técnico e em paralelo com ele: usuário de sistema e serviço systemd
+  próprios ouvindo só em `127.0.0.1`, mesmo Apache/Nginx já em uso (só
+  adiciona o vhost), certificado Let's Encrypt com renovação automática,
+  configuração em `/etc/coletor-olt` e dados em `/var/lib/coletor-olt`.
+  Rodar de novo atualiza sem perder dados.
+- Site protegido por usuário/senha do servidor web (HTTP Basic), inclusive
+  `/api`, com lista opcional de IPs liberados — a interface não tem login
+  próprio.
+- Vhosts de exemplo para Nginx e Apache e guia de deploy
+  (`deploy/DEPLOY.md`) com checklist.
+
+### Removido
+
+- `deploy/coletor-olt.service` (o instalador gera o serviço).
+
 ## [1.0.0] - 2026-10-02
 
 Primeira versão: coleta por SSH de OLTs C-DATA e Datacom, histórico em
@@ -51,5 +71,6 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.0.0...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/jmanoelslva/COLETA-OLT/releases/tag/v1.0.0

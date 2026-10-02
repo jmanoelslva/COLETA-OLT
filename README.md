@@ -41,13 +41,29 @@ sobre outra.
   - `cdata/parsers.py` — leitura das saídas da CLI (testada com saídas reais anonimizadas em `tests/fixtures/`)
   - `cdata/sessao.py` — sessão SSH, navegação entre views (`config`, `interface gpon`)
   - `coletas.py` — o que cada coleta roda e grava
-  - `agendador.py` — faixas rápida/lenta por OLT, coleta forçada, limpeza
+  - `datacom/` — parsers, sessão e coletas do DmOS
+  - `drivers.py` — o que muda por fabricante
+  - `agendador.py` — uma sessão e uma fila com prioridade por OLT, coleta forçada, limpeza
   - `alarmes.py` — catálogo de alarmes e correção das datas da OLT sem relógio
   - `analise.py` — faixas de sinal, degradação, diagnóstico por ONU e por PON
+  - `inventario.py`, `cofre.py` — cadastro de OLTs com senha cifrada
   - `api.py` — API HTTP (e serve o frontend buildado)
 - `frontend/` — interface (Vite + React + TypeScript)
 - `tools/` — sessão SSH interativa de desenvolvimento, gerador de fixtures, simulador
-- `deploy/` — exemplo de serviço systemd
+- `deploy/` — instalador do servidor (`install.sh`), vhosts Apache/Nginx e [DEPLOY.md](deploy/DEPLOY.md)
+
+## Deploy em produção
+
+No mesmo servidor do PWA técnico, sem mexer nele (outro diretório, domínio,
+serviço e porta). Passo a passo e checklist em [deploy/DEPLOY.md](deploy/DEPLOY.md):
+
+```bash
+git clone https://github.com/jmanoelslva/COLETA-OLT.git /tmp/coleta-olt
+sudo bash /tmp/coleta-olt/deploy/install.sh
+```
+
+O site fica atrás de usuário/senha do servidor web (a interface não tem
+login próprio), e o servidor precisa ter o IP liberado no SSH das OLTs.
 
 ## Rodando local
 

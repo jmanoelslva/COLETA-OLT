@@ -1,0 +1,90 @@
+# Exemplo de vhost Nginx para olt.hotnet.net.br (Coletor de OLTs)
+#
+# Serve o build estático do Vite (frontend/dist) e faz reverse proxy de
+# /api/* para o coletor (FastAPI, serviço systemd em 127.0.0.1:8090 — ver
+# deploy/install.sh). As rotas do coletor já começam com /api, então o
+# caminho vai inteiro (sem a barra no fim do proxy_pass).
+#
+# O coletor não tem login próprio: o site todo (inclusive /api) exige
+# usuário e senha (HTTP Basic, arquivo /etc/coletor-olt/htpasswd) e,
+# se configurado no install.sh, só aceita os IPs liberados.
+#
+# install.sh troca domínio, caminhos, porta e a lista de IPs sozinho.
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name olt.hotnet.net.br;
+
+    # Renovação do certificado (certbot --webroot) sem senha.
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot-acme;
+    }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name olt.hotnet.net.br;
+
+    ssl_certificate     /etc/letsencrypt/live/olt.hotnet.net.br/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/olt.hotnet.net.br/privkey.pem;
+
+    root /var/www/coletor-olt/dist;
+    index index.html;
+
+    auth_basic           "Coletor de OLTs";
+    auth_basic_user_file /etc/coletor-olt/htpasswd;
+
+    # IPs liberados (install.sh preenche; vazio = qualquer IP com senha).
+    # @IPS_LIBERADOS@
+
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" always;
+    add_header X-Frame-Options "DENY" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "same-origin" always;
+    add_header Permissions-Policy "geolocation=(), camera=(), microphone=(), payment=(), usb=()" always;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+
+    location /.well-known/acme-challenge/ {
+        auth_basic off;
+        root /var/www/certbot-acme;
+    }
+
+    # SPA: rota interna recarregada cai no index.html (react-router).
+    location / {
+        try_files $uri /index.html;
+        # index.html nunca em cache: é por ele que o navegador pega versão nova.
+        add_header Cache-Control "no-cache" always;
+        add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" always;
+        add_header X-Frame-Options "DENY" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+    }
+
+    # Arquivos com hash no nome: cache longo.
+    location /assets/ {
+        add_header Cache-Control "public, max-age=31536000, immutable" always;
+    }
+
+    location /api/ {
+        proxy_pass http://127.0.0.1:8090;
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        # Não repassa a senha do HTTP Basic para o coletor.
+        proxy_set_header Authorization "";
+
+        # "Coletar agora" espera a OLT responder (equipamento/ONUs passam de
+        # 1 min; a CLI atende um comando por vez) e "Testar acesso" pode
+        # esperar a fila da OLT.
+        proxy_read_timeout 330s;
+        proxy_send_timeout 330s;
+    }
+}
