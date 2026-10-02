@@ -7,6 +7,14 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.5.1] - 2026-10-02
+
+### Corrigido
+
+- Instalador: na atualização, baixa a versão nova antes das perguntas e, se o
+  próprio instalador mudou, continua pela versão nova. Antes, novidades do
+  instalador (como gerar o token de integração) só valiam rodando duas vezes.
+
 ## [1.5.0] - 2026-10-02
 
 ### Adicionado
@@ -193,7 +201,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.0...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.1...HEAD
+[1.5.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.1...v1.5.0
 [1.4.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.1...v1.4.0

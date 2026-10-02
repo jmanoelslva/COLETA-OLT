@@ -113,6 +113,20 @@ BANNER
 [ "$(id -u)" -eq 0 ] || err "Rode este script como root (ex: sudo bash install.sh)."
 command -v apt-get >/dev/null 2>&1 || err "Este instalador é só para Debian/Ubuntu (precisa de apt-get)."
 
+# Atualização: baixa a versão nova antes das perguntas e, se o instalador
+# mudou, recomeça por ele — senão as novidades do próprio instalador só
+# valeriam na execução seguinte (este processo já leu o script antigo).
+if [ -d "$INSTALL_DIR/.git" ] && [ -z "${COLETOR_INSTALADOR_NOVO:-}" ] && command -v git >/dev/null 2>&1; then
+  git_pre() { git -c safe.directory="$INSTALL_DIR" -C "$INSTALL_DIR" "$@"; }
+  info "Buscando a versão mais recente do coletor..."
+  [ -z "$(git_pre status --porcelain --untracked-files=no)" ] || git_pre checkout -- .
+  if git_pre pull --ff-only --quiet && ! cmp -s "$0" "$INSTALL_DIR/deploy/install.sh"; then
+    info "O instalador foi atualizado; continuando pela versão nova..."
+    trap - ERR
+    exec env COLETOR_INSTALADOR_NOVO=1 bash "$INSTALL_DIR/deploy/install.sh" "$@"
+  fi
+fi
+
 # --------------------------------------------------------------------------
 # 3. Perguntas
 # --------------------------------------------------------------------------
