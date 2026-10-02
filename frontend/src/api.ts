@@ -102,11 +102,16 @@ export class ErroApi extends Error {
   }
 }
 
+// "/" no domínio próprio; "/olt/" quando publicado dentro do app técnico.
+export const BASE = import.meta.env.BASE_URL
+export const DENTRO_DO_TECNICO = BASE !== '/'
+
 async function pedir<T>(caminho: string, init?: RequestInit): Promise<T> {
   let r: Response
   try {
-    r = await fetch(`/api${caminho}`, {
+    r = await fetch(`${BASE}api${caminho}`, {
       ...init,
+      credentials: 'same-origin',
       headers: { 'Content-Type': 'application/json', ...(init?.headers ?? {}) },
     })
   } catch {
@@ -117,6 +122,11 @@ async function pedir<T>(caminho: string, init?: RequestInit): Promise<T> {
     let campos: Record<string, string> | undefined
     try {
       const corpo = await r.json()
+      // Sem sessão do app técnico: vai para o login dele e volta para cá depois.
+      if (r.status === 401 && typeof corpo.login === 'string') {
+        const voltar = window.location.pathname + window.location.search
+        window.location.assign(`${corpo.login}?voltar=${encodeURIComponent(voltar)}`)
+      }
       if (typeof corpo.detail === 'string') msg = corpo.detail
       else if (corpo.detail && typeof corpo.detail === 'object' && !Array.isArray(corpo.detail)) {
         campos = corpo.detail
@@ -160,7 +170,7 @@ export const api = {
     pedir<unknown>(`/olts/${id}?apagar_historico=${apagarHistorico}`, { method: 'DELETE' }),
   testarOlt: (d: Partial<CadastroOlt>) => pedir<ResultadoTeste>('/olts/testar', { method: 'POST', body: JSON.stringify(d) }),
   parametros: () => pedir<{ valores: Parametros; padrao: Parametros }>('/parametros'),
-  acesso: () => pedir<{ ip: string | null; local: boolean; liberado: boolean }>('/acesso'),
+  acesso: () => pedir<{ ip: string | null; local: boolean; liberado: boolean; usuario: string | null }>('/acesso'),
   salvarAcl: (ips: string[]) =>
     pedir<{ valores: Parametros; padrao: Parametros }>('/parametros', { method: 'PUT', body: JSON.stringify({ acl_ips: ips }) }),
   salvarParametros: (v: Parametros) =>

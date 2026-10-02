@@ -54,16 +54,17 @@ sobre outra.
 
 ## Deploy em produção
 
-No mesmo servidor do PWA técnico, sem mexer nele (outro diretório, domínio,
-serviço e porta). Passo a passo e checklist em [deploy/DEPLOY.md](deploy/DEPLOY.md):
+No mesmo servidor do PWA técnico, sem mexer nos arquivos dele. Duas formas:
+**dentro do app técnico** (`tecnico.hotnet.net.br/olt/`, com o login do
+técnico e menu "OLTs" no PWA) ou **domínio próprio** (com usuário e senha do
+servidor web). Passo a passo e checklist em [deploy/DEPLOY.md](deploy/DEPLOY.md):
 
 ```bash
 git clone https://github.com/jmanoelslva/COLETA-OLT.git /tmp/coleta-olt
 sudo bash /tmp/coleta-olt/deploy/install.sh
 ```
 
-O site fica atrás de usuário/senha do servidor web (a interface não tem
-login próprio), e o servidor precisa ter o IP liberado no SSH das OLTs.
+O servidor precisa ter o IP liberado no SSH das OLTs.
 
 ## Rodando local
 

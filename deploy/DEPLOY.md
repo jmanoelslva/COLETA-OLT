@@ -1,41 +1,49 @@
 # Deploy do Coletor de OLTs
 
 Pensado para o **mesmo servidor do PWA HOTNET Técnico** (e do portal do
-cliente), sem mexer em nada deles: outro diretório, outro domínio, outro
-serviço systemd e outra porta local. Mesmo modelo do `deploy/install.sh` do
-app técnico.
+cliente), sem mexer nos arquivos deles: outro diretório, outro serviço
+systemd e outra porta local. Mesmo modelo do `deploy/install.sh` do app
+técnico.
+
+## Duas formas de publicar
+
+| | 1. Dentro do app técnico (recomendado) | 2. Domínio próprio |
+|---|---|---|
+| Endereço | `https://tecnico.hotnet.net.br/olt/` | `https://olt.hotnet.net.br` (ou outro) |
+| Login | **o do app técnico** — quem está logado no PWA entra direto | usuário e senha do servidor web (HTTP Basic) |
+| No PWA técnico | aparece o menu **OLTs** no painel | nada muda |
+| DNS / certificado | usa os do técnico | precisa de DNS e certificado novos |
+| Requisito | PWA técnico **1.6.0+** instalado no servidor | domínio só do coletor |
+
+No modo 1, o coletor não cria vhost: grava um trecho em
+`/etc/coletor-olt/web/`, que o vhost do técnico (1.6.0+) inclui **se
+existir**. Sem o coletor, o técnico funciona igual e o menu OLTs não aparece.
+O coletor valida a sessão do técnico (cookie `TECSESSION`) no `/auth/me` do
+backend dele, na mesma máquina — sem sessão, a tela manda para o login do
+técnico e volta para o coletor depois de entrar.
 
 | | |
 |---|---|
 | Código | `/opt/coletor-olt` (clone do repositório) |
 | Dados | `/var/lib/coletor-olt` — banco SQLite, `chave.key`, `known_hosts` das OLTs |
-| Configuração | `/etc/coletor-olt/coletor.env`, `/etc/coletor-olt/htpasswd`, `/etc/coletor-olt/install.conf` |
+| Configuração | `/etc/coletor-olt/coletor.env`, `install.conf`, `web/` (modo 1), `htpasswd` (modo 2) |
 | Serviço | `coletor-olt` (systemd), ouvindo só em `127.0.0.1:8090` |
-| Site | `https://<domínio>` servido pelo Apache/Nginx já em uso, com senha |
-| Arquivos web | `/var/www/coletor-olt/dist`, vhost `coletor-olt-<domínio>.conf` (nomes próprios, não colidem com o app técnico) |
+| Arquivos web | `/var/www/coletor-olt/dist` (nome próprio, não colide com o técnico) |
 
 ## Antes de instalar
 
-1. **DNS**: crie o registro de um domínio **só do coletor** (sugestão:
-   `olt.hotnet.net.br`) apontando para o servidor. **Não use o domínio do
-   PWA técnico** (`tecnico.hotnet.net.br`) nem o do portal: o instalador
-   recusa domínio que já pertence a outro site do servidor.
+1. **Modo 1**: atualize o PWA técnico para a **1.6.0 ou mais nova** e rode
+   o instalador dele (`sudo bash /opt/hotnet-tecnico/deploy/install.sh`,
+   Enter nas perguntas) — é isso que coloca a linha de include no vhost.
+   **Modo 2**: crie o DNS de um domínio **só do coletor**; o instalador
+   recusa domínio que já pertence a outro site.
 2. **Acesso às OLTs**: o servidor precisa entrar por SSH nas OLTs. Libere o
    **IP de saída do servidor** na ACL/firewall de gerência de cada OLT (o
    instalador mostra esse IP no final). Sem isso, "Testar acesso" falha com
    "Unable to connect".
-3. **Sistema**: Debian 12+ ou Ubuntu 22.04+ (o coletor precisa de Python
-   3.11+). O servidor do app técnico já atende.
-4. **Porta local**: o backend do app técnico usa a 8000; o coletor usa a
-   8090 por padrão. Qualquer porta livre serve.
-
-## Se uma instalação anterior usou o domínio do app técnico
-
-Versões até a 1.1.0 aceitavam o mesmo domínio e sobrescreviam o PWA técnico.
-Para consertar: rode o instalador do técnico
-(`sudo bash /opt/hotnet-tecnico/deploy/install.sh`, Enter nas perguntas) e
-depois o do coletor com um domínio próprio. O coletor atualizado não toca
-mais nos arquivos do técnico.
+3. **Sistema**: Debian 12+ ou Ubuntu 22.04+ (Python 3.11+). O servidor do
+   app técnico já atende.
+4. **Porta local**: o backend do técnico usa a 8000; o coletor usa a 8090.
 
 ## Instalar
 
@@ -46,47 +54,52 @@ sudo bash /tmp/coleta-olt/deploy/install.sh
 
 O script pergunta:
 
-- **Domínio** do coletor;
+- **Onde publicar**: 1 = dentro do app técnico (padrão quando ele está
+  instalado), 2 = domínio próprio;
+- **Domínio** (só no modo 2);
 - **Porta local** (Enter = 8090);
-- **IPs liberados** (opcional): redes que podem abrir o site, separadas por
-  espaço — ex.: a rede do escritório/NOC. Vazio = qualquer IP, sempre com
-  senha;
-- **E-mail** do Let's Encrypt (opcional);
-- **Usuário e senha** do primeiro acesso ao site (só na primeira vez).
+- **IPs liberados** (opcional, IPv4/IPv6): vazio = qualquer IP, sempre com
+  login. Dá para ajustar depois em Configurações;
+- No modo 2: **e-mail** do Let's Encrypt e **usuário e senha** do primeiro
+  acesso.
 
-Depois: abra `https://<domínio>`, entre com o usuário criado e cadastre as
-OLTs em **Cadastrar OLT**, usando **Testar acesso** antes de salvar.
+Depois: abra o coletor (modo 1: pelo menu **OLTs** do PWA técnico ou em
+`https://tecnico.hotnet.net.br/olt/`) e cadastre as OLTs em **Cadastrar
+OLT**, usando **Testar acesso** antes de salvar.
+
+Se o vhost do técnico ainda não tiver a linha de include, o instalador do
+coletor avisa e termina mesmo assim (o serviço já fica rodando); `/olt/`
+passa a funcionar quando o técnico for atualizado.
 
 ## Atualizar
-
-Rode o mesmo comando de novo (com o repositório já em `/opt/coletor-olt`):
 
 ```bash
 sudo bash /opt/coletor-olt/deploy/install.sh
 ```
 
-Vindo da versão 1.2.0 ou anterior, atualize o repositório antes, para já
-rodar o instalador novo:
+Vindo da 1.2.0 ou anterior, atualize o repositório antes, para já rodar o
+instalador novo:
 
 ```bash
 sudo git -c safe.directory=/opt/coletor-olt -C /opt/coletor-olt pull --ff-only
 ```
 
-Ele faz `git pull`, reinstala dependências, gera o build, reinicia o serviço
-e republica o site. Não apaga dados, a chave, os acessos nem reemite o
-certificado. As respostas da primeira vez aparecem como padrão (Enter).
+Faz `git pull`, reinstala dependências, gera o build, reinicia o serviço e
+republica. Não apaga dados, a chave, os acessos nem reemite certificado. Dá
+para trocar de modo rodando de novo e escolhendo a outra opção: o instalador
+desativa o que era do modo anterior (só arquivos do coletor).
 
 ## Segurança
 
-- A interface **não tem login próprio**. O site inteiro, inclusive `/api`,
-  fica atrás de usuário/senha do servidor web (HTTP Basic) e, se
-  configurado, de lista de IPs. Incluir pessoa ou trocar senha:
+- **Modo 1**: só entra quem tem sessão válida no app técnico (o mesmo login
+  do Controllr). Saiu do técnico, perde o acesso ao coletor em até 1 min.
+- **Modo 2**: o site inteiro, inclusive `/api`, fica atrás de usuário/senha
+  do servidor web:
 
   ```bash
-  sudo htpasswd -B /etc/coletor-olt/htpasswd nome
+  sudo htpasswd -B /etc/coletor-olt/htpasswd nome     # incluir/trocar
+  sudo htpasswd -D /etc/coletor-olt/htpasswd nome     # remover
   ```
-
-  Remover: `sudo htpasswd -D /etc/coletor-olt/htpasswd nome`.
 - **IPs liberados**: há duas listas, e as duas valem juntas:
   - a do **servidor web**, definida no `install.sh` (muda rodando o
     instalador de novo);
@@ -121,21 +134,31 @@ sudo systemctl start coletor-olt
 ```bash
 systemctl status coletor-olt              # serviço de pé
 journalctl -u coletor-olt -f              # coletas: "alarmes ok em 4s", etc.
-curl -s 127.0.0.1:8090/api/olts | head    # API local (sem senha, só no servidor)
+curl -s 127.0.0.1:8090/api/saude          # {"app": "coletor-olt", ...}
 ```
 
-Checklist depois de instalar:
+Checklist — modo 1 (dentro do app técnico):
+
+- [ ] `https://tecnico.hotnet.net.br/` continua abrindo o PWA técnico normal.
+- [ ] Logado no PWA, aparece o menu **OLTs** e ele abre o coletor sem pedir
+      senha.
+- [ ] Numa aba anônima, `https://tecnico.hotnet.net.br/olt/` leva ao login
+      do técnico e, depois de entrar, volta para o coletor.
+- [ ] Recarregar uma tela interna do coletor (ex.: uma ONU) abre a mesma
+      tela, não o app técnico.
+- [ ] "Cadastrar OLT" → "Testar acesso" conecta em cada OLT.
+
+Checklist — modo 2 (domínio próprio):
 
 - [ ] `https://<domínio>` pede usuário e senha; sem senha dá 401.
 - [ ] De um IP fora da lista (se configurada) dá 403.
 - [ ] "Cadastrar OLT" → "Testar acesso" conecta em cada OLT.
-- [ ] Depois de ~1 min, a OLT aparece na tela inicial com ONUs e alarmes.
-- [ ] `journalctl -u coletor-olt` sem "FALHOU" repetido.
 
-## Integração com o app técnico (futuro)
+Nos dois: depois de ~1 min a OLT aparece na tela inicial com ONUs e alarmes,
+e `journalctl -u coletor-olt` fica sem "FALHOU" repetido.
 
-O backend do app técnico, no mesmo servidor, pode consultar a API direto em
-`http://127.0.0.1:8090/api/...` sem passar pelo site. Para isso, defina
-`COLETOR_API_TOKEN` em `/etc/coletor-olt/coletor.env` e envie o mesmo valor
-no header `X-Api-Token`. Atenção: com o token definido, a interface web
-também passa a precisar dele — isso será ajustado na integração.
+## Desfazer o modo 1
+
+`sudo rm /etc/coletor-olt/web/*.conf` e recarregar o servidor web
+(`systemctl reload nginx` ou `apache2`): `/olt/` some e o menu OLTs deixa de
+aparecer no técnico, que segue funcionando.

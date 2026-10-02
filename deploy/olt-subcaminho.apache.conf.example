@@ -1,0 +1,50 @@
+# @coletor-olt@ trecho do Coletor de OLTs para rodar em /olt/ DENTRO do
+# VirtualHost do PWA técnico (tecnico.hotnet.net.br/olt/).
+#
+# O install.sh do coletor grava este arquivo em
+# /etc/coletor-olt/web/apache-olt.conf, e o vhost do técnico (versão 1.6.0+)
+# tem "IncludeOptional /etc/coletor-olt/web/apache-*.conf" — sem o coletor
+# instalado, nada é incluído e o técnico segue igual.
+#
+# Login: o coletor aceita a sessão do app técnico (cookie TECSESSION),
+# validada no backend do técnico — não há senha separada aqui.
+
+RedirectMatch 301 ^/olt$ /olt/
+
+# API do coletor (as rotas dele começam com /api). Vem antes do Alias.
+ProxyPass        /olt/api/ http://127.0.0.1:8090/api/ timeout=330
+ProxyPassReverse /olt/api/ http://127.0.0.1:8090/api/
+<Location /olt/api/>
+    RequestHeader set X-Real-IP "%{REMOTE_ADDR}e"
+</Location>
+
+Alias /olt /var/www/coletor-olt/dist
+
+<Location /olt/>
+    # IPs liberados (install.sh preenche a linha abaixo).
+    # @IPS_LIBERADOS@
+    Require all granted
+</Location>
+
+<Directory /var/www/coletor-olt/dist>
+    Options -Indexes
+    AllowOverride None
+    Require all granted
+
+    Header always set Cache-Control "no-cache"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+    Header always set X-Frame-Options "DENY"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "same-origin"
+
+    # SPA: rota interna recarregada cai no index.html do coletor.
+    RewriteEngine On
+    RewriteBase /olt/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /olt/index.html [L]
+</Directory>
+
+<Directory /var/www/coletor-olt/dist/assets>
+    Header always set Cache-Control "public, max-age=31536000, immutable"
+</Directory>

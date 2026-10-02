@@ -7,6 +7,29 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.3.0] - 2026-10-02
+
+### Adicionado
+
+- **Publicação dentro do app técnico**, em `https://<domínio do técnico>/olt/`,
+  sem domínio nem certificado novos. O instalador pergunta o modo (dentro do
+  técnico ou domínio próprio) e, no primeiro, só grava um trecho em
+  `/etc/coletor-olt/web/` que o vhost do técnico (PWA técnico 1.6.0+) inclui
+  se existir — o técnico continua funcionando igual sem o coletor.
+- **Login pelo app técnico** (`COLETOR_AUTH=tecnico`): o coletor aceita a
+  sessão do PWA técnico (cookie `TECSESSION`), validada no `/auth/me` do
+  backend dele e guardada por 1 minuto. Sem sessão, a interface manda para o
+  login do técnico e volta para o coletor depois de entrar.
+- `GET /api/saude` aberto, usado pelo PWA técnico para mostrar o menu
+  **OLTs** só quando o coletor está instalado.
+- Interface funciona com caminho base configurável no build
+  (`COLETOR_BASE=/olt/`); na barra de cima aparecem o técnico logado e o
+  link "‹ App técnico".
+
+### Alterado
+
+- `deploy/DEPLOY.md` reescrito com os dois modos e um checklist para cada.
+
 ## [1.2.2] - 2026-10-02
 
 ### Corrigido
@@ -112,7 +135,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.2...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.1.0...v1.2.0

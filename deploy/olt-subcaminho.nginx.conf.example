@@ -1,0 +1,47 @@
+# @coletor-olt@ trecho do Coletor de OLTs para rodar em /olt/ DENTRO do vhost
+# do PWA técnico (tecnico.hotnet.net.br/olt/).
+#
+# O install.sh do coletor grava este arquivo em
+# /etc/coletor-olt/web/nginx-olt.conf, e o vhost do técnico (versão 1.6.0+)
+# tem "include /etc/coletor-olt/web/nginx-*.conf;" — sem o coletor instalado,
+# o include não acha nada e o técnico segue igual.
+#
+# Login: o coletor aceita a sessão do app técnico (cookie TECSESSION),
+# validada no backend do técnico — não há senha separada aqui.
+
+location = /olt {
+    return 301 /olt/;
+}
+
+# API do coletor (as rotas dele começam com /api).
+location /olt/api/ {
+    # @IPS_LIBERADOS@
+    proxy_pass http://127.0.0.1:8090/api/;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    # "Coletar agora" e "Testar acesso" esperam a fila da OLT.
+    proxy_read_timeout 330s;
+    proxy_send_timeout 330s;
+}
+
+# Arquivos com hash no nome: cache longo.
+location /olt/assets/ {
+    # @IPS_LIBERADOS@
+    alias /var/www/coletor-olt/dist/assets/;
+    add_header Cache-Control "public, max-age=31536000, immutable" always;
+}
+
+# Interface (SPA): rota interna recarregada cai no index.html do coletor.
+location /olt/ {
+    # @IPS_LIBERADOS@
+    alias /var/www/coletor-olt/dist/;
+    try_files $uri $uri/ /olt/index.html;
+    add_header Cache-Control "no-cache" always;
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" always;
+    add_header X-Frame-Options "DENY" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "same-origin" always;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+}

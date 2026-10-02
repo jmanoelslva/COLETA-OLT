@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom'
 import { FormOlt } from './paginas/FormOlt'
@@ -6,8 +6,16 @@ import { Olt } from './paginas/Olt'
 import { Olts } from './paginas/Olts'
 import { Onu } from './paginas/Onu'
 import { Parametros } from './paginas/Parametros'
+import { api, DENTRO_DO_TECNICO } from './api'
 import { ProvedorParametros } from './parametros'
 import './estilo.css'
+
+/** Quem está logado no app técnico (modo /olt/). */
+function UsuarioTecnico() {
+  const [usuario, setUsuario] = useState<string | null>(null)
+  useEffect(() => { api.acesso().then(a => setUsuario(a.usuario)).catch(() => {}) }, [])
+  return usuario ? <span className="barra-usuario">{usuario}</span> : null
+}
 
 function App() {
   return (
@@ -20,7 +28,11 @@ function App() {
           </svg>
           OLTs HOTNET
         </Link>
-        <NavLink to="/configuracoes" className="barra-link">Configurações</NavLink>
+        <span className="barra-direita">
+          {DENTRO_DO_TECNICO && <UsuarioTecnico />}
+          {DENTRO_DO_TECNICO && <a href="/" className="barra-link">‹ App técnico</a>}
+          <NavLink to="/configuracoes" className="barra-link">Configurações</NavLink>
+        </span>
       </div>
       <Routes>
         <Route path="/" element={<Olts />} />
@@ -37,7 +49,7 @@ function App() {
 
 createRoot(document.getElementById('raiz')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
       <App />
     </BrowserRouter>
   </StrictMode>,

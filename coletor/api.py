@@ -19,7 +19,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from . import alarmes as cat
-from . import __version__, acl, analise, inventario
+from . import __version__, acl, analise, inventario, sessao_tecnico
 from .agendador import TIPOS, Agendador
 from .cdata.parsers import ErroCli
 from .cdata.sessao import ErroSessao
@@ -70,6 +70,22 @@ async def filtrar_por_ip(request: Request, call_next):
             return JSONResponse(status_code=403, content={
                 "detail": f"O IP {ip} não está liberado no coletor. Peça para incluí-lo em Configurações, "
                           "na lista de IPs liberados."})
+        # Login pelo PWA técnico. /api/saude fica aberto (só diz que o coletor
+        # existe — o app técnico usa para mostrar o menu) e chamada local no
+        # servidor (ip None, ex.: integração do backend do técnico) não precisa.
+        if settings.auth_modo == "tecnico" and ip is not None and request.url.path != "/api/saude":
+            cookie = request.cookies.get(settings.tecnico_cookie)
+            try:
+                tecnico = await run_in_threadpool(
+                    sessao_tecnico.validar, cookie, settings.tecnico_url, settings.tecnico_cookie)
+            except sessao_tecnico.TecnicoIndisponivel as e:
+                log.warning("backend do técnico não respondeu ao validar sessão: %s", e)
+                return JSONResponse(status_code=503, content={
+                    "detail": "O app técnico não respondeu para confirmar o seu login. Tente de novo em instantes."})
+            if tecnico is None:
+                return JSONResponse(status_code=401, content={
+                    "detail": "Entre no app técnico para usar o coletor.", "login": "/login"})
+            request.state.tecnico = tecnico
     return await call_next(request)
 
 
@@ -527,11 +543,19 @@ def ler_parametros() -> dict:
     return {"valores": banco.parametros(), "padrao": PARAMETROS_PADRAO}
 
 
+@app.get("/api/saude")
+def saude() -> dict:
+    """Aberto (sem login): o app técnico usa para saber se mostra o menu OLTs."""
+    return {"app": "coletor-olt", "versao": __version__, "login": settings.auth_modo or "servidor-web"}
+
+
 @app.get("/api/acesso", dependencies=[rotas])
 def meu_acesso(request: Request) -> dict:
-    """IP visto pelo coletor e se ele está na ACL (para a tela de Configurações)."""
+    """IP visto pelo coletor, se está na ACL e quem está logado (para a interface)."""
     ip = acl.ip_do_pedido(request)
-    return {"ip": ip, "local": ip is None, "liberado": acl.permitido(ip, banco.parametros()["acl_ips"])}
+    tecnico = getattr(request.state, "tecnico", None)
+    return {"ip": ip, "local": ip is None, "liberado": acl.permitido(ip, banco.parametros()["acl_ips"]),
+            "usuario": tecnico.usuario if tecnico else None}
 
 
 @app.put("/api/parametros", dependencies=[rotas])

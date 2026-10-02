@@ -32,6 +32,12 @@ class Settings:
     arquivo_olts: Path
     api_token: str
     cors_origens: tuple[str, ...]
+    # "tecnico" = só entra quem está logado no PWA técnico (cookie TECSESSION,
+    # validado no backend dele). Vazio = sem login no coletor (ex.: domínio
+    # próprio, protegido por usuário/senha do servidor web).
+    auth_modo: str = ""
+    tecnico_url: str = "http://127.0.0.1:8000"
+    tecnico_cookie: str = "TECSESSION"
 
     @property
     def banco(self) -> Path:
@@ -52,6 +58,9 @@ def carregar_settings() -> Settings:
         cors_origens=tuple(
             o.strip() for o in os.environ.get("COLETOR_CORS", "http://localhost:5174").split(",") if o.strip()
         ),
+        auth_modo=os.environ.get("COLETOR_AUTH", "").strip().lower(),
+        tecnico_url=os.environ.get("COLETOR_TECNICO_URL", "http://127.0.0.1:8000").rstrip("/"),
+        tecnico_cookie=os.environ.get("COLETOR_TECNICO_COOKIE", "TECSESSION"),
     )
 
 

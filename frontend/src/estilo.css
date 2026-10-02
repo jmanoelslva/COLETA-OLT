@@ -568,3 +568,8 @@ a.motivo:hover b { background: var(--cor); color: var(--painel); }
   .form-parametros .campo-linha > small.padrao { grid-column: 2; }
 }
 .form-parametros .acoes { border-top: 1px solid var(--linha-forte); margin-top: 0.5rem; z-index: 1; }
+
+/* Barra de cima: atalhos à direita (App técnico, usuário, Configurações). */
+.barra-direita { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: flex-end; }
+.barra-usuario { font-size: 0.85rem; opacity: 0.75; }
+@media (max-width: 480px) { .barra-usuario { display: none; } }
