@@ -26,6 +26,12 @@
 
 set -euo pipefail
 
+# O script se atualiza com "git pull" no meio da execução. O bash lê o
+# arquivo aos poucos, então o corpo todo fica dentro de { ... } para ser lido
+# inteiro antes de começar — senão a versão nova poderia ser executada pela
+# metade, a partir da posição em que a antiga estava.
+{
+
 # --------------------------------------------------------------------------
 # Configuração fixa
 # --------------------------------------------------------------------------
@@ -517,3 +523,6 @@ cat <<RESUMO
   Para atualizar depois, rode este mesmo script de novo.
 
 RESUMO
+
+exit 0
+}

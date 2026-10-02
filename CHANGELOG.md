@@ -7,6 +7,14 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.2.1] - 2026-10-02
+
+### Corrigido
+
+- O instalador atualiza o próprio arquivo com `git pull` durante a execução;
+  como o bash lê o script aos poucos, a versão nova podia ser executada pela
+  metade. Agora o script inteiro é lido antes de começar.
+
 ## [1.2.0] - 2026-10-02
 
 ### Adicionado
@@ -94,7 +102,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.0...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/jmanoelslva/COLETA-OLT/releases/tag/v1.0.0

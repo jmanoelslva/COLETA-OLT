@@ -65,6 +65,13 @@ Rode o mesmo comando de novo (com o repositório já em `/opt/coletor-olt`):
 sudo bash /opt/coletor-olt/deploy/install.sh
 ```
 
+Vindo da versão 1.2.0 ou anterior, atualize o repositório antes, para já
+rodar o instalador novo:
+
+```bash
+sudo git -c safe.directory=/opt/coletor-olt -C /opt/coletor-olt pull --ff-only
+```
+
 Ele faz `git pull`, reinstala dependências, gera o build, reinicia o serviço
 e republica o site. Não apaga dados, a chave, os acessos nem reemite o
 certificado. As respostas da primeira vez aparecem como padrão (Enter).
