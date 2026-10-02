@@ -1,0 +1,122 @@
+# show alarm history all
+show alarm history all
+ ------------------------------------------------------------------------------------
+ AlarmId   Time                 Level      Instance   Name      
+ ------------------------------------------------------------------------------------
+ 100306  2026-10-02 19:50:10   Warning    PON 0/0/1 ONU: 8 ONU-SN(TEST000000F3)   Dying gasp(DGi)
+         2026-10-02 19:50:55 (clear)
+ 1000501 2026-10-02 19:50:10   Err        PON 0/0/1 ONU: 8 ONU-SN(TEST000000F3)   Loss of signal for ONU(LOSi)
+         2026-10-02 19:50:55 (clear)
+ 1000502 2026-10-02 19:50:10   Err        PON 0/0/1 ONU: 8 ONU-SN(TEST000000F3)   Loss of frame for ONU(LOFi)
+         2026-10-02 19:50:55 (clear)
+ 1000509 2026-10-02 19:35:00   Warning    PON 0/0/1 ONU: 19 UNI 2 ONU-SN(TEST000000FE)   The Ethernet port link status is down
+         2026-10-02 19:35:07 (clear)
+ 1000509 2026-10-02 18:06:14   Warning    PON 0/0/1 ONU: 19 UNI 2 ONU-SN(TEST000000FE)   The Ethernet port link status is down
+         2026-10-02 19:33:53 (clear)
+ 100306  2026-10-02 19:31:40   Warning    PON 0/0/1 ONU: 17 ONU-SN(TEST000000FC)   Dying gasp(DGi)
+         2026-10-02 19:32:50 (clear)
+ 1000501 2026-10-02 19:31:40   Err        PON 0/0/1 ONU: 17 ONU-SN(TEST000000FC)   Loss of signal for ONU(LOSi)
+         2026-10-02 19:32:50 (clear)
+ 1000502 2026-10-02 19:31:40   Err        PON 0/0/1 ONU: 17 ONU-SN(TEST000000FC)   Loss of frame for ONU(LOFi)
+         2026-10-02 19:32:50 (clear)
+ 1000501 2026-10-02 19:19:43   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of signal for ONU(LOSi)
+         2026-10-02 19:20:05 (clear)
+ 1000502 2026-10-02 19:19:43   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of frame for ONU(LOFi)
+         2026-10-02 19:20:05 (clear)
+ 1000501 2026-10-02 19:18:52   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of signal for ONU(LOSi)
+         2026-10-02 19:19:40 (clear)
+ 1000502 2026-10-02 19:18:52   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of frame for ONU(LOFi)
+         2026-10-02 19:19:40 (clear)
+ 1000501 2026-10-02 19:16:59   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of signal for ONU(LOSi)
+         2026-10-02 19:17:15 (clear)
+ 1000502 2026-10-02 19:16:59   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of frame for ONU(LOFi)
+         2026-10-02 19:17:15 (clear)
+ 100306  2026-10-02 10:31:12   Warning    PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Dying gasp(DGi)
+         2026-10-02 19:16:55 (clear)
+ 1000501 2026-10-02 10:31:12   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of signal for ONU(LOSi)
+         2026-10-02 19:16:55 (clear)
+ 1000502 2026-10-02 10:31:12   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of frame for ONU(LOFi)
+         2026-10-02 19:16:55 (clear)
+ 1000520 2026-10-02 14:17:19   Warning    PON 0/0/1 ONU: 14 ONU-SN(TEST000000F9)   The ONT temperature exceeds the warning threshold
+         2026-10-02 19:13:19 (clear)
+ 1000510 2026-10-02 16:06:10   Err        PON 0/0/2 ONU: 33 ONU-SN(TEST00000110)   The ONT Rx power exceeds the low alarm threshold
+         2026-10-02 18:31:19 (clear)
+ 1000509 2026-10-02 18:04:15   Warning    PON 0/0/1 ONU: 19 UNI 2 ONU-SN(TEST000000FE)   The Ethernet port link status is down
+         2026-10-02 18:04:22 (clear)
+ 1000509 2026-10-02 17:57:52   Warning    PON 0/0/1 ONU: 6 UNI 1 ONU-SN(TEST000000F1)   The Ethernet port link status is down
+         2026-10-02 17:58:03 (clear)
+ 1000509 2026-10-02 17:57:32   Warning    PON 0/0/1 ONU: 6 UNI 1 ONU-SN(TEST000000F1)   The Ethernet port link status is down
+         2026-10-02 17:57:37 (clear)
+ 100306  2026-10-02 17:50:32   Warning    PON 0/0/1 ONU: 10 ONU-SN(TEST000000F5)   Dying gasp(DGi)
+         2026-10-02 17:51:35 (clear)
+ 1000501 2026-10-02 17:50:32   Err        PON 0/0/1 ONU: 10 ONU-SN(TEST000000F5)   Loss of signal for ONU(LOSi)
+         2026-10-02 17:51:35 (clear)
+ 1000502 2026-10-02 17:50:32   Err        PON 0/0/1 ONU: 10 ONU-SN(TEST000000F5)   Loss of frame for ONU(LOFi)
+         2026-10-02 17:51:35 (clear)
+ 100306  2026-10-02 17:30:16   Warning    PON 0/0/1 ONU: 28 ONU-SN(TEST00000107)   Dying gasp(DGi)
+         2026-10-02 17:30:55 (clear)
+ 1000501 2026-10-02 17:30:16   Err        PON 0/0/1 ONU: 28 ONU-SN(TEST00000107)   Loss of signal for ONU(LOSi)
+         2026-10-02 17:30:55 (clear)
+ 1000502 2026-10-02 17:30:16   Err        PON 0/0/1 ONU: 28 ONU-SN(TEST00000107)   Loss of frame for ONU(LOFi)
+         2026-10-02 17:30:55 (clear)
+ 1000509 2026-10-02 17:09:57   Warning    PON 0/0/1 ONU: 20 UNI 1 ONU-SN(TEST000000FF)   The Ethernet port link status is down
+         2026-10-02 17:10:12 (clear)
+ 1000510 2026-10-02 13:50:20   Err        PON 0/0/2 ONU: 33 ONU-SN(TEST00000110)   The ONT Rx power exceeds the low alarm threshold
+         2026-10-02 16:03:19 (clear)
+ 100306  2026-10-02 15:09:08   Warning    PON 0/0/2 ONU: 19 ONU-SN(TEST0000011B)   Dying gasp(DGi)
+         2026-10-02 15:48:45 (clear)
+ 1000501 2026-10-02 15:09:08   Err        PON 0/0/2 ONU: 19 ONU-SN(TEST0000011B)   Loss of signal for ONU(LOSi)
+         2026-10-02 15:48:45 (clear)
+ 1000502 2026-10-02 15:09:08   Err        PON 0/0/2 ONU: 19 ONU-SN(TEST0000011B)   Loss of frame for ONU(LOFi)
+         2026-10-02 15:48:45 (clear)
+ 1000509 2026-10-02 15:03:19   Warning    PON 0/0/2 ONU: 38 UNI 1 ONU-SN(TEST0000011C)   The Ethernet port link status is down
+         2026-10-02 15:04:29 (clear)
+ 1000509 2026-10-02 15:02:57   Warning    PON 0/0/2 ONU: 38 UNI 1 ONU-SN(TEST0000011C)   The Ethernet port link status is down
+         2026-10-02 15:03:04 (clear)
+ 100306  2026-10-02 13:51:20   Warning    PON 0/0/2 ONU: 26 ONU-SN(TEST0000011D)   Dying gasp(DGi)
+         2026-10-02 14:29:00 (clear)
+ 1000501 2026-10-02 13:51:20   Err        PON 0/0/2 ONU: 26 ONU-SN(TEST0000011D)   Loss of signal for ONU(LOSi)
+         2026-10-02 14:29:00 (clear)
+ 1000502 2026-10-02 13:51:20   Err        PON 0/0/2 ONU: 26 ONU-SN(TEST0000011D)   Loss of frame for ONU(LOFi)
+         2026-10-02 14:29:00 (clear)
+ 100306  2026-10-02 14:20:24   Warning    PON 0/0/1 ONU: 4 ONU-SN(TEST000000EF)   Dying gasp(DGi)
+         2026-10-02 14:21:20 (clear)
+ 1000501 2026-10-02 14:20:24   Err        PON 0/0/1 ONU: 4 ONU-SN(TEST000000EF)   Loss of signal for ONU(LOSi)
+         2026-10-02 14:21:20 (clear)
+ 1000502 2026-10-02 14:20:24   Err        PON 0/0/1 ONU: 4 ONU-SN(TEST000000EF)   Loss of frame for ONU(LOFi)
+         2026-10-02 14:21:20 (clear)
+ 1000509 2026-10-02 13:43:51   Warning    PON 0/0/1 ONU: 2 UNI 1 ONU-SN(TEST000000ED)   The Ethernet port link status is down
+         2026-10-02 13:43:56 (clear)
+ 1000510 2026-10-02 09:53:14   Err        PON 0/0/2 ONU: 33 ONU-SN(TEST00000110)   The ONT Rx power exceeds the low alarm threshold
+         2026-10-02 13:35:19 (clear)
+ 100306  2026-10-02 12:28:48   Warning    PON 0/0/1 ONU: 4 ONU-SN(TEST000000EF)   Dying gasp(DGi)
+         2026-10-02 12:29:35 (clear)
+ 1000501 2026-10-02 12:28:48   Err        PON 0/0/1 ONU: 4 ONU-SN(TEST000000EF)   Loss of signal for ONU(LOSi)
+         2026-10-02 12:29:35 (clear)
+ 1000502 2026-10-02 12:28:48   Err        PON 0/0/1 ONU: 4 ONU-SN(TEST000000EF)   Loss of frame for ONU(LOFi)
+         2026-10-02 12:29:35 (clear)
+ 100306  2026-10-02 11:17:30   Warning    PON 0/0/2 ONU: 11 ONU-SN(TEST0000011E)   Dying gasp(DGi)
+         2026-10-02 11:18:05 (clear)
+ 1000501 2026-10-02 11:17:30   Err        PON 0/0/2 ONU: 11 ONU-SN(TEST0000011E)   Loss of signal for ONU(LOSi)
+         2026-10-02 11:18:05 (clear)
+ 1000502 2026-10-02 11:17:30   Err        PON 0/0/2 ONU: 11 ONU-SN(TEST0000011E)   Loss of frame for ONU(LOFi)
+         2026-10-02 11:18:05 (clear)
+ 1000509 2026-10-02 11:07:52   Warning    PON 0/0/1 ONU: 19 UNI 2 ONU-SN(TEST000000FE)   The Ethernet port link status is down
+         2026-10-02 11:07:59 (clear)
+ 1000509 2026-10-02 01:11:43   Warning    PON 0/0/1 ONU: 19 UNI 2 ONU-SN(TEST000000FE)   The Ethernet port link status is down
+         2026-10-02 11:06:41 (clear)
+ 1000512 2026-10-02 10:30:43   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   The ONT Tx power exceeds the low alarm threshold
+         2026-10-02 10:30:47 (clear)
+ 1000512 2026-10-02 10:30:38   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   The ONT Tx power exceeds the low alarm threshold
+         2026-10-02 10:30:43 (clear)
+ 100306  2026-08-06 09:45:26   Warning    PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Dying gasp(DGi)
+         2026-10-02 10:30:35 (clear)
+ 1000501 2026-08-06 09:45:26   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of signal for ONU(LOSi)
+         2026-10-02 10:30:35 (clear)
+ 1000502 2026-08-06 09:45:26   Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of frame for ONU(LOFi)
+         2026-10-02 10:30:35 (clear)
+ 1000510 2026-10-02 09:27:59   Err        PON 0/0/2 ONU: 33 ONU-SN(TEST00000110)   The ONT Rx power exceeds the low alarm threshold
+         2026-10-02 09:53:07 (clear)
+ 1000509 2026-10-02 09:32:52   Warning    PON 0/0/2 ONU: 5 UNI 1 ONU-SN(TEST0000011F)   The Ethernet port link status is down
+total number : 2000
+OLT-TESTE(config)# 

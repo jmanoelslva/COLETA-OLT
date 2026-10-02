@@ -1,0 +1,30 @@
+# show port ddm-info 1
+show port ddm-info 1
+gpon 0/0/1 Transceiver information: 
+-------------------------------------------------------------------------------------
+ Temp(C)                                 : 30.81
+ Temp warning threshold(C)               : [0.00,70.00] 
+ Temp alarm threshold(C)                 : [-10.00,100.00] 
+ Voltage(V)                              : 3.28
+ Supply voltage warning threshold(V)     : [3.14,3.47] 
+ Supply voltage alarm threshold(V)       : [2.97,3.63] 
+ Bias(mA)                                : 9.20
+ Tx bias current warning threshold(mA)   : [3.00,40.00] 
+ Tx bias current alarm threshold(mA)     : [2.00,70.00] 
+ RX power(dBM)                           : -23.37
+ TX power(dBM)                           : 9.51
+ Tx power current warning threshold(dBm) : [0.00,9.00] 
+ Tx power current alarm threshold(dBm)   : [-1.00,10.00] 
+-------------------------------------------------------------------------------------
+ Transceiver Type  : OC48/STM16_NA_SFP 
+ Connector Type    : SC 
+ Wavelength(nm)    : 1490(nm) 
+ Transfer Distance : 20km(9um) 
+ Diagnostic Monitor: YES 
+ Vendor Name       : OEM              
+ Ordering Name     : Class C++++      
+ Serial Number     : PG01240923000443 
+ Manufact Date     : 20240923   
+-------------------------------------------------------------------------------------
+
+OLT-TESTE(config-gpon-0/0)# 

@@ -1,0 +1,40 @@
+# show alarm active all
+show alarm active all
+ ------------------------------------------------------------------------------------
+ AlarmId   Time                 Level      Instance             Name      
+ ------------------------------------------------------------------------------------
+ 1000501   2026-10-02 19:21:04  Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of signal for ONU(LOSi)
+ 1000502   2026-10-02 19:21:04  Err        PON 0/0/2 ONU: 18 ONU-SN(TEST0000010F)   Loss of frame for ONU(LOFi)
+ 1000510   2026-10-02 18:41:54  Err        PON 0/0/2 ONU: 33 ONU-SN(TEST00000110)   The ONT Rx power exceeds the low alarm threshold
+ 1000520   2026-10-02 09:59:07  Warning    PON 0/0/2 ONU: 36 ONU-SN(TEST00000111)   The ONT temperature exceeds the warning threshold
+ 1000509   2026-09-30 04:51:20  Warning    PON 0/0/2 ONU: 29 UNI 1 ONU-SN(TEST00000112)   The Ethernet port link status is down
+ 1000501   2026-09-26 21:05:24  Err        PON 0/0/1 ONU: 22 ONU-SN(TEST00000101)   Loss of signal for ONU(LOSi)
+ 1000502   2026-09-26 21:05:24  Err        PON 0/0/1 ONU: 22 ONU-SN(TEST00000101)   Loss of frame for ONU(LOFi)
+ 100306    2026-09-26 21:05:24  Warning    PON 0/0/1 ONU: 22 ONU-SN(TEST00000101)   Dying gasp(DGi)
+ 1000509   2026-09-20 19:37:34  Warning    PON 0/0/1 ONU: 1 UNI 1 ONU-SN(TEST000000EC)   The Ethernet port link status is down
+ 1000509   2026-09-20 03:21:51  Warning    PON 0/0/1 ONU: 7 UNI 1 ONU-SN(TEST000000F2)   The Ethernet port link status is down
+ 1000509   2026-09-19 22:32:00  Warning    PON 0/0/1 ONU: 4 UNI 1 ONU-SN(TEST000000EF)   The Ethernet port link status is down
+ 1000509   2026-09-19 21:54:08  Warning    PON 0/0/2 ONU: 23 UNI 1 ONU-SN(TEST00000113)   The Ethernet port link status is down
+ 1000509   2026-09-19 20:26:03  Warning    PON 0/0/1 ONU: 16 UNI 1 ONU-SN(TEST000000FB)   The Ethernet port link status is down
+ 1000509   2026-09-14 12:57:28  Warning    PON 0/0/2 ONU: 24 UNI 1 ONU-SN(TEST00000114)   The Ethernet port link status is down
+ 1000509   2026-09-05 16:19:53  Warning    PON 0/0/2 ONU: 27 UNI 1 ONU-SN(TEST00000115)   The Ethernet port link status is down
+ 1000509   2026-08-29 19:03:19  Warning    PON 0/0/1 ONU: 10 UNI 1 ONU-SN(TEST000000F5)   The Ethernet port link status is down
+ 1000509   2026-09-17 05:25:59  Warning    PON 0/0/2 ONU: 20 UNI 1 ONU-SN(TEST00000116)   The Ethernet port link status is down
+ 1000203   2026-07-31 17:48:12  Notice     PON 0/0/3             This tranceiver is not adapted,The default type will be used
+ 1000509   2026-09-20 03:25:54  Warning    PON 0/0/2 ONU: 9 UNI 4 ONU-SN(TEST00000117)   The Ethernet port link status is down
+ 1000509   2026-09-20 03:25:54  Warning    PON 0/0/2 ONU: 9 UNI 3 ONU-SN(TEST00000117)   The Ethernet port link status is down
+ 1000509   2026-09-20 03:25:54  Warning    PON 0/0/2 ONU: 9 UNI 2 ONU-SN(TEST00000117)   The Ethernet port link status is down
+ 1000509   2026-09-20 03:25:54  Warning    PON 0/0/2 ONU: 9 UNI 1 ONU-SN(TEST00000117)   The Ethernet port link status is down
+ 1000509   2026-07-20 09:38:14  Warning    PON 0/0/2 ONU: 13 UNI 1 ONU-SN(TEST00000118)   The Ethernet port link status is down
+ 1000509   2026-07-07 18:49:21  Warning    PON 0/0/1 ONU: 18 UNI 1 ONU-SN(TEST000000FD)   The Ethernet port link status is down
+ 1000509   2026-09-20 00:25:46  Warning    PON 0/0/1 ONU: 19 UNI 1 ONU-SN(TEST000000FE)   The Ethernet port link status is down
+ 1000509   2026-09-08 12:25:43  Warning    PON 0/0/1 ONU: 22 UNI 2 ONU-SN(TEST00000101)   The Ethernet port link status is down
+ 1000509   2026-09-08 12:25:43  Warning    PON 0/0/1 ONU: 22 UNI 1 ONU-SN(TEST00000101)   The Ethernet port link status is down
+ 1000509   2026-06-22 11:12:03  Warning    PON 0/0/2 ONU: 33 UNI 1 ONU-SN(TEST000000F9)   The Ethernet port link status is down
+ 1000509   2026-09-24 06:14:07  Warning    PON 0/0/2 ONU: 14 UNI 2 ONU-SN(TEST00000119)   The Ethernet port link status is down
+ 1000509   2026-09-24 06:14:07  Warning    PON 0/0/2 ONU: 14 UNI 1 ONU-SN(TEST00000119)   The Ethernet port link status is down
+ 1000509   2026-06-17 19:05:04  Warning    PON 0/0/2 ONU: 22 UNI 1 ONU-SN(TEST0000011A)   The Ethernet port link status is down
+ 1000210   2026-06-13 00:00:11  Warning    PON 0/0/2             The TX output power of the optical port is higher than the warning upper threshold or lower than the warning lower threshold
+ 1000210   2026-06-13 00:00:10  Warning    PON 0/0/1             The TX output power of the optical port is higher than the warning upper threshold or lower than the warning lower threshold
+total number : 33
+OLT-TESTE(config)# 

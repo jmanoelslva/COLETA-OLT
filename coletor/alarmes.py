@@ -36,6 +36,13 @@ _CATALOGO: list[tuple[re.Pattern, str, str, str]] = [
     (re.compile(r"ONT Rx power becomes normal", re.I), "rx_onu", "RX da ONU normalizou", "menor"),
     (re.compile(r"Ethernet port link status is (down|up)", re.I), "uni_link", "Porta LAN da ONU", "info"),
     (re.compile(r"not support this trans?ceiver", re.I), "sfp_incompativel", "SFP da PON não suportado", "maior"),
+    # Mensagens do firmware V3.x.
+    (re.compile(r"trans?ceiver is not adapted", re.I), "sfp_incompativel", "SFP da PON não reconhecido (tipo padrão)", "menor"),
+    (re.compile(r"TX output power of the optical port", re.I), "tx_pon", "TX do SFP da PON fora do limite", "maior"),
+    (re.compile(r"ONT temperature exceeds the alarm", re.I), "temp_onu", "Temperatura da ONU acima do limite", "menor"),
+    (re.compile(r"ONT temperature exceeds the warning", re.I), "temp_onu", "Temperatura da ONU em atenção", "info"),
+    (re.compile(r"ONT voltage exceeds", re.I), "tensao_onu", "Tensão da ONU fora do limite", "menor"),
+    (re.compile(r"ONT bias current exceeds", re.I), "bias_onu", "Corrente do laser da ONU fora do limite", "menor"),
 ]
 
 _NORMALIZOU = re.compile(r"(\sclear$|becomes normal|link status is up|^ONU voltou|\(normalizou\)$)", re.I)

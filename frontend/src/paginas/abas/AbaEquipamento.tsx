@@ -34,8 +34,9 @@ export function AbaEquipamento({ olt }: { olt: DetalheOlt }) {
           </li>
         ))}
         {s.fontes?.map(f => (
-          <li key={`p${f.slot}`} className={f.status === 'working' ? '' : 'atento'}>
-            Fonte {f.slot}: {f.status === 'working' ? 'funcionando' : 'sem funcionar (ou slot vazio)'}
+          <li key={`p${f.slot}`} className={f.status === 'working' || f.status === 'ausente' ? '' : 'atento'}>
+            Fonte {f.slot}: {f.status === 'working' ? 'funcionando'
+              : f.status === 'ausente' ? 'slot vazio' : 'sem funcionar (ou slot vazio)'}
           </li>
         ))}
       </ul>

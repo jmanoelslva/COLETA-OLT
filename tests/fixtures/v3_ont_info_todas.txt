@@ -1,0 +1,43 @@
+# show ont info 1 all
+show ont info 1 all
+----------------------------------------------------------------------------------------
+  F/S P  ONT    SN               Control  Run     Config    Match     Last       Desc
+         ID                      flag     state   state     state     down-cause  
+----------------------------------------------------------------------------------------
+  0/0 1  1      TEST000000EC     Active   Online  success   match     dying-gasp CLIENTE-165
+  0/0 1  2      TEST000000ED     Active   Online  success   match     dying-gasp CLIENTE-166
+  0/0 1  3      TEST000000EE     Active   Online  success   match     dying-gasp CLIENTE-167
+  0/0 1  4      TEST000000EF     Active   Online  success   match     dying-gasp CLIENTE-168
+  0/0 1  5      TEST000000F0     Active   Online  success   match     dying-gasp CLIENTE-169
+  0/0 1  6      TEST000000F1     Active   Online  success   match     dying-gasp CLIENTE-170
+  0/0 1  7      TEST000000F2     Active   Online  success   match     dying-gasp CLIENTE-171
+  0/0 1  8      TEST000000F3     Active   Online  success   match     dying-gasp CLIENTE-172
+  0/0 1  9      TEST000000F4     Active   Online  success   mismatch  dying-gasp CLIENTE-173
+  0/0 1  10     TEST000000F5     Active   Online  success   match     dying-gasp CLIENTE-174
+  0/0 1  11     TEST000000F6     Active   Online  success   match     dying-gasp CLIENTE-175
+  0/0 1  12     TEST000000F7     Active   Online  success   match     dying-gasp CLIENTE-176
+  0/0 1  13     TEST000000F8     Active   Online  success   mismatch  dying-gasp CLIENTE-177
+  0/0 1  14     TEST000000F9     Active   Online  success   match     dying-gasp CLIENTE-178
+  0/0 1  15     TEST000000FA     Active   Online  success   match     dying-gasp CLIENTE-179
+  0/0 1  16     TEST000000FB     Active   Online  success   match     dying-gasp CLIENTE-180
+  0/0 1  17     TEST000000FC     Active   Online  success   mismatch  dying-gasp CLIENTE-181
+  0/0 1  18     TEST000000FD     Active   Online  success   match     dying-gasp CLIENTE-182
+  0/0 1  19     TEST000000FE     Active   Online  success   match     LOS        CLIENTE-183
+  0/0 1  20     TEST000000FF     Active   Online  success   match     dying-gasp CLIENTE-184
+  0/0 1  21     TEST00000100     Active   Online  success   match     dying-gasp 
+  0/0 1  22     TEST00000101     Active   Offline initial   initial   dying-gasp CLIENTE-185
+  0/0 1  23     TEST00000102     Active   Online  success   match     reboot     CLIENTE-186
+  0/0 1  24     TEST00000103     Active   Online  success   match     dying-gasp 
+  0/0 1  25     TEST00000104     Active   Online  success   match     dying-gasp CLIENTE-187
+  0/0 1  26     TEST00000105     Active   Online  success   match     dying-gasp CLIENTE-188
+  0/0 1  27     TEST00000106     Active   Online  success   match     dying-gasp CLIENTE-189
+  0/0 1  28     TEST00000107     Active   Online  success   match     dying-gasp CLIENTE-190
+  0/0 1  29     TEST00000108     Active   Online  success   match     dying-gasp 
+  0/0 1  30     TEST00000109     Active   Online  success   match     dying-gasp CLIENTE-191
+  0/0 1  31     TEST0000010A     Active   Online  success   match     dying-gasp CLIENTE-192
+  0/0 1  32     TEST0000010B     Active   Online  success   mismatch  dying-gasp 
+  0/0 1  33     TEST0000010C     Active   Online  success   match     dying-gasp CLIENTE-193
+  0/0 1  34     TEST0000010D     Active   Online  success   match     dying-gasp CLIENTE-194
+----------------------------------------------------------------------------------------
+  Total: 34,  online: 33,  deactive: 0,  success: 33 , failed: 0
+OLT-TESTE(config-gpon-0/0)# 

@@ -1,0 +1,113 @@
+# show ont info 1 1
+show ont info 1 1
+  
+--------------------------------------------------------------------------------------------------------
+  F/S                  : 0/0 
+  Port                 : 1 
+  ONT-ID               : 1 
+  Control flag         : active 
+  Run state            : online 
+  Config state         : success 
+  Match state          : match 
+  DBA type             : SR 
+  Distance(m)          : 6093 
+  Validity mode        : always 
+  Authentic mode       : sn-auth 
+  SN                   : TEST000000EC (TEST-0000010E) 
+  Description          : CLIENTE-165
+  Last down cause      : dying-gasp 
+  Last up time         : 2026-09-20 19:50:51 
+  Last down time       : 2026-09-20 19:37:38 
+  Last dying-gasp      : 2026-09-20 19:37:38 
+  Online  time         : 12days 0h:2m:25s 
+  Alarm profile ID     : 0 
+  Wan profile ID       : -- 
+  Pri profile ID       : -- 
+  Mult-srv-profile ID  : 0 
+--------------------------------------------------------------------------------------------------------
+  
+--------------------------------------------------------------------------------------------------------
+  Line profile ID     : 0 
+  Line profile name   : LINE-PPPOE 
+  Binding times       : 74 
+  Bind by profile     : 1 
+  ------------------------------------------------------------------------------------------------------
+  FEC upstream        : Disable 
+  OMCC encrypt        : Disable 
+  Qos mode            : PQ 
+  Mapping mode        : VLAN 
+  l2mapping model     : 802.1P 
+  ------------------------------------------------------------------------------------------------------
+  <T-CONT  0>               DBA-Profile ID : 0   
+  <T-CONT  1>               DBA-Profile ID : 1   
+    <Gem ID  1> 
+      US-GEM-CAR : -               DS-GEM-CAR : -         DS-ENCRYPT-MODE : disable
+      US-PRIORITY-QUEUE : 1  DS-PRIORITY-QUEUE : 1  
+      --------------------------------------------------------------------------------------------------
+      Mapping-ID  VLAN      Priority      Port-ID      Veip-ID
+        1         1            -           -           -
+      --------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+  
+--------------------------------------------------------------------------------------------------------
+  Gem-id  Server-Vlan    User-Vlan     Tag-Action          Inner-Vlan    Inner-vlan-priority 
+  
+--------------------------------------------------------------------------------------------------------
+  1       2301            1            translate              --            --                  
+--------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------
+  Srv profile ID   : 0 
+  Srv profile name : SRV-PPPOE 
+  Binding times    : 74 
+---------------------------------------------------------------
+---------------------------------------------------------------
+  Port-type       Port-number  Max-adaptive-number
+---------------------------------------------------------------
+  ETH             adaptive     24 
+  POTS            0            - 
+  CATV            0            - 
+  IPHOST          2            - 
+  WIFI            0            - 
+---------------------------------------------------------------
+
+ MAC aging time(s):     	  : 300 
+ MAC learing switch:   		  : Enable 
+ Ring check switch                : Disable 
+ Ring port auto-shutdown          : Enable 
+ Ring check detect frequency(pps) : 8 
+ Ring resume interval(s)          : 300 
+ Multicast fast leave switch      : - 
+ Multicast mode                   : unconcern 
+ Multicast version                : v2 
+ Multicast max-group              : Unlimited 
+ VEIP mode                        : Trunk 
+ Native VLAN option:   		  : Concern 
+
+---------------------------------------------------------------
+  Port   Port Service-type Index S-VLAN S-PRI C-VLAN C-PRI ENCAP S-PRI
+  type   ID                                                      POLICY
+  ETH    1    Transparent  -     -      -     -      -     -     -
+---------------------------------------------------------------
+  Port  Port  Max-MAC-Count  Max-Frame-Size     N-VLAN     N-PRI Dhcp-ip Outbound Inbound
+  type  ID                                                                    
+---------------------------------------------------------------
+  ETH   1     unlimited          1522            1           0      --        -       -       
+---------------------------------------------------------------
+  Port-type  Port-ID  N-VLAN  N-PRI
+---------------------------------------------------------------
+  Port   Port QinQmode    Dhcp-ip 
+  type   ID                                     
+  ETH    1    unconcern    --           
+---------------------------------------------------------------
+  Port   Port  Igmp-forward  Igmp-forward  Igmp-forward  Multicast-forward 
+  type   ID    action        vlan          pri           action            
+---------------------------------------------------------------
+  ETH    1     -             -             -             -
+  IPHOST 1     -             -             -             
+---------------------------------------------------------------
+  Port   Port  Index   Multicast-Vlan      Dest             Dest         
+  type   ID            ID                  IP-Start         IP-End       
+---------------------------------------------------------------
+---------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+OLT-TESTE(config-gpon-0/0)# 

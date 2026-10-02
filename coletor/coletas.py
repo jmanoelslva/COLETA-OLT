@@ -172,23 +172,30 @@ def coletar_onus(s: SessaoCData, olt: OltConfig, banco: Banco, estado: EstadoOlt
     total = 0
     for porta in portas or olt.portas_pon:
         lista, totais = p.ont_info_todas(s.executar(f"show ont info {porta} all", VIEW_GPON))
-        sinais = p.optical_todas(s.executar(f"show ont optical-info {porta} all", VIEW_GPON))
+        sinais = p.optical_todas(s.executar(f"show ont optical-info {porta} all", VIEW_GPON), porta)
+        # Firmware V3 já traz o RX na OLT aqui: o ciclo lento (ddm with-onu-optical)
+        # passa a ler só o SFP da PON.
+        if any(sg.get("rx_olt") is not None for sg in sinais):
+            estado.extras["rx_olt_no_optical"] = True
         agora = iso(agora_utc())
         with banco.conexao() as c:
             for o in lista:
                 c.execute(
-                    """INSERT INTO onus (olt_id, porta, onu_id, sn, control_flag, run_state, config_state,
+                    """INSERT INTO onus (olt_id, porta, onu_id, sn, descricao, control_flag, run_state, config_state,
                                          match_state, last_down_cause, primeiro_visto, visto_em)
-                       VALUES (?,?,?,?,?,?,?,?,?,?,?)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
                        ON CONFLICT(olt_id, porta, onu_id) DO UPDATE SET
                          sn = excluded.sn, control_flag = excluded.control_flag,
                          run_state = excluded.run_state, config_state = excluded.config_state,
                          match_state = excluded.match_state, last_down_cause = excluded.last_down_cause,
                          visto_em = excluded.visto_em,
                          -- troca de ONU na mesma posição: o detalhe antigo não vale mais
-                         descricao = CASE WHEN onus.sn = excluded.sn THEN onus.descricao END,
+                         -- (V3 traz a descrição na lista; V1 só no detalhe)
+                         descricao = COALESCE(excluded.descricao,
+                                              CASE WHEN onus.sn = excluded.sn THEN onus.descricao END),
                          detalhe_em = CASE WHEN onus.sn = excluded.sn THEN onus.detalhe_em END""",
-                    (olt.id, porta, o["onu_id"], o["sn"], o["control_flag"], o["run_state"], o["config_state"],
+                    (olt.id, porta, o["onu_id"], o["sn"], o.get("descricao"), o["control_flag"], o["run_state"],
+                     o["config_state"],
                      o["match_state"], o["last_down_cause"], agora, agora),
                 )
             for sg in sinais:
@@ -197,6 +204,10 @@ def coletar_onus(s: SessaoCData, olt: OltConfig, banco: Banco, estado: EstadoOlt
                     "VALUES (?,?,?,?,?,?,?,?,?)",
                     (olt.id, porta, sg["onu_id"], agora, sg["rx"], sg["tx"], sg["tensao"], sg["bias"], sg["temp"]),
                 )
+            c.executemany(
+                "INSERT INTO sinais_olt (olt_id, porta, onu_id, coletado_em, rx_olt) VALUES (?,?,?,?,?)",
+                [(olt.id, porta, sg["onu_id"], agora, sg["rx_olt"]) for sg in sinais if sg.get("rx_olt") is not None],
+            )
             if totais:
                 c.execute("INSERT INTO pon_resumo (olt_id, porta, coletado_em, total, online) VALUES (?,?,?,?,?)",
                           (olt.id, porta, agora, totais["total"], totais["online"]))
@@ -253,6 +264,9 @@ def consultar_onu(s: SessaoCData, olt: OltConfig, banco: Banco, estado: EstadoOl
             "VALUES (?,?,?,?,?,?,?,?,?)",
             (olt.id, porta, onu_id, iso(agora_utc()), sg["rx"], sg["tx"], sg["tensao"], sg["bias"], sg["temp"]),
         )
+        if sg.get("rx_olt") is not None:
+            c.execute("INSERT INTO sinais_olt (olt_id, porta, onu_id, coletado_em, rx_olt) VALUES (?,?,?,?,?)",
+                      (olt.id, porta, onu_id, iso(agora_utc()), sg["rx_olt"]))
     return {"detalhe": d, "sinal": sg}
 
 
@@ -263,10 +277,15 @@ def coletar_rx_olt(s: SessaoCData, olt: OltConfig, banco: Banco, estado: EstadoO
                    portas: list[int] | None = None) -> dict:
     lidas = 0
     erros = {}
+    # V3: o RX na OLT já veio no optical-info do ciclo de ONUs; aqui só o SFP.
+    so_sfp = estado.extras.get("rx_olt_no_optical", False)
     for porta in portas or olt.portas_pon:
         try:
-            r = p.ddm_porta(s.executar(f"show port ddm-info {porta} with-onu-optical", VIEW_GPON,
-                                       timeout=TIMEOUT_DDM_ONUS))
+            if so_sfp:
+                r = p.ddm_porta(s.executar(f"show port ddm-info {porta}", VIEW_GPON))
+            else:
+                r = p.ddm_porta(s.executar(f"show port ddm-info {porta} with-onu-optical", VIEW_GPON,
+                                           timeout=TIMEOUT_DDM_ONUS))
         except p.ErroCli as e:
             erros[porta] = str(e)
             continue

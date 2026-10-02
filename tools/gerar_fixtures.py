@@ -53,6 +53,22 @@ MAPA.update({
     "datacom_portas_gpon.txt": "_show_interface_gpon.txt",
 })
 
+# Firmware V3.x (capturas do cadastro "teste") → fixtures "v3_*".
+MAPA_V3 = {
+    "v3_ont_info_todas.txt": "teste_show_ont_info_1_all.txt",
+    "v3_ont_info_online.txt": "teste_show_ont_info_1_1.txt",
+    "v3_optical_todas.txt": "teste_show_ont_optical_info_1_all.txt",
+    "v3_optical_uma.txt": "teste_show_ont_optical_info_1_1.txt",
+    "v3_ddm_porta.txt": "teste_show_port_ddm_info_1.txt",
+    "v3_alarmes_ativos.txt": "teste_show_alarm_active_all.txt",
+    "v3_cpu.txt": "teste_show_cpu.txt",
+    "v3_power.txt": "teste_show_power_state.txt",
+    "v3_temperatura.txt": "teste_show_temperature.txt",
+    "v3_uptime.txt": "teste_show_uptime.txt",
+}
+# O histórico V3 tem milhares de linhas: a fixture fica com o começo.
+LINHAS_HISTORICO_V3 = 120
+
 seriais: dict[str, str] = {}
 nomes: dict[str, str] = {}
 
@@ -67,6 +83,10 @@ def _serial(m: re.Match) -> str:
 def anonimizar(texto: str) -> str:
     # Serial de ONU: 12 caracteres alfanuméricos com ao menos um dígito, como coluna ou "SN : ...".
     texto = re.sub(r"(?<=\s)(?=[A-Z0-9]*\d)[A-Z0-9]{12}(?=\s)", _serial, texto)
+    # V3: "ONU-SN(ZTEGD1BC2714)" nos alarmes e "SN : X (XXXX-XXXXXXXX)" no detalhe.
+    texto = re.sub(r"(?<=ONU-SN\()[^)]+(?=\))", _serial, texto)
+    texto = re.sub(r"(?<=\()[0-9A-F]{4}-[0-9A-F]{8}(?=\))", lambda m: _serial(m)[:4] + "-" + _serial(m)[4:], texto)
+    texto = re.sub(r"\bOLT-[A-Z0-9-]+(?=[>#(])", "OLT-TESTE", texto)
 
     def _nome(m: re.Match) -> str:
         n = m.group(2)
@@ -75,6 +95,10 @@ def anonimizar(texto: str) -> str:
         return m.group(1) + nomes[n]
 
     texto = re.sub(r"^([ \t]*(?:Description|Name)[ \t]*:[ \t]*)(\S.*?)[ \t]*$", _nome, texto, flags=re.M)
+    # C-DATA V3: nome do cliente na 11ª coluna (Desc) de `show ont info <porta> all`.
+    if re.search(r"\bDesc\s*$", texto, re.M):
+        texto = re.sub(r"^([ \t]*\d+/\d+(?:[ \t]+\S+){8}[ \t]+)(\S.*?)([ \t]*)$",
+                       lambda m: _nome(m) + m.group(3), texto, flags=re.M)
     # Datacom: nome do cliente na última coluna da lista de ONUs.
     return re.sub(r"^(\d+/\d+/\d+[ \t].*?(?:N/A|-?\d+\.\d+)[ \t]+(?:N/A|-?\d+\.\d+)[ \t]+)(\S.*?)([ \t]*)$",
                   lambda m: _nome(m) + m.group(3), texto, flags=re.M)
@@ -84,12 +108,24 @@ def main() -> None:
     DESTINO.mkdir(parents=True, exist_ok=True)
     arquivos = sorted(ORIGEM.glob("*.txt"))
     for destino, trecho in MAPA.items():
-        candidatos = [a for a in arquivos if a.name.endswith(trecho)]
+        candidatos = [a for a in arquivos if a.name.endswith(trecho) and not a.name.startswith("teste_")]
         if not candidatos:
             print(f"faltando: {trecho}")
             continue
         (DESTINO / destino).write_text(anonimizar(candidatos[-1].read_text(encoding="utf-8")), encoding="utf-8")
         print(f"ok: {destino}")
+    for destino, nome in MAPA_V3.items():
+        if not (ORIGEM / nome).exists():
+            print(f"faltando: {nome}")
+            continue
+        (DESTINO / destino).write_text(anonimizar((ORIGEM / nome).read_text(encoding="utf-8")), encoding="utf-8")
+        print(f"ok: {destino}")
+    hist = ORIGEM / "teste_show_alarm_history_all.txt"
+    if hist.exists():
+        linhas = hist.read_text(encoding="utf-8").splitlines()
+        (DESTINO / "v3_alarmes_historico.txt").write_text(
+            anonimizar("\n".join(linhas[:LINHAS_HISTORICO_V3] + linhas[-2:]) + "\n"), encoding="utf-8")
+        print("ok: v3_alarmes_historico.txt")
 
 
 if __name__ == "__main__":

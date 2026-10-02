@@ -22,6 +22,9 @@ log = logging.getLogger(__name__)
 
 _ANSI = re.compile(r"\x1b\[[0-9;?]*[A-Za-z]|\x1b[()][A-Z0-9]|\r")
 _PROMPT = re.compile(r"^\S+?(?:\([^)]*\))?[>#]\s*$")
+_PAGINADOR = re.compile(r"-{2,}\s*more\b[^\n]*?-{2,}[\s\x00]*$", re.I)
+# Restos da paginação: NUL e backspaces que a OLT manda para apagar o "--More--".
+_LIXO = re.compile(r"[\x00\x08]")
 _PEDE_LOGIN = re.compile(r"(user ?name|login)\s*:\s*$", re.I)
 _PEDE_SENHA = re.compile(r"password\s*:\s*$", re.I)
 
@@ -40,6 +43,7 @@ class SessaoCData:
         self._cliente: paramiko.SSHClient | None = None
         self._canal: paramiko.Channel | None = None
         self._view = ""
+        self._sem_paginacao = False
         self.hostname: str | None = None
         self.ultimo_uso = 0.0
         self._lock = threading.Lock()
@@ -98,6 +102,7 @@ class SessaoCData:
         self._cliente = None
         self._canal = None
         self._view = ""
+        self._sem_paginacao = False
 
     # ------------------------------------------------------------ I/O
 
@@ -108,10 +113,14 @@ class SessaoCData:
         ultimo_dado = time.monotonic()
         while time.monotonic() < fim:
             if self._canal.recv_ready():
-                pedaco = self._canal.recv(65535).decode("utf-8", "replace")
-                buf += pedaco
+                buf += self._canal.recv(65535).decode("utf-8", "replace")
                 ultimo_dado = time.monotonic()
-                if re.search(r"--\s*more\s*--", pedaco, re.I):
+                # Paginação: "--More--" (V1.x) ou "--More ( Press 'Q' to quit )--"
+                # (V3.x). Procura no fim do buffer (o texto pode chegar partido),
+                # tira da saída e pede a próxima página.
+                pag = _PAGINADOR.search(buf, max(0, len(buf) - 200))
+                if pag:
+                    buf = buf[:pag.start()]
                     self._canal.send(" ")
                 continue
             if self._canal.closed:
@@ -120,7 +129,7 @@ class SessaoCData:
                 limpo = _ANSI.sub("", buf).rstrip(" ")
                 ultima = limpo.splitlines()[-1] if limpo.splitlines() else ""
                 if _PROMPT.match(ultima) or _PEDE_LOGIN.search(ultima) or _PEDE_SENHA.search(ultima):
-                    return _ANSI.sub("", buf)
+                    return _LIXO.sub("", _ANSI.sub("", buf))
             time.sleep(0.05)
         raise ErroSessao(f"timeout de {timeout:.0f}s esperando o prompt")
 
@@ -141,7 +150,8 @@ class SessaoCData:
             return ""
         self.hostname = m[1]
         modo = m[2] or ""
-        if modo.startswith("config-interface-gpon"):
+        # V1.x: "(config-interface-gpon-0/0)#"; V3.x: "(config-gpon-0/0)#".
+        if modo.startswith(("config-interface-gpon", "config-gpon")):
             self._view = VIEW_GPON
         elif modo == "config":
             self._view = VIEW_CONFIG
@@ -152,7 +162,14 @@ class SessaoCData:
         return self._view
 
     def _ir_para(self, view: str) -> None:
-        for _ in range(6):
+        for _ in range(7):
+            # Desliga a paginação desta sessão (só existe na view "#"; a OLT não
+            # guarda isso na config). Firmware que não conhece o comando só
+            # responde erro, e o "--More--" continua tratado em _ler_ate_prompt.
+            if self._view == "enable" and not self._sem_paginacao:
+                self._sem_paginacao = True
+                self._enviar("terminal length 0", 120)
+                continue
             if self._view == view:
                 return
             if self._view == "user":

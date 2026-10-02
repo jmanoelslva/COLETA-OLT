@@ -1,0 +1,5 @@
+# show uptime
+show uptime
+  System running time : 15 weeks, 6 day 19 hour 54 minute 42 second. 
+  System uptime time  : Fri Jun 12 23:58:24 2026 
+OLT-TESTE(config)# 

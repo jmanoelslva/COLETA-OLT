@@ -7,6 +7,32 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.4.0] - 2026-10-02
+
+### Adicionado
+
+- **Suporte ao firmware C-DATA V3.x** (testado na V3.3.76), mantendo a V1.x.
+  A sessão reconhece o prompt `(config-gpon-F/S)#` e o paginador
+  `--More ( Press 'Q' to quit )--`, e os parsers leem os formatos novos de
+  alarmes (AlarmId/Level, `ONU: n`, `ONU-SN(...)` e o `(clear)` na linha de
+  baixo, que vira evento de normalização), lista de ONUs, detalhe da ONU, SFP
+  da PON, CPU, temperatura, fontes e uptime.
+- Na V3 a descrição (nome do cliente) já vem na lista de ONUs e o RX na OLT
+  vem no `show ont optical-info <porta> all`: os dois são gravados a cada
+  ciclo de ONUs, e o ciclo lento de RX na OLT passa a ler só o SFP da PON
+  (sem o demorado `with-onu-optical`).
+- Novos alarmes no catálogo: temperatura, tensão e corrente do laser da ONU,
+  TX do SFP da PON fora do limite e SFP não reconhecido.
+- `tools/diagnostico_cdata.py`: roda todos os comandos de leitura numa OLT
+  cadastrada e confere cada parser, sem gravar no banco.
+
+### Corrigido
+
+- A sessão manda `terminal length 0` ao entrar no modo privilegiado. Algumas
+  OLTs não guardam essa opção na configuração, e a paginação ficava ativa em
+  toda sessão nova. A quebra pelo `--More--` continua como reserva.
+- Fontes: slot sem fonte aparece como "slot vazio", e não mais como alerta.
+
 ## [1.3.1] - 2026-10-02
 
 ### Corrigido
@@ -144,6 +170,7 @@ SQLite e interface web para o técnico.
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
 [Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.1...HEAD
+[1.4.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.1...v1.2.2
