@@ -7,6 +7,15 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.4.1] - 2026-10-02
+
+### Corrigido
+
+- Coleta de ONUs da C-DATA falhava inteira quando uma porta PON não tinha
+  ONU cadastrada: a OLT responde `Error: There is no ONT avaliable` em vez de
+  uma tabela vazia. A porta agora é registrada com 0 ONUs e o ciclo segue
+  para as demais.
+
 ## [1.4.0] - 2026-10-02
 
 ### Adicionado
@@ -169,7 +178,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.1...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.1...HEAD
+[1.4.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.2...v1.3.0

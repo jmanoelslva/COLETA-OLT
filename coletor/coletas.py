@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 
@@ -167,12 +168,28 @@ def _gravar_sfp(c, olt_id: str, porta: int, agora: str, sfp: dict) -> None:
 # ------------------------------------------------------------------ ONUs
 
 
+# Porta sem ONU cadastrada (ou, no optical-info, sem ONU online): a OLT responde
+# "Error: There is no ONT avaliable" (sic) em vez de uma tabela vazia.
+_SEM_ONT = re.compile(r"no ON[TU] ava(il|li)able", re.I)
+
+
+def _executar_lista(s: SessaoCData, comando: str) -> str | None:
+    try:
+        return s.executar(comando, VIEW_GPON)
+    except p.ErroCli as e:
+        if _SEM_ONT.search(str(e)):
+            return None
+        raise
+
+
 def coletar_onus(s: SessaoCData, olt: OltConfig, banco: Banco, estado: EstadoOlt,
                  portas: list[int] | None = None) -> dict:
     total = 0
     for porta in portas or olt.portas_pon:
-        lista, totais = p.ont_info_todas(s.executar(f"show ont info {porta} all", VIEW_GPON))
-        sinais = p.optical_todas(s.executar(f"show ont optical-info {porta} all", VIEW_GPON), porta)
+        saida = _executar_lista(s, f"show ont info {porta} all")
+        lista, totais = p.ont_info_todas(saida) if saida is not None else ([], {"total": 0, "online": 0})
+        saida = _executar_lista(s, f"show ont optical-info {porta} all") if lista else None
+        sinais = p.optical_todas(saida, porta) if saida is not None else []
         # Firmware V3 já traz o RX na OLT aqui: o ciclo lento (ddm with-onu-optical)
         # passa a ler só o SFP da PON.
         if any(sg.get("rx_olt") is not None for sg in sinais):
