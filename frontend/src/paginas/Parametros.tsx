@@ -148,11 +148,16 @@ export function Parametros() {
                     />
                     <span>{c.unidade}</span>
                   </span>
-                  {padrao && (
-                    <small id={`${c.chave}-pad`} className="sutil">
-                      padrão {emMin(c.chave) ? padrao[c.chave] / 60 : padrao[c.chave]}
-                    </small>
-                  )}
+                  {padrao && (() => {
+                    const pad = emMin(c.chave) ? padrao[c.chave] / 60 : padrao[c.chave]
+                    const alterado = Number((form[c.chave] ?? '').replace(',', '.')) !== pad
+                    return (
+                      <small id={`${c.chave}-pad`} className={`padrao${alterado ? ' padrao-alterado' : ''}`}
+                        title={alterado ? 'Valor diferente do padrão' : undefined}>
+                        padrão {pad} {c.unidade}
+                      </small>
+                    )
+                  })()}
                 </label>
               ))}
             </fieldset>

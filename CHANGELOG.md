@@ -7,6 +7,16 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.2.2] - 2026-10-02
+
+### Corrigido
+
+- Configurações: o valor padrão de cada campo ("padrão 5 min") ficava solto
+  numa linha abaixo do campo, sem unidade e desalinhado. Agora fica na mesma
+  linha, em coluna própria, com a unidade, e muda de cor quando o valor
+  digitado é diferente do padrão. A barra fixa de "Salvar configurações"
+  ganhou uma borda para não se confundir com o conteúdo.
+
 ## [1.2.1] - 2026-10-02
 
 ### Corrigido
@@ -102,7 +112,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.1...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.2...HEAD
+[1.2.2]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.0.0...v1.1.0
