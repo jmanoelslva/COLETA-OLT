@@ -1,0 +1,5 @@
+# show time
+show time 
+  2026-10-02 14:31:32 -0300 GMT
+
+OLT-IGC-NRO(config)# 

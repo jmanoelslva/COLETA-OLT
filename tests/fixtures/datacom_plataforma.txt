@@ -1,0 +1,10 @@
+# show platform
+show platform
+Chassis/Slot  Product model      Role     Status        Firmware version
+------------  -----------------  -------  ------------  ----------------------
+1             DM4610 HW2         -        -             Not available
+1/1           8GPON+8GX+4GT+2XS  Active   Ready         12.6.0-114-1-g60dccfb0ad
+1/FAN         DM4610-FAN         None     Ready         Not available
+1/PSU1        PSU-120-AC         None     Ready         Not available
+
+OLT-ARC-VSJ# 

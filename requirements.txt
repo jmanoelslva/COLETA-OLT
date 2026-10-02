@@ -1,0 +1,4 @@
+# C-DATA FD1616GS só oferece host key ssh-rsa/ssh-dss (SHA-1); paramiko 4+ removeu.
+paramiko>=3.5,<4
+fastapi>=0.115
+uvicorn[standard]>=0.30

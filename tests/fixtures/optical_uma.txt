@@ -1,0 +1,29 @@
+# show ont optical-info 1 1
+show ont optical-info 1 1 
+-----------------------------------------------------------------------------
+  Frame/Slot                              : 0/0
+  Port                                    : 1
+  ONT-ID                                  : 1
+  GEM-blocklen                            : 48 (bytes)
+  Sf-threshold                            : 5
+  Sd-threshold                            : 9
+  Voltage(V)                              : 3.22
+  Supply voltage warning threshold(V)     : [-,-]
+  Supply voltage alarm threshold(V)       : [-,-]
+  Tx optical power(dBm)                   : 2.22
+  Tx power current warning threshold(dBm) : [-,-]
+  Tx power current alarm threshold(dBm)   : [-,-]
+  Rx optical power(dBm)                   : -18.23
+  Rx power current warning threshold(dBm) : [-,-]
+  Rx power current alarm threshold(dBm)   : [-,-]
+  Laser bias current(mA)                  : 20.40
+  Tx bias current warning threshold(mA)   : [-,-]
+  Tx bias current alarm threshold(mA)     : [-,-]
+  Temperature(C)                          : 62.49
+  Temperature warning threshold(C)        : [-,-]
+  Temperature alarm threshold(C)          : [-,-]
+  CATV Rx optical power(dBm)              : --
+  CATV Rx power alarm threshold(dBm)      : [-,-]
+-----------------------------------------------------------------------------
+
+OLT-IGC-NRO(config-interface-gpon-0/0)# 

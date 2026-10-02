@@ -1,0 +1,2005 @@
+# show alarm history all
+show alarm history all 
+2026-10-02 13:27:53 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:27:52 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:26:18 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:26:17 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:26:00 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:25:55 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:25:38 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:25:34 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:24:14 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:24:13 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:24:00 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:23:59 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:23:00 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:22:59 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:22:10 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:22:09 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:22:02 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:21:58 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:21:35 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:21:34 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:21:05 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:21:04 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:21:00 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:21:01 PON 0/0/5 ONU 78 Dying gasp(DGi) clear
+2026-10-02 13:21:01 PON 0/0/5 ONU 78 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:21:01 PON 0/0/5 ONU 78 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:20:58 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:20:45 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:20:44 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:20:38 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:20:37 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:19:45 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:19:44 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:19:36 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:19:35 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:19:27 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:19:23 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:19:20 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:19:19 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:19:17 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:19:16 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:18:48 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:47 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:18:42 PON 0/0/5 ONU 9 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:41 PON 0/0/5 ONU 26 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:41 PON 0/0/4 ONU 36 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:40 PON 0/0/5 ONU 5 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:40 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:39 PON 0/0/4 ONU 17 The ONT Tx power becomes normal
+2026-10-02 13:18:39 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:18:25 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:24 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:18:05 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:04 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:18:01 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:17:58 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:17:56 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:17:57 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:17:53 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:17:52 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:17:50 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:17:49 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:17:48 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:17:43 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:17:40 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:17:39 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:17:30 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:17:28 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:17:13 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:17:12 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:17:10 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:17:09 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:17:00 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:16:59 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:16:29 PON 0/0/8 ONU 21 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:16:05 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:16:04 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:15:42 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:15:41 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:15:35 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:15:34 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:15:25 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:15:24 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:15:20 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:15:19 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:15:06 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:15:04 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:14:59 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:14:55 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:14:50 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:14:49 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:14:46 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:14:46 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:14:45 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:14:42 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:14:33 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:14:29 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:14:19 PON 0/0/8 ONU 21 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:14:16 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:14:12 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:14:00 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:13:59 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:13:55 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:13:54 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:13:50 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:13:49 PON 0/0/8 ONU 9 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:13:46 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:13:40 PON 0/0/3 ONU 25 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:13:39 PON 0/0/8 ONU 9 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:13:34 PON 0/0/3 ONU 25 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:13:33 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:13:29 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:13:29 PON 0/0/8 ONU 9 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:13:23 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:13:22 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:13:06 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:13:05 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:13:02 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:13:01 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:53 PON 0/0/8 ONU 9 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:12:54 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:12:50 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:45 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:44 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:41 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:12:32 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:29 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:28 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:25 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:24 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:23 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:22 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:19 PON 0/0/7 ONU 15 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:12:17 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:16 PON 0/0/7 ONU 15 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:12:16 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:15 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:14 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:11 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:10 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:07 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:07 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:12:06 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:04 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:03 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:12:02 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:12:00 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:11:58 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:11:57 PON 0/0/7 ONU 15 Dying gasp(DGi) clear
+2026-10-02 13:11:57 PON 0/0/7 ONU 15 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:57 PON 0/0/7 ONU 15 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:56 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:11:55 PON 0/0/5 ONU 62 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:54 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:11:53 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:11:53 PON 0/0/5 ONU 62 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:50 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:11:48 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:11:47 PON 0/0/5 ONU 47 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:46 PON 0/0/8 ONU 50 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:44 PON 0/0/8 ONU 50 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:44 PON 0/0/5 ONU 47 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:44 PON 0/0/5 ONU 62 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:42 PON 0/0/5 ONU 62 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:43 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:11:37 PON 0/0/5 ONU 47 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:36 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:11:35 PON 0/0/8 ONU 50 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:34 PON 0/0/8 ONU 50 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:34 PON 0/0/5 ONU 47 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:33 PON 0/0/5 ONU 62 Dying gasp(DGi) clear
+2026-10-02 13:11:33 PON 0/0/5 ONU 62 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:33 PON 0/0/5 ONU 62 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:32 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:11:31 PON 0/0/4 ONU 42 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:31 PON 0/0/6 ONU 29 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:29 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:11:28 PON 0/0/4 ONU 42 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:29 PON 0/0/4 ONU 14 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:28 PON 0/0/6 ONU 29 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:28 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:11:25 PON 0/0/8 ONU 50 Dying gasp(DGi) clear
+2026-10-02 13:11:25 PON 0/0/8 ONU 50 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:25 PON 0/0/8 ONU 50 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:25 PON 0/0/5 ONU 47 Dying gasp(DGi) clear
+2026-10-02 13:11:25 PON 0/0/5 ONU 47 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:25 PON 0/0/5 ONU 47 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:22 PON 0/0/8 ONU 51 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:20 PON 0/0/8 ONU 51 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:20 PON 0/0/4 ONU 42 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:19 PON 0/0/6 ONU 29 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:18 PON 0/0/6 ONU 29 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:18 PON 0/0/4 ONU 42 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:15 PON 0/0/8 ONU 61 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:15 PON 0/0/8 ONU 7 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:14 PON 0/0/8 ONU 84 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:13 PON 0/0/8 ONU 61 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:13 PON 0/0/5 ONU 38 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:12 PON 0/0/8 ONU 61 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:11 PON 0/0/8 ONU 7 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:11 PON 0/0/8 ONU 84 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:11 PON 0/0/5 ONU 38 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:11 PON 0/0/8 ONU 51 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:11 PON 0/0/8 ONU 40 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:10 PON 0/0/8 ONU 51 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:09 PON 0/0/8 ONU 61 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:10 PON 0/0/8 ONU 46 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:08 PON 0/0/8 ONU 40 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:09 PON 0/0/8 ONU 87 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:09 PON 0/0/8 ONU 86 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:09 PON 0/0/4 ONU 42 Dying gasp(DGi) clear
+2026-10-02 13:11:09 PON 0/0/4 ONU 42 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:09 PON 0/0/4 ONU 42 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:09 PON 0/0/6 ONU 29 Dying gasp(DGi) clear
+2026-10-02 13:11:09 PON 0/0/6 ONU 29 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:09 PON 0/0/6 ONU 29 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:09 PON 0/0/8 ONU 61 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:08 PON 0/0/8 ONU 46 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:07 PON 0/0/8 ONU 87 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:07 PON 0/0/7 ONU 9 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:07 PON 0/0/8 ONU 40 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:06 PON 0/0/8 ONU 86 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:06 PON 0/0/8 ONU 61 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:04 PON 0/0/8 ONU 40 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:04 PON 0/0/7 ONU 20 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:04 PON 0/0/7 ONU 18 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:03 PON 0/0/8 ONU 51 Dying gasp(DGi) clear
+2026-10-02 13:11:03 PON 0/0/8 ONU 51 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:03 PON 0/0/8 ONU 51 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:01 PON 0/0/7 ONU 20 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:02 PON 0/0/8 ONU 3 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:11:02 PON 0/0/8 ONU 84 Dying gasp(DGi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 84 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 84 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 48 Dying gasp(DGi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 48 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 48 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 62 Dying gasp(DGi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 62 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 62 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 85 Dying gasp(DGi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 85 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 85 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 26 Dying gasp(DGi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 26 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 26 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 38 Dying gasp(DGi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 38 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 38 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 11 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:02 PON 0/0/8 ONU 11 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 16 Dying gasp(DGi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 16 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:11:02 PON 0/0/5 ONU 16 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:11:01 PON 0/0/7 ONU 18 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:11:01 PON 0/0/8 ONU 3 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:59 PON 0/0/6 ONU 10 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:59 PON 0/0/8 ONU 30 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:58 PON 0/0/6 ONU 10 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:57 PON 0/0/7 ONU 9 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:57 PON 0/0/4 ONU 18 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:57 PON 0/0/4 ONU 49 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:57 PON 0/0/4 ONU 26 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:55 PON 0/0/4 ONU 49 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:55 PON 0/0/4 ONU 18 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:54 PON 0/0/4 ONU 26 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:53 PON 0/0/8 ONU 89 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:51 PON 0/0/8 ONU 89 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:51 PON 0/0/5 ONU 57 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:49 PON 0/0/8 ONU 30 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:48 PON 0/0/5 ONU 57 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:48 PON 0/0/5 ONU 2 Dying gasp(DGi) clear
+2026-10-02 13:10:48 PON 0/0/5 ONU 2 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:48 PON 0/0/5 ONU 2 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:48 PON 0/0/8 ONU 74 Dying gasp(DGi) clear
+2026-10-02 13:10:48 PON 0/0/8 ONU 74 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:48 PON 0/0/8 ONU 74 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:48 PON 0/0/4 ONU 4 Dying gasp(DGi) clear
+2026-10-02 13:10:48 PON 0/0/4 ONU 4 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:48 PON 0/0/4 ONU 4 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:48 PON 0/0/5 ONU 65 Dying gasp(DGi) clear
+2026-10-02 13:10:48 PON 0/0/5 ONU 65 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:48 PON 0/0/5 ONU 65 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 75 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 75 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 75 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 9 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 9 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 9 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 76 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 76 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 76 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 40 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 40 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 40 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 67 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 67 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 67 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 68 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 68 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 68 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 46 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 46 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 46 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 7 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 7 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 7 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 15 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 15 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 15 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/4 ONU 15 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/4 ONU 15 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/4 ONU 15 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 77 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 77 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 77 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 64 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 64 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 64 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 83 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 83 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 55 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 55 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 55 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 47 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 47 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 47 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/4 ONU 6 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/4 ONU 6 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/4 ONU 6 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/5 ONU 4 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/5 ONU 4 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/5 ONU 4 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/5 ONU 79 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/5 ONU 79 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/5 ONU 79 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/4 ONU 20 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/4 ONU 20 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/4 ONU 20 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/6 ONU 24 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/6 ONU 24 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/6 ONU 24 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 17 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 17 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 17 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 69 Dying gasp(DGi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 69 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:47 PON 0/0/8 ONU 69 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:46 PON 0/0/4 ONU 49 Dying gasp(DGi) clear
+2026-10-02 13:10:46 PON 0/0/4 ONU 49 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:46 PON 0/0/4 ONU 49 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:46 PON 0/0/6 ONU 15 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:46 PON 0/0/6 ONU 15 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:46 PON 0/0/4 ONU 18 Dying gasp(DGi) clear
+2026-10-02 13:10:46 PON 0/0/4 ONU 18 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:46 PON 0/0/4 ONU 18 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:46 PON 0/0/6 ONU 10 Dying gasp(DGi) clear
+2026-10-02 13:10:46 PON 0/0/6 ONU 10 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:46 PON 0/0/6 ONU 10 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:45 PON 0/0/7 ONU 10 Dying gasp(DGi) clear
+2026-10-02 13:10:45 PON 0/0/7 ONU 10 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:45 PON 0/0/7 ONU 10 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:45 PON 0/0/7 ONU 11 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:45 PON 0/0/7 ONU 17 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:45 PON 0/0/8 ONU 23 Dying gasp(DGi) clear
+2026-10-02 13:10:45 PON 0/0/8 ONU 23 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:45 PON 0/0/8 ONU 23 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:45 PON 0/0/8 ONU 20 Dying gasp(DGi) clear
+2026-10-02 13:10:45 PON 0/0/8 ONU 20 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:45 PON 0/0/8 ONU 20 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:45 PON 0/0/8 ONU 12 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:45 PON 0/0/8 ONU 12 The ONT Tx power becomes normal
+2026-10-02 13:10:44 PON 0/0/7 ONU 5 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 5 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 5 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 72 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 72 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 72 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 74 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 74 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 74 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 20 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 20 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 20 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 42 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 42 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 42 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 9 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 9 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 9 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 75 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 75 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 75 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 87 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 87 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 87 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 48 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 48 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 48 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 22 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 22 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 22 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 84 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 84 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 84 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 86 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 86 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 86 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 24 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 24 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 24 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 25 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 25 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 25 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 12 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 12 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 12 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 21 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 21 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 21 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 24 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 24 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 24 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 23 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 23 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 23 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 58 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 58 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 58 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 28 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 28 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 28 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 77 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 77 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 77 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 61 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 61 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 61 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 19 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 19 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 19 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 25 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 25 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 25 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 26 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 26 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 26 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 1 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 1 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 1 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 65 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 65 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 65 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 62 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 62 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 62 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 69 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 69 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 69 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 25 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 25 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 25 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 6 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 6 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 6 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 9 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 9 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/4 ONU 9 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 39 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 39 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/5 ONU 39 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 3 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 3 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/8 ONU 3 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 18 Dying gasp(DGi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 18 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:44 PON 0/0/7 ONU 18 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:43 PON 0/0/7 ONU 17 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:43 PON 0/0/5 ONU 37 Dying gasp(DGi) clear
+2026-10-02 13:10:43 PON 0/0/5 ONU 37 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:43 PON 0/0/5 ONU 37 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:43 PON 0/0/4 ONU 48 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:42 PON 0/0/8 ONU 12 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:42 PON 0/0/7 ONU 11 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:41 PON 0/0/5 ONU 46 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:40 PON 0/0/4 ONU 48 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:40 PON 0/0/5 ONU 57 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:40 PON 0/0/5 ONU 43 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:39 PON 0/0/8 ONU 12 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:10:38 PON 0/0/5 ONU 46 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:38 PON 0/0/5 ONU 19 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:37 PON 0/0/5 ONU 57 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:37 PON 0/0/5 ONU 43 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:37 PON 0/0/4 ONU 30 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:36 PON 0/0/6 ONU 34 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:35 PON 0/0/5 ONU 19 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:35 PON 0/0/4 ONU 30 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:34 PON 0/0/4 ONU 30 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:32 PON 0/0/4 ONU 48 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:32 PON 0/0/4 ONU 13 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:31 PON 0/0/4 ONU 30 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:29 PON 0/0/4 ONU 13 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:29 PON 0/0/4 ONU 48 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:29 PON 0/0/4 ONU 14 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:29 PON 0/0/8 ONU 12 The ONT Tx power becomes normal
+2026-10-02 13:10:28 PON 0/0/6 ONU 27 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:27 PON 0/0/6 ONU 27 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:25 PON 0/0/8 ONU 12 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:10:24 PON 0/0/4 ONU 46 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:24 PON 0/0/5 ONU 43 The ONT Tx power becomes normal
+2026-10-02 13:10:23 PON 0/0/4 ONU 46 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:23 PON 0/0/5 ONU 43 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:10:23 PON 0/0/5 ONU 64 Dying gasp(DGi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 64 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 64 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 29 Dying gasp(DGi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 29 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 29 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 86 Dying gasp(DGi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 86 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 86 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 41 Dying gasp(DGi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 41 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 41 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 9 Dying gasp(DGi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 9 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 9 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 8 Dying gasp(DGi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 8 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 8 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 55 Dying gasp(DGi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 55 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:23 PON 0/0/5 ONU 55 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:23 PON 0/0/8 ONU 27 Dying gasp(DGi) clear
+2026-10-02 13:10:23 PON 0/0/8 ONU 27 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:23 PON 0/0/8 ONU 27 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:23 PON 0/0/8 ONU 70 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:23 PON 0/0/8 ONU 14 Dying gasp(DGi) clear
+2026-10-02 13:10:23 PON 0/0/8 ONU 14 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:23 PON 0/0/8 ONU 14 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 24 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 24 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 24 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 71 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 71 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 71 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 23 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 23 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 23 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 52 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 52 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 43 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 43 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 43 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 78 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 78 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 78 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 44 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 44 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 44 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 33 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 33 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 33 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 33 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 33 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 33 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 44 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 44 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 44 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 5 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 5 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 5 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 23 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 23 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 23 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 16 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 16 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 16 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 52 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 52 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 52 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 29 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 29 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 29 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 52 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 52 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 52 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 61 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 61 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 61 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 4 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 4 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 4 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/6 ONU 35 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/6 ONU 35 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/6 ONU 35 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 73 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 73 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 73 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 30 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 30 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 30 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 48 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 48 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 48 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/6 ONU 34 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/6 ONU 34 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/6 ONU 34 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 55 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 55 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 55 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/4 ONU 5 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:22 PON 0/0/5 ONU 26 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 70 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:22 PON 0/0/5 ONU 26 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/5 ONU 26 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 65 Dying gasp(DGi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 65 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:22 PON 0/0/8 ONU 65 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 12 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 12 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 12 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 57 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 57 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 57 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 32 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 32 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 32 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 14 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 14 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 14 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 13 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 13 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 13 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 31 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 31 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 31 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 21 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 21 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 21 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 85 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 85 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 85 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 18 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 18 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 18 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 5 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 5 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 5 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 36 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 36 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 36 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 19 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 19 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 19 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/7 ONU 21 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/7 ONU 21 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/7 ONU 21 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 83 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 83 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 83 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 20 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 20 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 20 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 53 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 53 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/8 ONU 53 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/7 ONU 14 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/7 ONU 14 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/7 ONU 14 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 4 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 4 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/6 ONU 4 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 17 Dying gasp(DGi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 17 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:21 PON 0/0/4 ONU 17 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:21 PON 0/0/5 ONU 54 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:18 PON 0/0/8 ONU 82 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 82 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 82 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 70 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 70 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 70 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 28 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 28 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 28 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:18 PON 0/0/4 ONU 10 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/4 ONU 10 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/4 ONU 10 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 42 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 42 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 42 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:18 PON 0/0/5 ONU 81 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/5 ONU 81 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/5 ONU 81 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:18 PON 0/0/4 ONU 8 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/4 ONU 8 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/4 ONU 8 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 72 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 72 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 72 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:18 PON 0/0/6 ONU 27 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:18 PON 0/0/8 ONU 57 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 57 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/8 ONU 57 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:18 PON 0/0/5 ONU 28 Dying gasp(DGi) clear
+2026-10-02 13:10:18 PON 0/0/5 ONU 28 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:18 PON 0/0/5 ONU 28 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 89 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 89 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 89 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 5 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:17 PON 0/0/5 ONU 1 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 1 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 1 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 41 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 41 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 41 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 49 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 49 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 49 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 49 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 49 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 49 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 54 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 54 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 54 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 27 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 27 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 27 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 6 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 6 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 6 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 46 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 46 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 46 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 32 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 32 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 32 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/6 ONU 7 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/6 ONU 7 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/6 ONU 7 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 14 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 14 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 14 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 12 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 12 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 12 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 34 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 34 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 34 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 2 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 2 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 2 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 18 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 18 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 18 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 38 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 38 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 38 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 36 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 36 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 36 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 54 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 54 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 54 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 51 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 51 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 51 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 79 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 79 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 79 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 13 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 13 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 13 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 45 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 45 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 45 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 29 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 29 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 29 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/7 ONU 11 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/7 ONU 11 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/7 ONU 11 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/6 ONU 21 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/6 ONU 21 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/6 ONU 21 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 6 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 6 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 6 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 30 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 30 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 30 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 21 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 21 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/8 ONU 21 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/7 ONU 17 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/7 ONU 17 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/7 ONU 17 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/6 ONU 17 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/6 ONU 17 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/6 ONU 17 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 19 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 19 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/5 ONU 19 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 54 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 54 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 54 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/7 ONU 16 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/7 ONU 16 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/7 ONU 16 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 50 Dying gasp(DGi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 50 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:17 PON 0/0/4 ONU 50 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:16 PON 0/0/6 ONU 27 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:14 PON 0/0/4 ONU 46 UNI 0/1 The Ethernet port link status is up
+2026-10-02 13:10:12 PON 0/0/4 ONU 46 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:10:07 PON 0/0/8 ONU 32 Dying gasp(DGi) clear
+2026-10-02 13:10:07 PON 0/0/8 ONU 32 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:07 PON 0/0/8 ONU 32 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:07 PON 0/0/8 ONU 88 Dying gasp(DGi) clear
+2026-10-02 13:10:07 PON 0/0/8 ONU 88 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:07 PON 0/0/8 ONU 88 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 24 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 24 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 24 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 22 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 22 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 22 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 36 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 36 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 36 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 51 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 51 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 51 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 37 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 37 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 37 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 66 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 66 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 66 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 16 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 16 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 16 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 8 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 8 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 8 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 7 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 7 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 7 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 7 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 7 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 7 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 43 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 43 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 43 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 40 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 40 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 40 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 46 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 46 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 46 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 50 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 50 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 50 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 18 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 18 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 18 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/6 ONU 6 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/6 ONU 6 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/6 ONU 6 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 56 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 56 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 56 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 45 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 45 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/8 ONU 45 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 60 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 60 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/4 ONU 60 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 12 Dying gasp(DGi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 12 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:06 PON 0/0/5 ONU 12 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 56 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 56 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 56 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 26 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 26 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 26 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 39 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 39 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 39 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 53 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 53 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 53 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 2 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 2 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 2 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 2 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 2 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 2 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 1 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 1 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 1 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 27 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 27 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 27 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 39 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 39 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 39 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 10 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 10 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 10 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 8 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 8 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 8 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 5 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 5 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 5 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 13 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 13 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 13 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 35 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 35 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 35 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 7 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 7 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 7 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 3 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 3 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 3 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 66 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 66 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 66 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 31 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 31 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 31 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 87 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 87 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 87 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 3 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 3 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 3 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 26 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 26 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 26 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 37 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 37 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 37 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 11 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 11 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 11 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 5 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 5 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 5 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 4 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 4 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/7 ONU 4 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 11 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 11 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/4 ONU 11 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 2 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 2 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/6 ONU 2 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 22 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 22 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/5 ONU 22 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 35 Dying gasp(DGi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 35 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:10:05 PON 0/0/8 ONU 35 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:10:05 PON 0/0/6 Loss of signal(LOS) clear
+2026-10-02 13:10:05 PON 0/0/4 Loss of signal(LOS) clear
+2026-10-02 13:10:05 PON 0/0/8 Loss of signal(LOS) clear
+2026-10-02 13:09:57 PON 0/0/5 ONU 32 Dying gasp(DGi) clear
+2026-10-02 13:09:57 PON 0/0/5 ONU 32 Loss of frame for ONU(LOFi) clear
+2026-10-02 13:09:57 PON 0/0/5 ONU 32 Loss of signal for ONU(LOSi) clear
+2026-10-02 13:09:57 PON 0/0/5 Loss of signal(LOS) clear
+2026-10-02 13:09:23 PON 0/0/5 Loss of signal(LOS)
+2026-10-02 13:09:23 PON 0/0/7 ONU 10 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/7 ONU 10 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/7 ONU 10 Dying gasp(DGi)
+2026-10-02 13:09:23 PON 0/0/8 Loss of signal(LOS)
+2026-10-02 13:09:23 PON 0/0/8 ONU 21 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 21 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 21 Dying gasp(DGi)
+2026-10-02 13:09:23 PON 0/0/5 ONU 69 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/5 ONU 69 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 13 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 13 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 69 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 69 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/5 ONU 69 Dying gasp(DGi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 13 Dying gasp(DGi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 67 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 67 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 69 Dying gasp(DGi)
+2026-10-02 13:09:23 PON 0/0/5 ONU 65 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/5 ONU 65 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/7 ONU 25 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/7 ONU 25 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 72 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 72 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 67 Dying gasp(DGi)
+2026-10-02 13:09:23 PON 0/0/4 Loss of signal(LOS)
+2026-10-02 13:09:23 PON 0/0/8 ONU 49 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 49 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 78 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/8 ONU 78 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:23 PON 0/0/4 ONU 50 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:23 PON 0/0/4 ONU 50 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/7 ONU 25 Dying gasp(DGi)
+2026-10-02 13:09:23 PON 0/0/4 ONU 19 Dying gasp(DGi) clear
+2026-10-02 13:09:23 PON 0/0/6 ONU 9 Dying gasp(DGi) clear
+2026-10-02 13:09:23 PON 0/0/6 ONU 20 Dying gasp(DGi) clear
+2026-10-02 13:09:23 PON 0/0/6 ONU 25 Dying gasp(DGi) clear
+2026-10-02 13:09:23 PON 0/0/6 ONU 19 Dying gasp(DGi) clear
+2026-10-02 13:09:22 PON 0/0/5 ONU 65 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 72 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 87 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 87 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 19 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 78 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 49 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 62 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 62 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 14 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 14 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 50 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 48 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 48 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/7 ONU 20 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/7 ONU 20 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 87 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 16 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 16 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 65 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 65 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 25 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 25 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 79 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 79 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 21 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 21 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/7 ONU 20 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 12 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 12 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/7 ONU 8 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/7 ONU 8 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 55 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 55 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 56 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 56 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 55 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 55 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 79 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 79 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 42 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 42 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 71 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 71 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 2 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 2 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 24 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 24 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 48 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 48 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 44 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 44 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 32 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 32 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 62 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 66 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 66 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 53 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 53 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 1 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 1 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 26 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 26 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 58 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 58 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 53 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 53 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 49 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 49 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 14 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 64 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 64 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 47 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 47 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 57 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 57 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 47 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 47 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 3 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 3 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 48 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 16 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 16 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 25 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 16 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 35 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 35 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 83 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 83 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 6 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 6 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 49 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 55 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 56 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 2 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/5 ONU 79 Dying gasp(DGi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 24 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/4 ONU 24 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/7 ONU 9 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:22 PON 0/0/7 ONU 9 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:22 PON 0/0/8 ONU 65 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 52 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 52 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 24 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 24 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 5 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 9 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 21 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 21 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 79 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 Loss of signal(LOS)
+2026-10-02 13:09:21 PON 0/0/8 ONU 16 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 16 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 46 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 46 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 12 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 18 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 18 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 12 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 12 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 13 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 13 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 2 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 2 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 88 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 88 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 5 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 5 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 17 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 17 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 2 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 2 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 3 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 3 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 23 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 23 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 16 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 16 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 72 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 72 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 4 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 4 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 74 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 74 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 23 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 23 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 17 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 17 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 28 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 28 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 6 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 6 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 32 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 32 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 27 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 27 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 23 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 23 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 24 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 24 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 61 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 61 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 33 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 33 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 22 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 22 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 8 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 8 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 86 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 86 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 31 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 31 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 22 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 22 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 11 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 11 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 10 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 10 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 56 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 56 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 2 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 2 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 22 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 22 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 51 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 51 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 14 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 14 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 26 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 26 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 3 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 3 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 29 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 29 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 62 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 62 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 23 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 23 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 25 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 25 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 48 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 48 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 81 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 81 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 60 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 60 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 37 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 37 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 26 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 26 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 27 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 27 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 36 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 36 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 6 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 6 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 64 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 64 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 4 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 4 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 51 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 51 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 19 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 19 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 33 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 33 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 39 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 39 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 36 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 36 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 5 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 5 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 35 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 35 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 7 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 7 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 85 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 85 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 45 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 45 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 26 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 26 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 26 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 26 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 8 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 8 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 45 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 45 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 35 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 35 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 4 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 4 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 5 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 5 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 57 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 57 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 51 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 51 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 20 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 20 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 36 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 36 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 6 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 6 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 29 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 29 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 30 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 30 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 68 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 68 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 54 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 54 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 42 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 42 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 50 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 50 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 12 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 12 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 38 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 38 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 78 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 78 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 1 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 1 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 21 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 21 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 34 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 34 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 14 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 14 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 7 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 7 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 15 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 15 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 75 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 75 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 14 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 14 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 29 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 29 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 11 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 11 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 54 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 54 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 32 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 32 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 7 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 7 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 24 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 24 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 9 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 9 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 4 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 4 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 39 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 39 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 12 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 12 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 70 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 70 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 15 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 15 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 4 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 4 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 1 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 1 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 62 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 62 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 9 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 9 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 42 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 42 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 17 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 17 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 21 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 21 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 5 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 5 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 66 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 66 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 28 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 28 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 84 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 84 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 73 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 73 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 82 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 82 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 7 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 7 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 75 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 75 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 40 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 40 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 10 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 10 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 65 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 65 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 49 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 49 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 52 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 52 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 19 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 19 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 15 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 15 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 8 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 8 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 2 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 2 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 55 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 55 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 39 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 39 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 77 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 77 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 5 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 5 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 34 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 34 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 46 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 46 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 37 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 37 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 48 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 7 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 41 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 41 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 18 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 18 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 20 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 20 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 9 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 9 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 15 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 15 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 32 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 32 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 28 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 28 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 50 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 50 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 66 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 66 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 66 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 74 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 74 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 24 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 9 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 20 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 43 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 43 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 77 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 77 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 84 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 84 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 38 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 38 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 35 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 13 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 26 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 52 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 18 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 3 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 21 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 44 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 25 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 61 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 61 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 24 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 17 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 19 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 1 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 55 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 71 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 37 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 37 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 18 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 18 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 20 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 20 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 33 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 53 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 11 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 11 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 53 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 47 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 64 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 58 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 24 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 31 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 31 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 11 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 11 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 17 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 3 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 44 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 44 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 88 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 49 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 46 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 2 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 10 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 10 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 8 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 38 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 28 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 6 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 89 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 89 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 85 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 85 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 46 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 16 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 4 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 39 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 16 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 61 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 27 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 23 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 3 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 15 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 29 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 29 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 86 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 86 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 12 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 48 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 8 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 6 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 18 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 18 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 24 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 21 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 6 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 6 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 41 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 41 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 23 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 2 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 35 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 30 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 30 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 87 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 87 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 21 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 42 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 85 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 18 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 18 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 64 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 17 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 17 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 7 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 72 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 23 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 45 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 11 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 4 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 46 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 46 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 40 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 40 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 19 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 19 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 43 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 43 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 31 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 26 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 14 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 12 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 2 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 35 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 14 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 81 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 36 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 37 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 56 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 39 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 47 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 74 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 32 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 33 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 22 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 19 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 6 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 61 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 57 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 23 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 68 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 54 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 75 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 51 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 32 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 1 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 36 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 25 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 34 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 60 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 51 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 42 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 24 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 32 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 22 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 29 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 26 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 4 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 16 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 4 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 20 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 40 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 57 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 10 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 5 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 83 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 14 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 29 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 36 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 11 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 54 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 22 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 5 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 27 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 29 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 8 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 15 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 70 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 45 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 20 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 62 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 13 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 13 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 15 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 1 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 30 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 75 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 86 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 34 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 7 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 51 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 26 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 66 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 18 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 28 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 89 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 9 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 9 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 21 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 83 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 82 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 6 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 38 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 84 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 84 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 52 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 17 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 5 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 11 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 86 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 8 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 37 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 77 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 39 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 66 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 65 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 7 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 18 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 10 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 2 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 19 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 62 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 30 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 55 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 78 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 87 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 50 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 18 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 4 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 17 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 74 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 28 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 26 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 40 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 5 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 12 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 19 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 43 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 46 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 9 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 73 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 41 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 10 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 42 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 37 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 32 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 29 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/5 ONU 41 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 77 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 18 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 44 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 50 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 20 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 85 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 43 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 31 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 7 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 7 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 27 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 27 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 54 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 54 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 6 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 13 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 83 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/7 ONU 7 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/4 ONU 54 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/6 ONU 27 Dying gasp(DGi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 76 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 76 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 52 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 52 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 76 Dying gasp(DGi)
+2026-10-02 13:09:07 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:09:06 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:09:06 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:09:02 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:08:57 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:08:53 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:08:33 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:08:32 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:08:12 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:08:11 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:08:08 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:08:07 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:08:06 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:08:05 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:07:56 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:07:55 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:07:48 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:07:44 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:07:43 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:07:42 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:07:38 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:07:37 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:07:27 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:07:25 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:07:24 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:07:23 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:06:39 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:06:38 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:06:34 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:06:33 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:06:28 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:06:27 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:06:17 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:06:18 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:06:16 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:06:13 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:06:09 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:06:08 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:05:52 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:05:48 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:05:29 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:05:28 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:05:26 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:05:22 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:04:58 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:04:57 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:04:39 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:04:34 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:04:17 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:04:13 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:04:03 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:04:00 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:03:41 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:03:40 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:03:07 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:03:08 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:03:06 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:03:04 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:02:47 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:02:46 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:02:38 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:02:37 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:02:13 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:02:12 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:01:42 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:01:38 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:01:37 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:01:37 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:01:23 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:01:22 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:01:21 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:01:20 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:00:49 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:00:48 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:00:30 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:00:29 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 13:00:15 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:00:11 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:00:01 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:00:02 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 13:00:00 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:59:58 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:59:58 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:59:57 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:59:39 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:59:38 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:59:28 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:59:27 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:59:18 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:59:17 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:58:56 PON 0/0/7 ONU 13 Loss of frame for ONU(LOFi)
+2026-10-02 12:58:56 PON 0/0/7 ONU 13 Loss of signal for ONU(LOSi)
+2026-10-02 12:58:56 PON 0/0/7 ONU 13 Dying gasp(DGi)
+2026-10-02 12:58:38 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:58:37 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:58:27 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:58:25 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:58:24 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:58:19 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:58:15 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:58:10 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:58:06 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:58:05 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:57:01 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:57:00 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:56:44 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:56:40 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:56:27 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:56:26 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:55:51 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:55:50 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:55:46 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:55:45 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:55:38 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:55:37 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:55:26 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:55:25 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:55:22 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:55:18 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:54:58 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:54:57 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:54:55 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:54:54 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:53:25 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:53:24 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:53:12 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:53:11 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:53:05 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:53:04 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:53:00 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:52:59 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:52:55 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:52:54 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:52:44 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:52:43 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:52:37 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:52:36 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:52:33 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:52:32 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:52:28 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:52:27 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:52:24 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:52:21 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:52:04 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:52:03 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:52:03 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:51:59 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:51:56 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:51:55 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:51:25 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:51:20 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:50:39 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:50:38 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:50:29 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:50:28 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:50:13 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:50:12 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:49:27 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:49:26 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:48:48 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:48:47 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:48:10 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:48:09 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:48:04 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:48:01 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:47:53 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:47:52 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:47:31 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:47:30 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:47:22 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:47:21 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:46:58 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:46:57 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:46:53 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:46:48 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:46:28 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:46:27 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:46:24 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:46:23 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:46:17 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:46:16 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:46:13 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:46:11 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:46:04 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:46:05 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:46:03 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:46:01 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:46:01 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:46:00 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:45:58 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:45:57 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:44:17 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:44:16 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:43:52 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:43:51 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:43:47 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:43:46 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:43:36 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:43:33 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:42:23 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:42:22 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:42:16 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:42:15 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:41:38 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:41:33 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:41:31 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:41:30 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:40:40 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:40:39 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:40:19 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:40:18 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:40:13 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:40:12 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:40:08 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:40:07 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:39:40 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:39:39 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:39:36 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:39:35 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:39:17 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:39:16 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:39:07 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:39:02 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:38:52 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:38:50 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:38:48 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:38:47 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:38:45 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:38:44 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:38:29 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:38:27 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:38:11 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:38:10 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:38:03 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:38:02 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:59 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:58 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:56 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:55 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:54 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:50 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:45 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:37:41 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:40 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:38 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:34 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:33 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:23 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:20 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:14 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:13 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:11 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:10 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:08 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:07 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:37:03 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:37:02 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:36:54 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:36:53 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:36:29 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:36:26 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:36:18 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:36:17 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:36:15 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:36:14 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:35:12 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:35:11 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:34:40 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:34:39 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:34:35 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:34:33 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:34:26 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:34:25 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:34:07 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:34:06 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:33:48 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:33:47 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:33:45 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:33:44 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:33:35 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:33:34 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:33:07 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:33:05 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:33:00 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:32:58 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:32:53 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:32:52 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:32:45 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:32:44 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:32:33 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:32:32 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:32:23 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:32:20 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:32:06 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:32:05 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:31:59 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:31:58 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:31:47 PON 0/0/6 ONU 10 The ONT Tx power becomes normal
+2026-10-02 12:31:45 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:31:44 PON 0/0/8 ONU 7 The ONT Tx power becomes normal
+2026-10-02 12:31:42 PON 0/0/6 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 12:31:41 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+total number : 2000
+
+OLT-IGC-NRO(config)# 

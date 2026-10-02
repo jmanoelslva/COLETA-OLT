@@ -1,0 +1,19 @@
+# show system memory
+show system memory
+Chassis/Slot: 1/1
+
+     Memory information:
+     ---                5 seconds     1 minute    5 minutes   30 minutes
+     total             984.95 MiB   984.95 MiB   984.95 MiB   984.95 MiB
+     used              718.63 MiB   717.63 MiB   716.27 MiB   705.44 MiB
+     available         266.32 MiB   267.32 MiB   268.67 MiB   279.51 MiB 
+
+     Memory detailed information:
+     ---                5 seconds     1 minute    5 minutes   30 minutes
+     free              183.76 MiB   184.76 MiB   186.13 MiB   197.02 MiB 
+     buffered             0 bytes      0 bytes      0 bytes      0 bytes 
+     cached            220.14 MiB   220.13 MiB   220.12 MiB   220.07 MiB 
+     slab_recl          10.35 MiB    10.34 MiB    10.34 MiB    10.33 MiB 
+     slab_unrecl        27.86 MiB    27.81 MiB    27.82 MiB    27.78 MiB 
+
+OLT-ARC-VSJ# 

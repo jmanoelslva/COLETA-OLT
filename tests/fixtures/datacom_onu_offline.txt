@@ -1,0 +1,39 @@
+# show interface gpon 1/1/1 onu 91
+show interface gpon 1/1/1 onu 91
+ Last updated            : 2026-08-23 02:19:28 UTC-3
+
+ ID                      : 91
+ Serial Number           : TEST00000094
+ Password                : 
+ Uptime                  : N/A
+ Last Seen Online        : N/A
+ Vendor ID               : N/A
+ Equipment ID            : N/A
+ Name                    : CLIENTE-085
+ Operational state       : Down
+ Primary status          : Inactive
+ Last down reason        : N/A
+ Last down time          : N/A
+ Distance                : N/A [km]
+ IPv4 mode               : Not configured
+ IPv4 address            : 
+ IPv4 default gateway    : 
+ IPv4 VLAN               : 
+ IPv4 CoS                : 
+ Line Profile            : PPPoE-GERAL
+ Service Profile         : 
+ RG Profile              : 
+ RG One Shot Provision   : Not provisioned
+ TR069 ACS Profile       : 
+ SNMP                    : Disabled
+ Allocated bandwidth     : 0 fixed, 0 assured+fixed [kbit/s]
+ Upstream-FEC            : Enabled
+ Anti Rogue ONU isolate  : Disabled
+ Version                 : N/A
+ Active FW               : N/A N/A, N/A
+ Standby FW              : N/A N/A, N/A
+ Software Download State : None
+ Rx Optical Power [dBm]  : N/A
+ Tx Optical Power [dBm]  : N/A
+
+OLT-ARC-VSJ# 

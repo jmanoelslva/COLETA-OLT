@@ -1,0 +1,10 @@
+# OLT de mentira para desenvolver o frontend com dados de tools/simular.py.
+# Uso: COLETOR_DADOS=dados/dev COLETOR_OLTS=olts.dev.toml python -m coletor
+[[olt]]
+id = "simulada"
+nome = "OLT Simulada"
+host = "127.0.0.1"
+usuario = "-"
+senha = "-"
+portas_pon = [1, 2]
+ativa = false

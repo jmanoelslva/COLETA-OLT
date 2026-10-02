@@ -1,0 +1,39 @@
+# show port ddm-info 1
+show port ddm-info 1 
+-----------------------------------------------------------------------------
+  Temperature(C)                 : 66.5
+  Supply Voltage(V)              : 3.23
+  TX Bias current(mA)            : 13
+  TX power(dBm)                  : 5.70
+  RX power(dBm)                  : -22.75
+ ----------------------------------------------------------------------------
+  Vendor                         : ANSAOEN         
+  Product name                   : AS60PG43206CPSS5
+  Version                        : 000 
+  Serial number                  : PG01210121000167
+-----------------------------------------------------------------------------
+         Optical Module Threshold Parameter
+-----------------------------------------------------------------------------
+  Rx power warning
+  threshold(dBm)                  : [-,-]
+  Rx power alarm
+  threshold(dBm)                  : [-,-]
+  Tx power warning
+  threshold(dBm)                  : [-,-]
+  Tx power alarm
+  threshold(dBm)                  : [-,-]
+  Tx bias warning
+  threshold(mA)                   : [-,-]
+  Tx bias alarm
+  threshold(mA)                   : [-,-]
+  Supply voltage warning
+  threshold(V)                    : [-,-]
+  Supply voltage alarm
+  threshold(V)                    : [-,-]
+  Temperature warning
+  threshold(C)                    : [-,-]
+  Temperature alarm
+  threshold(C)                    : [-,-]
+-----------------------------------------------------------------------------
+
+OLT-IGC-NRO(config-interface-gpon-0/0)# 

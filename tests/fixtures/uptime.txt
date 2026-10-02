@@ -1,0 +1,6 @@
+# show uptime
+show uptime 
+  System up time   : 43 day 1 hour 1 minute 43 second
+  System boot time : Thu Aug 20 12:57:27 2026
+
+OLT-IGC-NRO(config)# 

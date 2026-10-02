@@ -1,0 +1,5 @@
+# show ont optical-info 1 4
+show ont optical-info 1 4 
+Error:Get onu optical info fail!
+
+OLT-IGC-NRO(config-interface-gpon-0/0)# 

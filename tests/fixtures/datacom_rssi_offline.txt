@@ -1,0 +1,4 @@
+# show interface gpon 1/1/1 onu 91 rssi
+show interface gpon 1/1/1 onu 91 rssi
+ RSSI [dBm]: Unable to get RSSI. Check if ONU is Up.
+OLT-ARC-VSJ# 

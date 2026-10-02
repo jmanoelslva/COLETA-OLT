@@ -1,0 +1,5 @@
+# show temperature
+show temperature 
+  The temperature of the board: 58.0(C)
+
+OLT-IGC-NRO(config)# 

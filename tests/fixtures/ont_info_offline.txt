@@ -1,0 +1,81 @@
+# show ont info 1 4
+show ont info 1 4 
+-----------------------------------------------------------------------------
+  F/S               : 0/0
+  Port              : 1
+  ONT-ID            : 4
+  Control flag      : active
+  Run state         : offline
+  Config state      : initial
+  Match state       : initial
+  DBA type          : SR
+  Distance(m)       : --
+  Validity mode     : always
+  Authentic mode    : sn-auth
+  SN                : TEST00000004
+  Description       : CLIENTE-002
+  Last down cause   : LOS
+  Last up time      : 2026-10-02 06:15:39
+  Last down time    : 2026-10-02 06:15:39
+  Last dying-gasp   : 2026-09-28 19:13:15
+  On  line  time    : --
+  Alarm profile ID  : --
+  Wan profile ID    : --
+ ----------------------------------------------------------------------------
+  Line Profile-ID     : 0
+  Line Profile-name   : PPPoE
+ ----------------------------------------------------------------------------
+  FEC upstream     : Disable
+  OMCC encrypt     : Off
+  Qos mode         : PQ
+  Mapping mode     : VLAN
+  TR069 management : Disable
+  TR069 IP index   : 0
+ ----------------------------------------------------------------------------
+  <T-CONT  0>               DBA-Profile ID : 0  
+  ---------------------------------------------------------------------------
+  <T-CONT  1>               DBA-Profile ID : 1  
+    <Gem ID  1>
+      US-GEM-CAR : -         DS-ENCRYPT-MODE : off
+      US-PRIORITY-QUEUE : 1  DS-PRIORITY-QUEUE : 1  
+      -----------------------------------------------------------------------
+      Mapping-ID  VLAN      Priority      Port-ID
+      1           1         -             -      
+ ----------------------------------------------------------------------------
+  Service Profile-ID    : 0
+  Service Profile-name  : PPPoE
+ ----------------------------------------------------------------------------
+  Port-type       Port-number  Max-adaptive-number
+  ---------------------------------------------------------------------------
+  ETH             adaptive     4
+  POTS            adaptive     2
+  CATV            adaptive     1
+  IPHOST          adaptive     2
+ ----------------------------------------------------------------------------
+  MAC learning switch              : Enable
+  MAC aging time(s)                : 300
+  Ring check switch                : Disable
+  Ring port auto-shutdown          : Enable
+  Ring check detect frequency(pps) : 8
+  Ring resume interval(s)          : 300
+  Native VLAN option               : concern
+ ----------------------------------------------------------------------------
+  Port   Port Service-type Index S-VLAN S-PRI C-VLAN C-PRI ENCAP S-PRI
+  type   ID                                                      POLICY
+  ---------------------------------------------------------------------------
+  ETH    1    Transparent  -     -      -     -      -     -     -
+  ETH    2    Transparent  -     -      -     -      -     -     -
+  ETH    3    Transparent  -     -      -     -      -     -     -
+  ETH    4    Transparent  -     -      -     -      -     -     -
+  IPHOST 1    Transparent  -     -      -     -      -     -     -
+  IPHOST 2    Transparent  -     -      -     -      -     -     -
+ ----------------------------------------------------------------------------
+  Port-type  Port-ID  Max-MAC-Count    Max-Frame-Size  N-VLAN  N-PRI
+  ---------------------------------------------------------------------------
+  ETH        1        unlimited            1522         1       0  
+  ETH        2        unlimited            1522         1       0  
+  ETH        3        unlimited            1522         1       0  
+  ETH        4        unlimited            1522         1       0  
+-----------------------------------------------------------------------------
+
+OLT-IGC-NRO(config-interface-gpon-0/0)# 

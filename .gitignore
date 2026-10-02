@@ -1,0 +1,24 @@
+# Python
+.venv/
+**/__pycache__/
+.pytest_cache/
+
+# Credenciais e dados reais de OLT — nunca vão pro repo
+*.env
+!*.env.example
+olts.toml
+tools/capturas/
+dados/
+*.sqlite3
+*.sqlite3-*
+*.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Editor/OS
+.idea/
+.vscode/
+*.log
+Thumbs.db

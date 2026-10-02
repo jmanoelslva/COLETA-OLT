@@ -1,0 +1,162 @@
+# show alarm active all
+show alarm active all 
+2026-10-02 13:27:53 PON 0/0/8 ONU 7 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:42 PON 0/0/5 ONU 9 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:41 PON 0/0/5 ONU 26 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:41 PON 0/0/4 ONU 36 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:18:40 PON 0/0/5 ONU 5 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 13:10:36 PON 0/0/6 ONU 34 UNI 0/1 The Ethernet port link status is down
+2026-10-02 13:09:21 PON 0/0/8 ONU 66 Loss of frame for ONU(LOFi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 66 Loss of signal for ONU(LOSi)
+2026-10-02 13:09:21 PON 0/0/8 ONU 66 Dying gasp(DGi)
+2026-10-02 12:58:56 PON 0/0/7 ONU 13 Loss of frame for ONU(LOFi)
+2026-10-02 12:58:56 PON 0/0/7 ONU 13 Loss of signal for ONU(LOSi)
+2026-10-02 12:58:56 PON 0/0/7 ONU 13 Dying gasp(DGi)
+2026-10-02 12:20:19 PON 0/0/8 ONU 60 Loss of frame for ONU(LOFi)
+2026-10-02 12:20:19 PON 0/0/8 ONU 60 Loss of signal for ONU(LOSi)
+2026-10-02 12:20:19 PON 0/0/8 ONU 60 Dying gasp(DGi)
+2026-10-02 11:53:37 PON 0/0/4 ONU 21 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 11:53:37 PON 0/0/5 ONU 20 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 11:53:36 PON 0/0/5 ONU 31 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 11:46:22 PON 0/0/6 ONU 20 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 11:45:18 PON 0/0/4 ONU 10 UNI 0/1 The Ethernet port link status is down
+2026-10-02 11:44:17 PON 0/0/8 ONU 10 Loss of frame for ONU(LOFi)
+2026-10-02 11:44:17 PON 0/0/8 ONU 10 Loss of signal for ONU(LOSi)
+2026-10-02 11:44:17 PON 0/0/8 ONU 10 Dying gasp(DGi)
+2026-10-02 11:25:48 PON 0/0/5 ONU 15 Loss of frame for ONU(LOFi)
+2026-10-02 11:25:48 PON 0/0/5 ONU 15 Loss of signal for ONU(LOSi)
+2026-10-02 11:25:48 PON 0/0/5 ONU 15 Dying gasp(DGi)
+2026-10-02 10:29:54 PON 0/0/4 ONU 62 UNI 0/1 The Ethernet port link status is down
+2026-10-02 09:34:58 PON 0/0/3 ONU 60 Loss of frame for ONU(LOFi)
+2026-10-02 09:34:58 PON 0/0/3 ONU 60 Loss of signal for ONU(LOSi)
+2026-10-02 09:34:58 PON 0/0/3 ONU 60 Dying gasp(DGi)
+2026-10-02 09:05:07 PON 0/0/7 ONU 1 Loss of frame for ONU(LOFi)
+2026-10-02 07:11:34 PON 0/0/2 ONU 5 The ONT Tx power exceeds the high alarm threshold
+2026-10-02 06:15:40 PON 0/0/1 ONU 4 ONU does not react correctly after deactive or disable(DFi)
+2026-10-02 00:07:46 PON 0/0/8 ONU 58 UNI 0/1 The Ethernet port link status is down
+2026-10-01 21:22:21 PON 0/0/1 ONU 53 UNI 0/1 The Ethernet port link status is down
+2026-10-01 17:10:53 PON 0/0/4 ONU 28 The ONT Tx power exceeds the low alarm threshold
+2026-10-01 17:10:52 PON 0/0/4 ONU 29 The ONT Tx power exceeds the low alarm threshold
+2000-02-11 21:21:15 PON 0/0/4 ONU 13 The ONT Rx power exceeds the high alarm threshold
+2000-02-11 21:21:15 PON 0/0/4 ONU 29 The ONT Rx power exceeds the high alarm threshold
+2000-02-11 21:08:45 PON 0/0/6 ONU 15 The ONT Tx power exceeds the high alarm threshold
+2000-02-11 21:08:45 PON 0/0/5 ONU 75 The ONT Tx power exceeds the high alarm threshold
+2000-02-11 21:08:44 PON 0/0/5 ONU 23 The ONT Tx power exceeds the high alarm threshold
+2000-02-11 20:51:28 PON 0/0/1 ONU 48 The ONT Tx power exceeds the high alarm threshold
+2000-02-11 20:47:24 PON 0/0/5 ONU 18 The ONT Tx power exceeds the high alarm threshold
+2000-02-11 20:46:52 PON 0/0/5 ONU 24 The ONT Tx power exceeds the high alarm threshold
+2000-02-11 20:46:51 PON 0/0/4 ONU 39 The ONT Tx power exceeds the high alarm threshold
+2000-02-11 20:46:51 PON 0/0/5 ONU 17 The ONT Tx power exceeds the high alarm threshold
+2000-02-11 20:46:43 PON 0/0/4 ONU 32 The ONT Tx power exceeds the high alarm threshold
+2000-02-11 20:41:53 PON 0/0/5 ONU 13 UNI 0/1 The Ethernet port link status is down
+2000-02-11 20:41:47 PON 0/0/5 ONU 72 UNI 0/1 The Ethernet port link status is down
+2000-02-11 20:41:21 PON 0/0/4 ONU 36 UNI 0/1 The Ethernet port link status is down
+2000-02-11 20:39:21 PON 0/0/5 ONU 16 UNI 0/4 The Ethernet port link status is down
+2000-02-10 22:33:38 PON 0/0/5 ONU 40 The ONT Tx power exceeds the high alarm threshold
+2000-02-08 21:55:11 PON 0/0/2 ONU 14 The ONT Tx power exceeds the high alarm threshold
+2000-02-08 21:54:50 PON 0/0/2 ONU 6 The ONT Tx power exceeds the high alarm threshold
+2000-02-08 21:46:49 PON 0/0/2 ONU 10 The ONT Tx power exceeds the high alarm threshold
+2000-02-08 21:46:49 PON 0/0/2 ONU 23 The ONT Tx power exceeds the high alarm threshold
+2000-02-08 03:00:29 PON 0/0/4 ONU 22 Loss of frame for ONU(LOFi)
+2000-02-08 03:00:29 PON 0/0/4 ONU 22 Loss of signal for ONU(LOSi)
+2000-02-08 03:00:29 PON 0/0/4 ONU 22 Dying gasp(DGi)
+2000-02-08 01:26:14 PON 0/0/2 ONU 12 The ONT Tx power exceeds the high alarm threshold
+2000-02-08 00:43:27 PON 0/0/2 ONU 12 UNI 0/1 The Ethernet port link status is down
+2000-02-07 20:40:53 PON 0/0/8 ONU 44 The ONT Tx power exceeds the high alarm threshold
+2000-02-07 19:36:58 PON 0/0/8 ONU 38 UNI 0/1 The Ethernet port link status is down
+2000-02-07 18:52:17 PON 0/0/8 ONU 88 UNI 0/1 The Ethernet port link status is down
+2000-02-07 18:52:16 PON 0/0/8 ONU 78 UNI 0/1 The Ethernet port link status is down
+2000-02-07 18:52:15 PON 0/0/8 ONU 79 UNI 0/1 The Ethernet port link status is down
+2000-02-07 18:52:12 PON 0/0/8 ONU 65 UNI 0/1 The Ethernet port link status is down
+2000-02-07 18:52:08 PON 0/0/7 ONU 8 UNI 0/1 The Ethernet port link status is down
+2000-02-07 18:52:07 PON 0/0/8 ONU 32 UNI 0/1 The Ethernet port link status is down
+2000-02-07 18:52:04 PON 0/0/7 ONU 10 UNI 0/1 The Ethernet port link status is down
+2000-02-07 00:36:06 PON 0/0/8 ONU 81 Loss of frame for ONU(LOFi)
+2000-02-07 00:36:06 PON 0/0/8 ONU 81 Loss of signal for ONU(LOSi)
+2000-02-07 00:36:06 PON 0/0/8 ONU 81 Dying gasp(DGi)
+2000-02-06 23:54:25 PON 0/0/5 ONU 2 UNI 0/1 The Ethernet port link status is down
+2000-02-04 20:54:28 PON 0/0/2 ONU 11 UNI 0/4 The Ethernet port link status is down
+2000-02-04 20:54:28 PON 0/0/2 ONU 11 UNI 0/3 The Ethernet port link status is down
+2000-02-04 20:54:28 PON 0/0/2 ONU 11 UNI 0/2 The Ethernet port link status is down
+2000-02-04 20:54:28 PON 0/0/2 ONU 11 UNI 0/1 The Ethernet port link status is down
+2000-02-04 18:36:34 PON 0/0/5 ONU 22 UNI 0/1 The Ethernet port link status is down
+2000-02-04 03:16:07 PON 0/0/6 ONU 26 UNI 0/1 The Ethernet port link status is down
+2000-02-03 02:46:23 PON 0/0/8 ONU 69 UNI 0/1 The Ethernet port link status is down
+2000-02-03 02:02:26 PON 0/0/8 ONU 17 The ONT Tx power exceeds the high alarm threshold
+2000-02-03 01:20:12 PON 0/0/6 ONU 19 The ONT Tx power exceeds the high alarm threshold
+2000-01-31 04:05:09 PON 0/0/1 ONU 1 The ONT Tx power exceeds the high alarm threshold
+2000-01-29 05:48:34 PON 0/0/1 ONU 42 The ONT Tx power exceeds the high alarm threshold
+2000-01-29 02:44:21 PON 0/0/5 ONU 16 UNI 0/2 The Ethernet port link status is down
+2000-01-29 01:03:31 PON 0/0/5 ONU 18 UNI 0/1 The Ethernet port link status is down
+2000-01-28 21:13:50 PON 0/0/2 ONU 1 Loss of frame for ONU(LOFi)
+2000-01-28 21:13:50 PON 0/0/2 ONU 1 Loss of signal for ONU(LOSi)
+2000-01-28 04:01:05 PON 0/0/5 ONU 4 UNI 0/1 The Ethernet port link status is down
+2000-01-25 23:59:30 PON 0/0/2 ONU 1 UNI 0/1 The Ethernet port link status is down
+2000-01-25 22:09:25 PON 0/0/8 ONU 76 UNI 0/1 The Ethernet port link status is down
+2000-01-25 17:14:15 PON 0/0/8 ONU 42 The ONT Tx power exceeds the high alarm threshold
+2000-01-24 23:40:04 PON 0/0/2 ONU 1 The ONT Tx power exceeds the high alarm threshold
+2000-01-24 21:16:36 PON 0/0/8 ONU 13 The ONT Tx power exceeds the high alarm threshold
+2000-01-24 20:50:01 PON 0/0/5 ONU 14 UNI 0/1 The Ethernet port link status is down
+2000-01-23 21:44:13 PON 0/0/5 ONU 50 UNI 0/1 The Ethernet port link status is down
+2000-01-23 04:33:26 PON 0/0/8 ONU 78 The ONT Tx power exceeds the high alarm threshold
+2000-01-23 00:38:50 PON 0/0/3 ONU 39 The ONT Tx power exceeds the high alarm threshold
+2000-01-21 06:08:58 PON 0/0/6 ONU 21 The ONT Tx power exceeds the high alarm threshold
+2000-01-21 03:25:35 PON 0/0/1 ONU 27 The ONT Tx power exceeds the high alarm threshold
+2000-01-19 01:14:59 PON 0/0/3 ONU 9 The ONT Tx power exceeds the high alarm threshold
+2000-01-17 02:16:50 PON 0/0/1 ONU 43 The ONT Tx power exceeds the high alarm threshold
+2000-01-16 10:22:46 PON 0/0/2 ONU 15 The ONT Tx power exceeds the high alarm threshold
+2000-01-16 02:27:26 PON 0/0/5 ONU 11 The ONT Tx power exceeds the high alarm threshold
+2000-01-16 02:01:51 PON 0/0/5 ONU 61 Loss of frame for ONU(LOFi)
+2000-01-16 02:01:51 PON 0/0/5 ONU 61 Loss of signal for ONU(LOSi)
+2000-01-15 23:44:25 PON 0/0/5 ONU 14 The ONT Tx power exceeds the high alarm threshold
+2000-01-15 23:14:43 PON 0/0/5 ONU 74 UNI 0/1 The Ethernet port link status is down
+2000-01-15 23:01:07 PON 0/0/5 ONU 84 UNI 0/1 The Ethernet port link status is down
+2000-01-15 22:35:22 PON 0/0/5 ONU 55 The ONT Tx power exceeds the high alarm threshold
+2000-01-15 22:34:58 PON 0/0/5 ONU 36 UNI 0/1 The Ethernet port link status is down
+2000-01-15 21:57:11 PON 0/0/5 ONU 1 UNI 0/1 The Ethernet port link status is down
+2000-01-15 20:32:03 PON 0/0/5 ONU 10 UNI 0/1 The Ethernet port link status is down
+2000-01-15 20:29:23 PON 0/0/5 ONU 9 UNI 0/1 The Ethernet port link status is down
+2000-01-15 19:10:04 PON 0/0/7 ONU 3 The ONT Tx power exceeds the high alarm threshold
+2000-01-13 21:43:36 PON 0/0/3 ONU 56 The ONT Tx power exceeds the high alarm threshold
+2000-01-09 15:10:51 PON 0/0/2 ONU 19 The ONT Tx power exceeds the high alarm threshold
+2000-01-07 19:54:50 PON 0/0/5 ONU 16 UNI 0/3 The Ethernet port link status is down
+2000-01-07 19:54:50 PON 0/0/5 ONU 16 UNI 0/1 The Ethernet port link status is down
+2000-01-07 19:46:27 PON 0/0/3 ONU 52 The ONT Tx power exceeds the low alarm threshold
+2000-01-07 19:46:04 PON 0/0/5 ONU 65 UNI 0/4 The Ethernet port link status is down
+2000-01-07 19:46:04 PON 0/0/5 ONU 65 UNI 0/3 The Ethernet port link status is down
+2000-01-07 19:46:04 PON 0/0/5 ONU 65 UNI 0/2 The Ethernet port link status is down
+2000-01-07 19:46:04 PON 0/0/5 ONU 65 UNI 0/1 The Ethernet port link status is down
+2000-01-07 19:32:23 PON 0/0/3 ONU 28 UNI 0/1 The Ethernet port link status is down
+2000-01-07 17:21:49 PON 0/0/7 ONU 24 The ONT Tx power exceeds the low alarm threshold
+2000-01-07 16:01:17 PON 0/0/2 ONU 30 UNI 0/1 The Ethernet port link status is down
+2000-01-07 06:29:18 PON 0/0/3 ONU 48 UNI 0/1 The Ethernet port link status is down
+2000-01-07 05:44:13 PON 0/0/3 ONU 15 UNI 0/1 The Ethernet port link status is down
+2000-01-05 08:33:15 PON 0/0/1 ONU 25 The ONT Tx power exceeds the high alarm threshold
+2000-01-05 08:33:06 PON 0/0/1 ONU 8 The ONT Tx power exceeds the high alarm threshold
+2000-01-05 08:33:06 PON 0/0/1 ONU 24 The ONT Tx power exceeds the high alarm threshold
+2000-01-05 08:33:03 PON 0/0/1 ONU 4 The ONT Tx power exceeds the high alarm threshold
+2000-01-05 08:25:37 PON 0/0/1 ONU 22 UNI 0/4 The Ethernet port link status is down
+2000-01-05 08:25:37 PON 0/0/1 ONU 22 UNI 0/3 The Ethernet port link status is down
+2000-01-05 08:25:37 PON 0/0/1 ONU 22 UNI 0/1 The Ethernet port link status is down
+2000-01-05 08:24:56 PON 0/0/1 ONU 8 The ONT Tx power exceeds the low alarm threshold
+2000-01-05 08:24:56 PON 0/0/1 ONU 24 The ONT Tx power exceeds the low alarm threshold
+2000-01-05 08:24:56 PON 0/0/1 ONU 42 The ONT Tx power exceeds the low alarm threshold
+2000-01-05 08:19:08 PON 0/0/1 ONU 65 UNI 0/1 The Ethernet port link status is down
+2000-01-03 04:09:33 PON 0/0/8 ONU 62 UNI 0/4 The Ethernet port link status is down
+2000-01-03 04:09:33 PON 0/0/8 ONU 62 UNI 0/3 The Ethernet port link status is down
+2000-01-03 04:09:33 PON 0/0/8 ONU 62 UNI 0/2 The Ethernet port link status is down
+2000-01-03 04:09:33 PON 0/0/8 ONU 62 UNI 0/1 The Ethernet port link status is down
+2000-01-03 01:37:16 PON 0/0/2 ONU 30 UNI 0/4 The Ethernet port link status is down
+2000-01-03 01:37:16 PON 0/0/2 ONU 30 UNI 0/3 The Ethernet port link status is down
+2000-01-01 01:04:21 PON 0/0/4 ONU 6 The ONT Tx power exceeds the high alarm threshold
+1999-12-31 21:09:58 PON 0/0/1 ONU 46 The ONT Tx power exceeds the high alarm threshold
+1999-12-31 21:09:58 PON 0/0/1 ONU 41 The ONT Tx power exceeds the high alarm threshold
+1999-12-31 21:03:09 PON 0/0/8 ONU 30 UNI 0/2 The Ethernet port link status is down
+1999-12-31 21:03:06 PON 0/0/8 ONU 21 UNI 0/2 The Ethernet port link status is down
+1999-12-31 21:02:54 PON 0/0/4 ONU 14 UNI 0/2 The Ethernet port link status is down
+1999-12-31 21:02:41 PON 0/0/3 ONU 14 UNI 0/2 The Ethernet port link status is down
+1999-12-31 21:02:33 PON 0/0/1 ONU 44 UNI 0/2 The Ethernet port link status is down
+2000-01-01 00:01:10 PON 0/0/8 Do not support this tranceiver
+total number : 157
+
+OLT-IGC-NRO(config)# 

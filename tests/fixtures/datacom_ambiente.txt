@@ -1,0 +1,34 @@
+# show environment
+show environment
+
+ Temperature Sensors:
+--------------------------------------------------------------------------------------
+ Chassis/Slot/Id | Sensor             | Temp. | Alarm Thresholds | Hyster. | Status   
+                 |                    | (C)   | (C)              | (C)     |          
+--------------------------------------------------------------------------------------
+ 1/1/SENSOR1     | Card               |  29.8 |   0.0  ~ 55.0    |    5.0  | NORMAL 
+ 1/1/SENSOR2     | Switch Fabric      |  38.3 |   0.0  ~ 75.0    |    5.0  | NORMAL 
+ 1/1/SENSOR3     | GPON PHY/SFP       |  41.6 |   0.0  ~ 75.0    |    5.0  | NORMAL 
+ 1/1/SENSOR5     | CPU Core           |  41.0 |   0.0  ~ 95.0    |    5.0  | NORMAL 
+ 1/1/SENSOR6     | Switch Fabric Core |  46.8 |   0.0  ~ 100.0   |    5.0  | NORMAL 
+ 1/PSU1/SENSOR1  | PSU1               |  34.5 |   0.0  ~ 85.0    |    5.0  | NORMAL 
+--------------------------------------------------------------------------------------
+Sensors on not present transceivers(QSFPs) are displayed as N/A Status
+
+ Fan Information:
+-----------------------------------------------
+ Chassis/Slot/Fan-ID | Speed(RPM)   | Status   
+-----------------------------------------------
+ 1/FAN/1             |   6000       | NORMAL 
+ 1/FAN/2             |   6000       | NORMAL 
+ 1/FAN/3             |   6120       | NORMAL 
+-----------------------------------------------
+
+ Power Information:
+----------------------------------------------
+ Chassis/PSU-ID | Status                      
+----------------------------------------------
+ 1/PSU1         | OK                  
+----------------------------------------------
+
+OLT-ARC-VSJ# 

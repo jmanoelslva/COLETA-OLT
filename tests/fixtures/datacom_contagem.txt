@@ -1,0 +1,8 @@
+# show onu-global-count
+show onu-global-count
+--ONU Counting of all PONs--
+TOTAL    NON PROVISIONED    UP    DOWN 
+--------------------------------------
+  643                  0   615      28
+
+OLT-ARC-VSJ# 

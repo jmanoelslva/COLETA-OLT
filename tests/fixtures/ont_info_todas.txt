@@ -1,0 +1,69 @@
+# show ont info 1 all
+show ont info 1 all 
+-----------------------------------------------------------------------------
+  F/S P  ONT SN            Control   Run      Config   Match   Last      
+         ID                flag      state    state    state   down-cause
+ ----------------------------------------------------------------------------
+  0/0 1  1   TEST00000001  Active    Online   success  match    dying-gasp
+  0/0 1  2   TEST00000002  Active    Online   success  match    dying-gasp
+  0/0 1  3   TEST00000003  Active    Online   success  match    dying-gasp
+  0/0 1  4   TEST00000004  Active    Offline  initial  initial  LOS
+  0/0 1  5   TEST00000005  Active    Online   success  match    dying-gasp
+  0/0 1  6   TEST00000006  Active    Online   success  match    dying-gasp
+  0/0 1  7   TEST00000007  Active    Online   success  match    dying-gasp
+  0/0 1  8   TEST00000008  Active    Online   success  match    dying-gasp
+  0/0 1  9   TEST00000009  Active    Online   success  match    dying-gasp
+  0/0 1  10  TEST0000000A  Active    Online   success  match    dying-gasp
+  0/0 1  11  TEST0000000B  Active    Online   success  match    dying-gasp
+  0/0 1  12  TEST0000000C  Active    Online   success  match    dying-gasp
+  0/0 1  13  TEST0000000D  Active    Online   success  match    dying-gasp
+  0/0 1  14  TEST0000000E  Active    Online   success  match    dying-gasp
+  0/0 1  15  TEST0000000F  Active    Online   success  match    dying-gasp
+  0/0 1  16  TEST00000010  Active    Online   success  match    dying-gasp
+  0/0 1  17  TEST00000011  Active    Online   success  match    dying-gasp
+  0/0 1  18  TEST00000012  Active    Online   success  match    dying-gasp
+  0/0 1  19  TEST00000013  Active    Online   success  match    dying-gasp
+  0/0 1  20  TEST00000014  Active    Online   success  match    dying-gasp
+  0/0 1  21  TEST00000015  Active    Online   success  match    dying-gasp
+  0/0 1  22  TEST00000016  Active    Online   success  match    dying-gasp
+  0/0 1  24  TEST00000017  Active    Online   success  match    dying-gasp
+  0/0 1  25  TEST00000018  Active    Online   success  match    dying-gasp
+  0/0 1  26  TEST00000019  Active    Online   success  match    dying-gasp
+  0/0 1  27  TEST0000001A  Active    Online   success  match    dying-gasp
+  0/0 1  28  TEST0000001B  Active    Online   success  match    dying-gasp
+  0/0 1  29  TEST0000001C  Active    Online   success  match    dying-gasp
+  0/0 1  30  TEST0000001D  Active    Online   success  match    dying-gasp
+  0/0 1  31  TEST0000001E  Active    Online   success  match    dying-gasp
+  0/0 1  32  TEST0000001F  Active    Online   success  match    dying-gasp
+  0/0 1  33  TEST00000020  Active    Online   success  match    LOS
+  0/0 1  34  TEST00000021  Active    Online   success  match    dying-gasp
+  0/0 1  35  TEST00000022  Active    Online   success  match    dying-gasp
+  0/0 1  36  TEST00000023  Active    Online   success  match    dying-gasp
+  0/0 1  37  TEST00000024  Active    Online   success  match    dying-gasp
+  0/0 1  38  TEST00000025  Active    Online   success  match    dying-gasp
+  0/0 1  39  TEST00000026  Active    Online   success  match    dying-gasp
+  0/0 1  40  TEST00000027  Active    Online   success  match    dying-gasp
+  0/0 1  41  TEST00000028  Active    Online   success  match    dying-gasp
+  0/0 1  42  TEST00000029  Active    Online   success  match    LOS
+  0/0 1  43  TEST0000002A  Active    Online   success  match    dying-gasp
+  0/0 1  44  TEST0000002B  Active    Online   success  match    dying-gasp
+  0/0 1  46  TEST0000002C  Active    Online   success  match    dying-gasp
+  0/0 1  48  TEST0000002D  Active    Online   success  match    dying-gasp
+  0/0 1  49  TEST0000002E  Active    Online   success  match    dying-gasp
+  0/0 1  52  TEST0000002F  Active    Online   success  match    dying-gasp
+  0/0 1  53  TEST00000030  Active    Online   success  match    dying-gasp
+  0/0 1  54  TEST00000031  Active    Online   success  match    dying-gasp
+  0/0 1  56  TEST00000032  Active    Online   success  match    dying-gasp
+  0/0 1  57  TEST00000033  Active    Online   success  match    dying-gasp
+  0/0 1  58  TEST00000034  Active    Online   success  match    dying-gasp
+  0/0 1  59  TEST00000035  Active    Online   success  match    dying-gasp
+  0/0 1  60  TEST00000036  Active    Offline  initial  initial  --
+  0/0 1  61  TEST00000037  Active    Online   success  match    dying-gasp
+  0/0 1  62  TEST00000038  Active    Online   success  match    dying-gasp
+  0/0 1  63  TEST00000039  Active    Online   success  match    dying-gasp
+  0/0 1  64  TEST0000003A  Active    Online   success  match    dying-gasp
+  0/0 1  65  TEST0000003B  Active    Online   success  match    LOS
+-----------------------------------------------------------------------------
+  Total: 59,  online: 57,  deactive: 0,  failed: 0
+
+OLT-IGC-NRO(config-interface-gpon-0/0)# 

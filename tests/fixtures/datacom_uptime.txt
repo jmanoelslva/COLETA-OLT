@@ -1,0 +1,4 @@
+# show system uptime
+show system uptime
+ 14:46:30 up 40 days, 12:31,  2 users,  load average: 0.95, 0.86, 0.83
+OLT-ARC-VSJ# 

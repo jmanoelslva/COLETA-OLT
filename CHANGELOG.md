@@ -1,0 +1,55 @@
+# Changelog
+
+Todas as mudanças relevantes deste projeto são registradas aqui.
+
+O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
+e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
+
+## [Não lançado]
+
+## [1.0.0] - 2026-10-02
+
+Primeira versão: coleta por SSH de OLTs C-DATA e Datacom, histórico em
+SQLite e interface web para o técnico.
+
+### Adicionado
+
+- Coleta por SSH da **C-DATA FD16xx** (FD1616GS/FD1608SN): alarmes ativos e
+  histórico, equipamento (CPU, memória, temperatura, ventoinhas, fontes,
+  firmware, SFP das PONs), ONUs por porta com RX/TX na ONU e RX na OLT
+  (`ddm-info ... with-onu-optical`).
+- Coleta por SSH da **Datacom DmOS** (DM4610, DmOS 12.6): ONUs por porta,
+  detalhe e RSSI por ONU em rodízio, alarmes ativos, equipamento (CPU,
+  memória, sensores, ventoinhas, fonte, SFP e estado das portas PON).
+- Histórico de quedas da Datacom a partir do `Last down reason/time` das ONUs
+  (o DmOS não tem histórico de alarmes); demais alarmes pela diferença entre
+  leituras de `show alarm`.
+- Uma sessão SSH e uma fila com prioridade por OLT (a CLI atende um comando
+  por vez): manual → alarmes → equipamento → ONUs → RX OLT em pedaços.
+- Coleta manual ("Coletar agora") por tipo e por porta, e leitura de uma ONU
+  na hora.
+- Intervalos de coleta, faixas de sinal e retenção (90 dias) configuráveis
+  pela tela, valendo sem reiniciar; botão **Restaurar padrões**.
+- Cadastro de OLTs pela interface, com teste de acesso antes de salvar e
+  senha criptografada no banco (`dados/chave.key`); importação opcional de
+  `olts.toml`.
+- Diagnóstico por ONU e por porta PON: faixas de RX ONU/RX OLT, perda em cada
+  sentido (aponta laser da ONU ou curvatura), degradação contra a média de 7
+  dias, ONU oscilando, queda em massa (energia × LOS), sinal ruim
+  generalizado na PON, PON sem link, SFP não suportado, serial duplicado,
+  relógio da OLT errado.
+- Estado da porta PON na C-DATA inferido por RX do SFP sem luz ou nenhuma
+  ONU online.
+- Correção das datas de alarmes da C-DATA registrados com a OLT sem relógio
+  (ano 2000), estimadas a partir do boot.
+- Tela inicial com resumo da rede, "Precisa de atenção agora", cartão por OLT
+  com saúde, fileira de PONs e ONUs offline por motivo (com link para a lista
+  filtrada).
+- Telas da OLT (diagnóstico, alarmes ativos, histórico, ONUs, equipamento) e
+  da ONU (régua RX ONU/RX OLT, gráfico de sinal, cadastro, eventos).
+- Tema claro e escuro; layout para celular.
+- Testes dos parsers e das coletas contra saídas reais anonimizadas
+  (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
+
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/jmanoelslva/COLETA-OLT/releases/tag/v1.0.0

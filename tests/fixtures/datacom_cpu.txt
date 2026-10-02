@@ -1,0 +1,33 @@
+# show system cpu
+show system cpu
+system cpu cpuSysUptime 3501612
+Chassis/Slot: 1/1
+
+   CPU load information:
+   ---              5 seconds   1 minute  5 minutes
+   active                 26%        32%        36%
+   idle                   74%        68%        64% 
+
+    CPU core 0 information:
+    ---              5 seconds   1 minute  5 minutes
+    user                   20%        24%        27% 
+    system                  7%         8%         9% 
+    nice                    0%         0%         0% 
+    wait                    0%         0%         0% 
+    interrupt               0%         0%         0% 
+    softirq                 0%         1%         1% 
+    active                 28%        33%        37%
+    idle                   72%        67%        63% 
+
+    CPU core 1 information:
+    ---              5 seconds   1 minute  5 minutes
+    user                   19%        23%        27% 
+    system                  6%         8%         8% 
+    nice                    0%         0%         0% 
+    wait                    0%         0%         0% 
+    interrupt               0%         0%         0% 
+    softirq                 0%         1%         1% 
+    active                 25%        31%        36%
+    idle                   75%        69%        64% 
+
+OLT-ARC-VSJ# 

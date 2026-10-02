@@ -1,0 +1,12 @@
+# show firmware
+show firmware
+
+Status: Idle
+Download progress: -
+
+Version                     State   
+------------------------------------
+9.2.0-217-1-g11a5773edd     Inactive
+12.6.0-114-1-g60dccfb0ad    Active
+
+OLT-ARC-VSJ# 

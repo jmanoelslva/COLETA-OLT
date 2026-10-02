@@ -1,0 +1,4 @@
+# O serviço roda em Linux: repositório sempre em LF.
+* text=auto eol=lf
+*.png binary
+*.ico binary

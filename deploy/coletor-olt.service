@@ -1,0 +1,28 @@
+# /etc/systemd/system/coletor-olt.service
+# Um processo só (o agendador vive dentro da API) — não usar mais de 1 worker.
+[Unit]
+Description=Coletor de OLTs (HOTNET)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=coletor-olt
+Group=coletor-olt
+WorkingDirectory=/opt/coletor-olt
+Environment=COLETOR_HOST=127.0.0.1
+Environment=COLETOR_PORTA=8090
+Environment=COLETOR_DADOS=/var/lib/coletor-olt
+Environment=COLETOR_OLTS=/etc/coletor-olt/olts.toml
+# Token que o backend do app técnico vai mandar no header X-Api-Token.
+EnvironmentFile=-/etc/coletor-olt/coletor.env
+ExecStart=/opt/coletor-olt/.venv/bin/python -m coletor
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/coletor-olt
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

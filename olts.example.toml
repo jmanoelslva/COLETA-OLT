@@ -1,0 +1,16 @@
+# Inventário de OLTs. Copie para olts.toml (fora do Git) e preencha.
+# O arquivo tem senha em texto: no servidor, deixe legível só pelo usuário
+# do serviço (chmod 600).
+
+[[olt]]
+id = "cdata-centro"            # identificador curto, usado na URL
+nome = "OLT Centro"
+modelo = "C-DATA FD1616GS"
+host = "192.0.2.10"              # IP de gerência da OLT
+porta_ssh = 22
+usuario = ""
+senha = ""
+# senha_enable = ""            # só se o "enable" pedir senha diferente
+frame_slot = "0/0"             # usado em "interface gpon 0/0"
+portas_pon = [1, 2, 3, 4, 5, 6, 7, 8]
+# ativa = false                # pausa a coleta sem remover do inventário

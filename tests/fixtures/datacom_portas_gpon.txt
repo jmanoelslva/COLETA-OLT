@@ -1,0 +1,131 @@
+# show interface gpon
+show interface gpon
+
+Physical interface   :  gpon 1/1/1, Enabled, Physical link is Up
+Link-level type      :  GPON
+Logical reach        :  0-40 km
+Downstream FEC       :  Enabled
+Upstream FEC         :  Enabled
+Transceiver type     :  opway-OP46C1-datacom-custom
+Allocated upstream bandwidth
+    Fixed + Assured  :  0          kbit/s
+    Fixed            :  0          kbit/s
+    Assured          :  0          kbit/s
+    Max              :  101838848  kbit/s
+    Overhead         :  3036       kbit/s (92 ONUs)
+Available upstream bandwidth
+    CBR   BW         :  615552     kbit/s
+    Total BW         :  1152064    kbit/s
+
+Physical interface   :  gpon 1/1/2, Enabled, Physical link is Up
+Link-level type      :  GPON
+Logical reach        :  0-40 km
+Downstream FEC       :  Enabled
+Upstream FEC         :  Enabled
+Transceiver type     :  opway-OP46C1-datacom-custom
+Allocated upstream bandwidth
+    Fixed + Assured  :  0          kbit/s
+    Fixed            :  0          kbit/s
+    Assured          :  0          kbit/s
+    Max              :  92983296   kbit/s
+    Overhead         :  2772       kbit/s (84 ONUs)
+Available upstream bandwidth
+    CBR   BW         :  615552     kbit/s
+    Total BW         :  1154368    kbit/s
+
+Physical interface   :  gpon 1/1/3, Enabled, Physical link is Up
+Link-level type      :  GPON
+Logical reach        :  0-40 km
+Downstream FEC       :  Enabled
+Upstream FEC         :  Enabled
+Transceiver type     :  opway-OP46C1-datacom-custom
+Allocated upstream bandwidth
+    Fixed + Assured  :  0          kbit/s
+    Fixed            :  0          kbit/s
+    Assured          :  0          kbit/s
+    Max              :  84127744   kbit/s
+    Overhead         :  2508       kbit/s (76 ONUs)
+Available upstream bandwidth
+    CBR   BW         :  615552     kbit/s
+    Total BW         :  1161280    kbit/s
+
+Physical interface   :  gpon 1/1/4, Enabled, Physical link is Up
+Link-level type      :  GPON
+Logical reach        :  0-40 km
+Downstream FEC       :  Enabled
+Upstream FEC         :  Enabled
+Transceiver type     :  opway-OP46C1-datacom-custom
+Allocated upstream bandwidth
+    Fixed + Assured  :  0          kbit/s
+    Fixed            :  0          kbit/s
+    Assured          :  0          kbit/s
+    Max              :  111801344  kbit/s
+    Overhead         :  3333       kbit/s (101 ONUs)
+Available upstream bandwidth
+    CBR   BW         :  615552     kbit/s
+    Total BW         :  1142080    kbit/s
+
+Physical interface   :  gpon 1/1/5, Enabled, Physical link is Up
+Link-level type      :  GPON
+Logical reach        :  0-40 km
+Downstream FEC       :  Enabled
+Upstream FEC         :  Enabled
+Transceiver type     :  opway-OP46C1-datacom-custom
+Allocated upstream bandwidth
+    Fixed + Assured  :  0          kbit/s
+    Fixed            :  0          kbit/s
+    Assured          :  0          kbit/s
+    Max              :  77486080   kbit/s
+    Overhead         :  2310       kbit/s (70 ONUs)
+Available upstream bandwidth
+    CBR   BW         :  615552     kbit/s
+    Total BW         :  1167424    kbit/s
+
+Physical interface   :  gpon 1/1/6, Enabled, Physical link is Up
+Link-level type      :  GPON
+Logical reach        :  0-40 km
+Downstream FEC       :  Enabled
+Upstream FEC         :  Enabled
+Transceiver type     :  opway-OP46C1-datacom-custom
+Allocated upstream bandwidth
+    Fixed + Assured  :  0          kbit/s
+    Fixed            :  0          kbit/s
+    Assured          :  0          kbit/s
+    Max              :  66416640   kbit/s
+    Overhead         :  1980       kbit/s (60 ONUs)
+Available upstream bandwidth
+    CBR   BW         :  615552     kbit/s
+    Total BW         :  1174336    kbit/s
+
+Physical interface   :  gpon 1/1/7, Enabled, Physical link is Up
+Link-level type      :  GPON
+Logical reach        :  0-40 km
+Downstream FEC       :  Enabled
+Upstream FEC         :  Enabled
+Transceiver type     :  opway-OP46C1-datacom-custom
+Allocated upstream bandwidth
+    Fixed + Assured  :  0          kbit/s
+    Fixed            :  0          kbit/s
+    Assured          :  0          kbit/s
+    Max              :  92983296   kbit/s
+    Overhead         :  2772       kbit/s (84 ONUs)
+Available upstream bandwidth
+    CBR   BW         :  615552     kbit/s
+    Total BW         :  1153600    kbit/s
+
+Physical interface   :  gpon 1/1/8, Enabled, Physical link is Up
+Link-level type      :  GPON
+Logical reach        :  0-40 km
+Downstream FEC       :  Enabled
+Upstream FEC         :  Enabled
+Transceiver type     :  opway-OP46C1-datacom-custom
+Allocated upstream bandwidth
+    Fixed + Assured  :  0          kbit/s
+    Fixed            :  0          kbit/s
+    Assured          :  0          kbit/s
+    Max              :  84127744   kbit/s
+    Overhead         :  2508       kbit/s (76 ONUs)
+Available upstream bandwidth
+    CBR   BW         :  615552     kbit/s
+    Total BW         :  1160512    kbit/s
+OLT-ARC-VSJ# 

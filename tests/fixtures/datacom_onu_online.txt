@@ -1,0 +1,39 @@
+# show interface gpon 1/1/1 onu 2
+show interface gpon 1/1/1 onu 2
+ Last updated            : 2026-10-02 14:51:17 UTC-3
+
+ ID                      : 2
+ Serial Number           : TEST0000003E
+ Password                : 
+ Uptime                  : 03:35
+ Last Seen Online        : N/A
+ Vendor ID               : xPON
+ Equipment ID            : FD511G-X-F670
+ Name                    : CLIENTE-005
+ Operational state       : Up
+ Primary status          : Active
+ Last down reason        : Dying gasp
+ Last down time          : 2026-10-02 11:16:41 UTC-3
+ Distance                : 1 [km]
+ IPv4 mode               : Not configured
+ IPv4 address            : 
+ IPv4 default gateway    : 
+ IPv4 VLAN               : 
+ IPv4 CoS                : 
+ Line Profile            : PPPoE-GERAL
+ Service Profile         : 
+ RG Profile              : 
+ RG One Shot Provision   : Not provisioned
+ TR069 ACS Profile       : 
+ SNMP                    : Disabled
+ Allocated bandwidth     : 0 fixed, 0 assured+fixed [kbit/s]
+ Upstream-FEC            : Enabled
+ Anti Rogue ONU isolate  : Disabled
+ Version                 : F670.1A
+ Active FW               : V1.3.7 valid, committed
+ Standby FW              : V1.3.7 valid, not committed
+ Software Download State : None
+ Rx Optical Power [dBm]  : -20.81
+ Tx Optical Power [dBm]  : 1.77
+
+OLT-ARC-VSJ# 

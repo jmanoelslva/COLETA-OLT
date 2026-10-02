@@ -1,0 +1,4 @@
+# show interface gpon 1/1/1 onu 2 rssi
+show interface gpon 1/1/1 onu 2 rssi
+ RSSI [dBm]: -22.29
+OLT-ARC-VSJ# 

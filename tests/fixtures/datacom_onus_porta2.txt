@@ -1,0 +1,89 @@
+# show interface gpon 1/1/2 onu
+show interface gpon 1/1/2 onu
+  Itf     ONU ID   Serial Number   Oper State   Last Down Reason       Software Download State      Rx Power [dBm]  Tx Power [dBm]  Name
+--------  ------   -------------   ----------   --------------------   --------------------------   -------------   -------------   ------------------------------------------------
+1/1/2     0        TEST00000098    Up           LOSi                   None                         -31.55          1.66            CLIENTE-089                              
+1/1/2     1        TEST00000099    Up           Dying gasp             None                         -21.37          1.42            CLIENTE-090                                      
+1/1/2     2        TEST0000009A    Up           Dying gasp             None                         -20.56          2.11            CLIENTE-091                                
+1/1/2     3        TEST0000009B    Up           Dying gasp             None                         -18.73          1.84            CLIENTE-092                                     
+1/1/2     4        TEST0000009C    Up           Dying gasp             None                         -20.13          1.77            CLIENTE-093                           
+1/1/2     5        TEST0000009D    Up           Dying gasp             None                         -20.97          1.73            CLIENTE-094                                     
+1/1/2     6        TEST0000009E    Up           OMCC problem           None                         -21.48          1.70            CLIENTE-095                                     
+1/1/2     7        TEST0000009F    Up           Unknown                None                         -18.26          2.31            CLIENTE-096                                     
+1/1/2     8        TEST000000A0    Up           Dying gasp             None                         -18.82          1.84            CLIENTE-097                                         
+1/1/2     9        TEST000000A1    Up           Dying gasp             None                         -19.87          1.84            CLIENTE-098                                       
+1/1/2     10       TEST000000A2    Up           Dying gasp             None                         -20.31          1.69            CLIENTE-099                                        
+1/1/2     11       TEST000000A3    Up           Dying gasp             None                         -19.71          2.37            CLIENTE-100                                      
+1/1/2     12       TEST000000A4    Up           Dying gasp             None                         -19.46          1.94            CLIENTE-101                                      
+1/1/2     13       TEST000000A5    Up           Dying gasp             None                         -19.82          1.74            CLIENTE-102                                     
+1/1/2     14       TEST000000A6    Up           LOSi                   None                         -20.91          1.73            CLIENTE-103                                     
+1/1/2     15       TEST000000A7    Up           Dying gasp             None                         -20.55          1.72            CLIENTE-104                                     
+1/1/2     16       TEST000000A8    Up           Dying gasp             None                         -16.55          1.72            CLIENTE-105                                   
+1/1/2     17       TEST000000A9    Up           Dying gasp             None                         -19.66          1.64            CLIENTE-106                                       
+1/1/2     18       TEST000000AA    Up           Dying gasp             None                         -19.39          2.44            CLIENTE-107                              
+1/1/2     19       TEST000000AB    Up           Dying gasp             None                         -19.58          1.55            CLIENTE-108                                      
+1/1/2     20       TEST000000AC    Up           Dying gasp             None                         -23.67          1.92            CLIENTE-109                                  
+1/1/2     21       TEST000000AD    Up           Dying gasp             None                         -19.47          1.52            CLIENTE-110                                
+1/1/2     22       TEST000000AE    Up           Dying gasp             None                         -18.35          1.80            CLIENTE-111                                    
+1/1/2     23       TEST000000AF    Up           Dying gasp             None                         -20.36          1.64            CLIENTE-112                                        
+1/1/2     24       TEST000000B0    Up           Dying gasp             None                         -19.17          2.49            CLIENTE-113                                     
+1/1/2     25       TEST000000B1    Up           LOSi                   None                         -15.70          1.67            CLIENTE-114                                    
+1/1/2     27       TEST000000B2    Up           Dying gasp             None                         -24.31          1.62            CLIENTE-115                                     
+1/1/2     28       TEST000000B3    Up           Dying gasp             None                         -19.39          2.38            CLIENTE-116                                  
+1/1/2     29       TEST000000B4    Up           Dying gasp             None                         -21.19          1.59            CLIENTE-117                                      
+1/1/2     30       TEST000000B5    Up           Dying gasp             None                         -21.93          1.85            CLIENTE-118                                     
+1/1/2     31       TEST000000B6    Up           Dying gasp             None                         -15.76          2.60            CLIENTE-119                                       
+1/1/2     32       TEST000000B7    Up           Dying gasp             None                         -21.48          1.69            CLIENTE-120                                    
+1/1/2     33       TEST000000B8    Up           Dying gasp             None                         -18.76          1.73            CLIENTE-121                                     
+1/1/2     34       TEST000000B9    Down         N/A                    None                         N/A             N/A             CLIENTE-122                                       
+1/1/2     35       TEST000000BA    Up           Dying gasp             None                         -21.02          2.88            CLIENTE-123                                  
+1/1/2     36       TEST000000BB    Up           Dying gasp             None                         -20.46          1.72            CLIENTE-124                                    
+1/1/2     37       TEST000000BC    Up           Dying gasp             None                         -19.55          1.66            CLIENTE-125                                     
+1/1/2     38       TEST000000BD    Up           Dying gasp             None                         -19.39          2.35            CLIENTE-126                                      
+1/1/2     39       TEST000000BE    Up           LOSi                   None                         -17.35          2.09            CLIENTE-127                                        
+1/1/2     40       TEST000000BF    Up           Dying gasp             None                         -15.74          2.41            CLIENTE-128                                       
+1/1/2     41       TEST000000C0    Up           Dying gasp             None                         -19.28          2.34                                                            
+1/1/2     42       TEST000000C1    Up           OMCC problem           None                         -23.28          2.29            CLIENTE-129                                      
+1/1/2     43       TEST000000C2    Up           Dying gasp             None                         -19.43          2.58            CLIENTE-130                                    
+1/1/2     44       TEST000000C3    Up           Dying gasp             None                         -19.51          1.75            CLIENTE-131                                      
+1/1/2     45       TEST000000C4    Up           Dying gasp             None                         -20.65          2.55            CLIENTE-132                                   
+1/1/2     46       TEST000000C5    Up           Dying gasp             None                         -21.14          2.23            CLIENTE-133                                    
+1/1/2     47       TEST000000C6    Up           Dying gasp             None                         -20.76          1.93            CLIENTE-134                                  
+1/1/2     48       TEST000000C7    Up           Dying gasp             None                         -19.28          1.56            CLIENTE-135                              
+1/1/2     49       TEST000000C8    Up           Dying gasp             None                         N/A             1.80                                                            
+1/1/2     50       TEST000000C9    Up           LOSi                   None                         -18.70          2.31            CLIENTE-136                                  
+1/1/2     51       TEST000000CA    Up           Dying gasp             None                         -17.85          1.68            CLIENTE-137                                  
+1/1/2     52       TEST000000CB    Up           Dying gasp             None                         -19.87          1.98            CLIENTE-138                                     
+1/1/2     53       TEST000000CC    Up           Dying gasp             None                         -18.86          2.48                                                            
+1/1/2     54       TEST000000CD    Up           Dying gasp             None                         -21.02          1.94            CLIENTE-139                                    
+1/1/2     55       TEST000000CE    Up           Dying gasp             None                         -21.25          2.38            CLIENTE-140                                     
+1/1/2     56       TEST000000CF    Up           Dying gasp             None                         -18.96          1.79            CLIENTE-141                                 
+1/1/2     57       TEST000000D0    Up           Dying gasp             None                         -19.51          2.47            CLIENTE-142                                      
+1/1/2     58       TEST000000D1    Up           OMCC problem           None                         -20.60          1.84            CLIENTE-143                                      
+1/1/2     59       TEST000000D2    Up           Dying gasp             None                         -19.83          2.47            CLIENTE-144                                     
+1/1/2     60       TEST000000D3    Up           Dying gasp             None                         -22.76          2.48            CLIENTE-145                                       
+1/1/2     61       TEST000000D4    Up           Dying gasp             None                         -21.93          1.71            CLIENTE-146                                       
+1/1/2     62       TEST000000D5    Up           Dying gasp             None                         -18.69          1.56            CLIENTE-147                                      
+1/1/2     63       TEST000000D6    Up           Dying gasp             None                         -19.79          2.29            CLIENTE-148                                   
+1/1/2     64       TEST000000D7    Up           Dying gasp             None                         -20.45          1.77            CLIENTE-149                                    
+1/1/2     65       TEST000000D8    Up           LOSi                   None                         -19.14          1.79                                                            
+1/1/2     66       TEST000000D9    Up           Dying gasp             None                         -19.55          1.61                                                            
+1/1/2     67       TEST000000DA    Up           Dying gasp             None                         -19.32          2.25            CLIENTE-150                                   
+1/1/2     68       TEST000000DB    Up           Dying gasp             None                         -20.18          2.20            CLIENTE-151                                       
+1/1/2     69       TEST000000DC    Up           Dying gasp             None                         -19.58          2.41            CLIENTE-152                                     
+1/1/2     70       TEST000000DD    Up           Dying gasp             None                         -18.73          2.32                                                            
+1/1/2     71       TEST000000DE    Up           Dying gasp             None                         -21.49          1.66            CLIENTE-153                                    
+1/1/2     72       TEST000000DF    Up           OMCC problem           None                         -19.17          1.60            CLIENTE-154                                     
+1/1/2     73       TEST000000E0    Up           Dying gasp             None                         -19.17          0.63                                                            
+1/1/2     74       TEST000000E1    Up           Dying gasp             None                         -19.79          2.36            CLIENTE-155                                    
+1/1/2     75       TEST000000E2    Up           Dying gasp             None                         -20.04          1.41                                                            
+1/1/2     76       TEST000000E3    Up           Dying gasp             None                         -18.80          2.34            CLIENTE-156                                 
+1/1/2     77       TEST000000E4    Up           Dying gasp             None                         -19.39          2.12            CLIENTE-157                                    
+1/1/2     78       TEST000000E5    Up           Dying gasp             None                         -21.81          2.29            CLIENTE-158                                    
+1/1/2     79       TEST000000E6    Up           Dying gasp             None                         -19.28          2.43            CLIENTE-159                                
+1/1/2     80       TEST000000E7    Up           Dying gasp             None                         -18.96          2.34            CLIENTE-160                                        
+1/1/2     81       TEST000000E8    Up           Dying gasp             None                         -19.39          2.28            CLIENTE-161                                    
+1/1/2     82       TEST000000E9    Up           Dying gasp             None                         -19.36          1.82            CLIENTE-162                                  
+1/1/2     83       TEST000000EA    Up           N/A                    None                         -20.00          2.36            CLIENTE-163                                       
+1/1/2     88       TEST000000EB    Up           Dying gasp             None                         -17.87          2.20            CLIENTE-164                               
+OLT-ARC-VSJ# 
