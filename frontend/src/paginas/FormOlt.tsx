@@ -221,6 +221,7 @@ export function FormOlt() {
               <label className="campo curto">
                 Frame/slot
                 <input value={f.frame_slot} onChange={e => campo('frame_slot', e.target.value)} aria-invalid={!!erros.frame_slot} />
+                <small className="sutil">Da "interface gpon", ex.: 0/0</small>
                 <Erro k="frame_slot" />
               </label>
             )}

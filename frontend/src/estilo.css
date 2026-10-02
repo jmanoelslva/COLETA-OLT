@@ -573,3 +573,6 @@ a.motivo:hover b { background: var(--cor); color: var(--painel); }
 .barra-direita { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: flex-end; }
 .barra-usuario { font-size: 0.85rem; opacity: 0.75; }
 @media (max-width: 480px) { .barra-usuario { display: none; } }
+
+/* Cadastro de OLT: cada campo ocupa só a altura do próprio conteúdo (sem esticar o input). */
+.form-olt .campo { align-content: start; }

@@ -7,6 +7,14 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.3.1] - 2026-10-02
+
+### Corrigido
+
+- Cadastro de OLT (C-DATA): o campo Frame/slot esticava para acompanhar a
+  altura de "Portas PON em uso" e ficava desalinhado. Os campos agora ocupam
+  só a altura do próprio conteúdo, e o Frame/slot ganhou uma dica curta.
+
 ## [1.3.0] - 2026-10-02
 
 ### Adicionado
@@ -135,7 +143,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.0...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.1...HEAD
+[1.3.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.0...v1.2.1
