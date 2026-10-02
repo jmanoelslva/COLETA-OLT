@@ -197,6 +197,8 @@ PARAMETROS_PADRAO: dict[str, Any] = {
     "temp_onu_atencao": 70.0,
     # ONU com N+ alarmes na última hora é marcada como "oscilando".
     "oscilacao_eventos_1h": 6,
+    # IPs/redes que podem usar o coletor (vazio = todos). Ver coletor/acl.py.
+    "acl_ips": [],
 }
 
 

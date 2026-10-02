@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { api, type Parametros as P } from '../api'
+import { api, ErroApi, type Parametros as P } from '../api'
 import { useParametros } from '../parametros'
 
 interface Campo { chave: string; nome: string; unidade: string; passo?: number; ajuda?: string }
@@ -48,6 +48,10 @@ const GRUPOS: { titulo: string; texto: string; campos: Campo[] }[] = [
 
 const emMin = (k: string) => k.startsWith('intervalo_')
 
+// acl_ips é lista; o resto dos parâmetros é número.
+const numericos = (v: P): P => Object.fromEntries(Object.entries(v).filter(([, x]) => typeof x === 'number'))
+const aclDe = (v: P | null): string[] => ((v as Record<string, unknown> | null)?.acl_ips as string[] | undefined) ?? []
+
 export function Parametros() {
   const { recarregar } = useParametros()
   const [valores, setValores] = useState<P | null>(null)
@@ -59,7 +63,7 @@ export function Parametros() {
 
   const aplicar = (v: P) => {
     setValores(v)
-    setForm(Object.fromEntries(Object.entries(v).map(([k, x]) => [k, String(emMin(k) ? x / 60 : x)])))
+    setForm(Object.fromEntries(Object.entries(numericos(v)).map(([k, x]) => [k, String(emMin(k) ? x / 60 : x)])))
   }
 
   useEffect(() => {
@@ -94,14 +98,16 @@ export function Parametros() {
     }
   }
 
-  const iguaisAoPadrao = !!(valores && padrao && Object.keys(padrao).every(k => valores[k] === padrao[k]))
+  // A lista de IPs liberados não entra no "Restaurar padrões".
+  const iguaisAoPadrao = !!(valores && padrao &&
+    Object.keys(numericos(padrao)).every(k => valores[k] === padrao[k]))
 
   const restaurar = async () => {
     if (!padrao) return
     setSalvando(true)
     setMsg(null)
     try {
-      const r = await api.salvarParametros(padrao)
+      const r = await api.salvarParametros(numericos(padrao))
       aplicar(r.valores)
       recarregar()
       setMsg({ ok: true, texto: 'Valores padrão restaurados.' })
@@ -160,7 +166,7 @@ export function Parametros() {
               </button>
             ) : (
               <span className="confirmar-padrao" role="alertdialog" aria-label="Confirmar restauração">
-                <span>Voltar todos os valores para o padrão? O que não foi salvo também será descartado.</span>
+                <span>Voltar coleta, faixas e alertas para o padrão? A lista de IPs liberados não muda.</span>
                 <button type="button" className="botao perigo" onClick={restaurar} disabled={salvando}>Restaurar padrões</button>
                 <button type="button" className="botao-sec" onClick={() => setConfirmarPadrao(false)}>Cancelar</button>
               </span>
@@ -169,7 +175,76 @@ export function Parametros() {
           </div>
         </form>
       )}
+      {valores && <AclIps atual={aclDe(valores)} aoSalvar={v => { aplicar(v) }} />}
       {!valores && msg && <p className="aviso-erro">{msg.texto}</p>}
     </main>
+  )
+}
+
+/** Lista de IPs/redes que podem usar o coletor (vale na hora, sem reinstalar). */
+function AclIps({ atual, aoSalvar }: { atual: string[]; aoSalvar: (v: P) => void }) {
+  const [texto, setTexto] = useState(atual.join('\n'))
+  const [acesso, setAcesso] = useState<{ ip: string | null; local: boolean; liberado: boolean } | null>(null)
+  const [msg, setMsg] = useState<{ ok: boolean; texto: string } | null>(null)
+  const [salvando, setSalvando] = useState(false)
+
+  useEffect(() => { api.acesso().then(setAcesso).catch(() => {}) }, [])
+  useEffect(() => { setTexto(atual.join('\n')) }, [atual.join('|')])  // eslint-disable-line react-hooks/exhaustive-deps
+
+  const linhas = texto.split('\n').map(l => l.trim()).filter(Boolean)
+  const mudou = linhas.join('|') !== atual.join('|')
+
+  const salvar = async () => {
+    setSalvando(true)
+    setMsg(null)
+    try {
+      const r = await api.salvarAcl(linhas)
+      aoSalvar(r.valores)
+      setMsg({ ok: true, texto: linhas.length ? 'Lista de IPs salva. Vale a partir de agora.' : 'Lista vazia: qualquer IP pode usar o coletor.' })
+    } catch (err) {
+      const campo = err instanceof ErroApi ? err.campos?.acl_ips : undefined
+      setMsg({ ok: false, texto: campo ?? (err instanceof Error ? err.message : String(err)) })
+    } finally {
+      setSalvando(false)
+    }
+  }
+
+  const incluirMeuIp = () => {
+    if (acesso?.ip && !linhas.includes(acesso.ip)) setTexto(t => (t.trim() ? `${t.trim()}\n` : '') + acesso.ip)
+  }
+
+  return (
+    <section className="form-parametros acl">
+      <fieldset>
+        <legend>IPs liberados</legend>
+        <p className="sutil">
+          Quem pode abrir o coletor, além da senha do site. Um IP ou rede por linha, IPv4 ou IPv6 (ex.: 177.85.130.0/24 ou 2804:abc::/32),
+          com comentário opcional depois de #. Lista vazia libera qualquer IP. Vale na hora, sem reinstalar.
+        </p>
+        <p className="acl-meu-ip">
+          {acesso == null ? 'Verificando o seu IP…'
+            : acesso.local ? 'Você está acessando de dentro do servidor (sempre liberado).'
+            : <>Seu IP agora: <strong>{acesso.ip}</strong>
+                {!linhas.length || acesso.liberado ? '' : ' (fora da lista atual)'}
+                {acesso.ip && !linhas.includes(acesso.ip) && (
+                  <button type="button" className="chip" onClick={incluirMeuIp}>Incluir meu IP</button>
+                )}
+              </>}
+        </p>
+        <textarea rows={Math.max(4, linhas.length + 1)} value={texto} onChange={e => setTexto(e.target.value)}
+          spellCheck={false} aria-label="IPs ou redes liberados, um por linha"
+          placeholder={'177.85.130.0/24   # escritório (IPv4)\n2804:abc::/32     # escritório (IPv6)\n10.0.0.0/8        # VPN'} />
+        <div className="acoes-acl">
+          <button type="button" className="botao" onClick={salvar} disabled={salvando || !mudou}>
+            {salvando ? 'Salvando…' : 'Salvar lista de IPs'}
+          </button>
+          {msg && <span className={msg.ok ? 'ok' : 'aviso-erro'} role="status">{msg.texto}</span>}
+        </div>
+        <p className="sutil">
+          Para não se trancar fora, o coletor não salva uma lista que deixe o seu IP de fora. A lista de IPs
+          definida na instalação (no servidor web) continua valendo junto com esta.
+        </p>
+      </fieldset>
+    </section>
   )
 }

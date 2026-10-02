@@ -7,6 +7,29 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.2.0] - 2026-10-02
+
+### Adicionado
+
+- **IPs liberados em Configurações**: ACL de IPv4/IPv6 (IP ou rede, com
+  comentário opcional) aplicada pelo coletor em toda a `/api`, valendo na
+  hora, sem reinstalar. Mostra o IP de quem está acessando, tem botão para
+  incluí-lo e recusa salvar uma lista que trancaria o próprio usuário.
+  Chamadas locais no servidor (integração com o app técnico) não passam pela
+  ACL. "Restaurar padrões" não mexe nessa lista.
+
+### Corrigido
+
+- O instalador sobrescrevia o PWA técnico quando recebia o mesmo domínio
+  dele (vhost `sites-available/<domínio>.conf` e build em
+  `/var/www/<domínio>`, os mesmos caminhos do app técnico). Agora o coletor
+  usa pasta e vhost com nome próprio (`/var/www/coletor-olt`,
+  `coletor-olt-<domínio>.conf`, com a marca `@coletor-olt@`) e o instalador
+  **recusa, antes de alterar qualquer coisa**, um domínio que já pertence a
+  outro site do servidor. Ao trocar de domínio, só desativa vhosts antigos
+  do próprio coletor.
+- `COLETOR_CORS` no `.env` acompanha o domínio quando ele muda.
+
 ## [1.1.0] - 2026-10-02
 
 ### Adicionado
@@ -71,6 +94,7 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.1.0...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/jmanoelslva/COLETA-OLT/releases/tag/v1.0.0

@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import secrets
+import time
 from concurrent.futures import TimeoutError as FuturoTimeout
 from contextlib import asynccontextmanager
 from datetime import timedelta
@@ -14,11 +15,11 @@ from typing import Any
 from fastapi import Depends, FastAPI, HTTPException, Query, Request
 from fastapi.concurrency import run_in_threadpool
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from . import alarmes as cat
-from . import __version__, analise, inventario
+from . import __version__, acl, analise, inventario
 from .agendador import TIPOS, Agendador
 from .cdata.parsers import ErroCli
 from .cdata.sessao import ErroSessao
@@ -52,6 +53,24 @@ async def ciclo_de_vida(app: FastAPI):
 app = FastAPI(title="Coletor de OLTs", version=__version__, lifespan=ciclo_de_vida)
 app.add_middleware(CORSMiddleware, allow_origins=list(settings.cors_origens), allow_methods=["*"],
                    allow_headers=["*"])
+
+_acl_cache: tuple[float, list[str]] = (0.0, [])
+
+
+@app.middleware("http")
+async def filtrar_por_ip(request: Request, call_next):
+    """ACL de IPs editável em Configurações (ver coletor/acl.py)."""
+    global _acl_cache
+    if request.url.path.startswith("/api/"):
+        agora = time.monotonic()
+        if agora - _acl_cache[0] > 5:
+            _acl_cache = (agora, banco.parametros().get("acl_ips") or [])
+        ip = acl.ip_do_pedido(request)
+        if not acl.permitido(ip, _acl_cache[1]):
+            return JSONResponse(status_code=403, content={
+                "detail": f"O IP {ip} não está liberado no coletor. Peça para incluí-lo em Configurações, "
+                          "na lista de IPs liberados."})
+    return await call_next(request)
 
 
 def autenticar(request: Request) -> None:
@@ -508,13 +527,34 @@ def ler_parametros() -> dict:
     return {"valores": banco.parametros(), "padrao": PARAMETROS_PADRAO}
 
 
+@app.get("/api/acesso", dependencies=[rotas])
+def meu_acesso(request: Request) -> dict:
+    """IP visto pelo coletor e se ele está na ACL (para a tela de Configurações)."""
+    ip = acl.ip_do_pedido(request)
+    return {"ip": ip, "local": ip is None, "liberado": acl.permitido(ip, banco.parametros()["acl_ips"])}
+
+
 @app.put("/api/parametros", dependencies=[rotas])
-def salvar_parametros(novos: dict[str, Any]) -> dict:
+def salvar_parametros(novos: dict[str, Any], request: Request) -> dict:
     erros = {}
     limpos = {}
     for k, v in novos.items():
         if k not in PARAMETROS_PADRAO:
             erros[k] = "parâmetro desconhecido"
+            continue
+        if k == "acl_ips":
+            if not isinstance(v, list):
+                erros[k] = "envie uma lista de IPs ou redes"
+                continue
+            try:
+                limpos[k] = acl.normalizar(v)
+            except ValueError as e:
+                erros[k] = f"IP ou rede inválido: {e}"
+                continue
+            ip = acl.ip_do_pedido(request)
+            if not acl.permitido(ip, limpos[k]):
+                erros[k] = (f"a lista não inclui o seu IP atual ({ip}); salvar assim bloquearia o seu "
+                            "próprio acesso. Inclua-o ou deixe a lista vazia.")
             continue
         try:
             limpos[k] = type(PARAMETROS_PADRAO[k])(v)
@@ -528,6 +568,9 @@ def salvar_parametros(novos: dict[str, Any]) -> dict:
     if erros:
         raise HTTPException(422, erros)
     valores = banco.salvar_parametros(limpos)
+    if "acl_ips" in limpos:
+        global _acl_cache
+        _acl_cache = (0.0, [])  # ACL nova vale na próxima chamada
     if agendador:
         agendador.acordar_todas()
     return {"valores": valores, "padrao": PARAMETROS_PADRAO}

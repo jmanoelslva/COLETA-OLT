@@ -12,11 +12,14 @@ app técnico.
 | Configuração | `/etc/coletor-olt/coletor.env`, `/etc/coletor-olt/htpasswd`, `/etc/coletor-olt/install.conf` |
 | Serviço | `coletor-olt` (systemd), ouvindo só em `127.0.0.1:8090` |
 | Site | `https://<domínio>` servido pelo Apache/Nginx já em uso, com senha |
+| Arquivos web | `/var/www/coletor-olt/dist`, vhost `coletor-olt-<domínio>.conf` (nomes próprios, não colidem com o app técnico) |
 
 ## Antes de instalar
 
-1. **DNS**: crie o registro do domínio do coletor (sugestão:
-   `olt.hotnet.net.br`) apontando para o servidor.
+1. **DNS**: crie o registro de um domínio **só do coletor** (sugestão:
+   `olt.hotnet.net.br`) apontando para o servidor. **Não use o domínio do
+   PWA técnico** (`tecnico.hotnet.net.br`) nem o do portal: o instalador
+   recusa domínio que já pertence a outro site do servidor.
 2. **Acesso às OLTs**: o servidor precisa entrar por SSH nas OLTs. Libere o
    **IP de saída do servidor** na ACL/firewall de gerência de cada OLT (o
    instalador mostra esse IP no final). Sem isso, "Testar acesso" falha com
@@ -25,6 +28,14 @@ app técnico.
    3.11+). O servidor do app técnico já atende.
 4. **Porta local**: o backend do app técnico usa a 8000; o coletor usa a
    8090 por padrão. Qualquer porta livre serve.
+
+## Se uma instalação anterior usou o domínio do app técnico
+
+Versões até a 1.1.0 aceitavam o mesmo domínio e sobrescreviam o PWA técnico.
+Para consertar: rode o instalador do técnico
+(`sudo bash /opt/hotnet-tecnico/deploy/install.sh`, Enter nas perguntas) e
+depois o do coletor com um domínio próprio. O coletor atualizado não toca
+mais nos arquivos do técnico.
 
 ## Instalar
 
@@ -69,6 +80,13 @@ certificado. As respostas da primeira vez aparecem como padrão (Enter).
   ```
 
   Remover: `sudo htpasswd -D /etc/coletor-olt/htpasswd nome`.
+- **IPs liberados**: há duas listas, e as duas valem juntas:
+  - a do **servidor web**, definida no `install.sh` (muda rodando o
+    instalador de novo);
+  - a de **Configurações → IPs liberados**, no próprio coletor, que vale na
+    hora e aceita IPv4 e IPv6. Ela mostra o seu IP e não deixa salvar uma
+    lista que te tranque fora. Se o domínio tiver registro AAAA, o
+    navegador costuma usar IPv6 — inclua a rede IPv6 também.
 - O serviço roda com usuário próprio (`coletor-olt`, sem shell), só escreve
   em `/var/lib/coletor-olt` e só ouve em `127.0.0.1`.
 - As senhas das OLTs ficam cifradas no banco com `chave.key`. **Faça backup

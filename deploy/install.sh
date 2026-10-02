@@ -108,11 +108,30 @@ read -rp "Domínio do coletor (Enter para usar '$DEFAULT_DOMAIN'): " DOMINIO
 DOMINIO="${DOMINIO:-$DEFAULT_DOMAIN}"
 [[ "$DOMINIO" =~ $DOMAIN_REGEX ]] || err "Domínio inválido: '$DOMINIO' (sem http://, sem barra no fim)."
 
+# O coletor precisa de um domínio só dele. Se algum site do servidor (PWA
+# técnico, portal do cliente...) já responde por esse nome, para aqui — antes
+# de mexer em qualquer coisa. Os vhosts do coletor levam a marca @coletor-olt@.
+site_alheio_com_dominio() {
+  local dom_re="${DOMINIO//./\\.}" arq
+  for arq in /etc/nginx/sites-available/* /etc/nginx/sites-enabled/* /etc/nginx/conf.d/*.conf \
+             /etc/apache2/sites-available/*.conf /etc/apache2/sites-enabled/*.conf; do
+    [ -f "$arq" ] || continue
+    grep -Eiq "^[[:space:]]*(server_name|ServerName|ServerAlias)([[:space:]]+[^#]*)?[[:space:]]${dom_re}([[:space:]]|;|\$)" "$arq" || continue
+    grep -q "@coletor-olt@" "$arq" && continue
+    echo "$arq"
+    return 0
+  done
+  return 1
+}
+if ARQ_ALHEIO="$(site_alheio_com_dominio)"; then
+  err "O domínio '$DOMINIO' já é de outro site deste servidor ($ARQ_ALHEIO). Use um domínio só do coletor (ex: olt.hotnet.net.br) — usar o mesmo sobrescreveria aquele site."
+fi
+
 read -rp "Porta local do coletor (Enter para usar '$DEFAULT_PORT'): " BACKEND_PORT
 BACKEND_PORT="${BACKEND_PORT:-$DEFAULT_PORT}"
 [[ "$BACKEND_PORT" =~ ^[0-9]+$ ]] || err "Porta inválida: '$BACKEND_PORT'."
 
-echo "IPs/redes que podem abrir o coletor, separados por espaço (ex: 177.85.130.0/24 10.0.0.0/8)."
+echo "IPs/redes (IPv4 ou IPv6) que podem abrir o coletor, separados por espaço (ex: 177.85.130.0/24 2804:abc::/32)."
 echo "Vazio = qualquer IP, mas sempre com usuário e senha."
 read -rp "IPs liberados (Enter para usar '${DEFAULT_IPS:-qualquer}'): " IPS_LIBERADOS
 IPS_LIBERADOS="${IPS_LIBERADOS:-$DEFAULT_IPS}"
@@ -170,7 +189,10 @@ if [ -z "$WEBSERVER" ]; then
   fi
 fi
 
-WWW_ROOT="/var/www/$DOMINIO"
+# Pasta e vhost próprios, com nome que nunca coincide com os de outros apps
+# (o PWA técnico usa /var/www/<domínio> e sites-available/<domínio>.conf).
+WWW_ROOT="/var/www/coletor-olt"
+VHOST="coletor-olt-$DOMINIO"
 PUBLISH_DIR="$WWW_ROOT/dist"
 TEMPLATE_DIR="$INSTALL_DIR/deploy"
 
@@ -284,6 +306,7 @@ EOF
 else
   ok "$ENV_FILE já existe, mantendo (edite à mão se precisar)."
   sed -i -E "s/^COLETOR_PORTA=.*/COLETOR_PORTA=$BACKEND_PORT/" "$ENV_FILE"
+  sed -i -E "s#^COLETOR_CORS=.*#COLETOR_CORS=https://$DOMINIO#" "$ENV_FILE"
 fi
 chown root:"$SERVICE_USER" "$ENV_FILE"
 chmod 640 "$ENV_FILE"
@@ -379,7 +402,8 @@ mkdir -p "$ACME_WEBROOT"
 if [ ! -f "/etc/letsencrypt/live/$DOMINIO/fullchain.pem" ]; then
   info "Preparando vhost provisório na porta 80 para validar o domínio..."
   if [ "$WEBSERVER" = "nginx" ]; then
-    cat > "/etc/nginx/sites-available/$DOMINIO.conf" <<EOF
+    cat > "/etc/nginx/sites-available/$VHOST.conf" <<EOF
+# @coletor-olt@ vhost provisório do Coletor de OLTs (gerado pelo install.sh)
 server {
     listen 80;
     listen [::]:80;
@@ -388,10 +412,11 @@ server {
     location / { return 404; }
 }
 EOF
-    ln -sf "/etc/nginx/sites-available/$DOMINIO.conf" "/etc/nginx/sites-enabled/$DOMINIO.conf"
+    ln -sf "/etc/nginx/sites-available/$VHOST.conf" "/etc/nginx/sites-enabled/$VHOST.conf"
     nginx -t && systemctl reload nginx
   else
-    cat > "/etc/apache2/sites-available/$DOMINIO.conf" <<EOF
+    cat > "/etc/apache2/sites-available/$VHOST.conf" <<EOF
+# @coletor-olt@ vhost provisório do Coletor de OLTs (gerado pelo install.sh)
 <VirtualHost *:80>
     ServerName $DOMINIO
     DocumentRoot $ACME_WEBROOT
@@ -400,7 +425,7 @@ EOF
     </Directory>
 </VirtualHost>
 EOF
-    a2ensite "$DOMINIO" >/dev/null
+    a2ensite "$VHOST" >/dev/null
     apache2ctl configtest && systemctl reload apache2
   fi
 fi
@@ -432,6 +457,18 @@ else
   REGRAS_APACHE="Require all granted"
 fi
 
+# Se o domínio do coletor mudou, desativa o vhost antigo DO COLETOR (só os
+# que têm a marca @coletor-olt@ — nunca toca em vhost de outro app).
+for antigo in /etc/nginx/sites-available/coletor-olt-*.conf /etc/apache2/sites-available/coletor-olt-*.conf; do
+  [ -f "$antigo" ] || continue
+  nome="$(basename "$antigo" .conf)"
+  [ "$nome" = "$VHOST" ] && continue
+  grep -q "@coletor-olt@" "$antigo" || continue
+  warn "Desativando vhost antigo do coletor: $nome"
+  rm -f "/etc/nginx/sites-enabled/$nome.conf"
+  if command -v a2dissite >/dev/null 2>&1; then a2dissite "$nome" >/dev/null 2>&1 || true; fi
+done
+
 info "Publicando o vhost definitivo (HTTPS + senha + proxy para o coletor)..."
 if [ "$WEBSERVER" = "nginx" ]; then
   sed \
@@ -440,7 +477,8 @@ if [ "$WEBSERVER" = "nginx" ]; then
     -e "s#/etc/coletor-olt/htpasswd#$HTPASSWD_FILE#g" \
     -e "s/127\.0\.0\.1:8090/127.0.0.1:$BACKEND_PORT/g" \
     -e "s|^ *# @IPS_LIBERADOS@$|$REGRAS_NGINX|" \
-    "$TEMPLATE_DIR/nginx.conf.example" > "/etc/nginx/sites-available/$DOMINIO.conf"
+    "$TEMPLATE_DIR/nginx.conf.example" > "/etc/nginx/sites-available/$VHOST.conf"
+  ln -sf "/etc/nginx/sites-available/$VHOST.conf" "/etc/nginx/sites-enabled/$VHOST.conf"
   nginx -t && systemctl reload nginx
 else
   sed \
@@ -449,7 +487,8 @@ else
     -e "s#/etc/coletor-olt/htpasswd#$HTPASSWD_FILE#g" \
     -e "s/127\.0\.0\.1:8090/127.0.0.1:$BACKEND_PORT/g" \
     -e "/# @IPS_LIBERADOS@/{n;s|.*|            $REGRAS_APACHE|}" \
-    "$TEMPLATE_DIR/apache-vhost.conf.example" > "/etc/apache2/sites-available/$DOMINIO.conf"
+    "$TEMPLATE_DIR/apache-vhost.conf.example" > "/etc/apache2/sites-available/$VHOST.conf"
+  a2ensite "$VHOST" >/dev/null
   apache2ctl configtest && systemctl reload apache2
 fi
 

@@ -1,3 +1,4 @@
+# @coletor-olt@ (marca usada pelo install.sh para reconhecer os vhosts deste app)
 # Exemplo de VirtualHost Apache para olt.hotnet.net.br (Coletor de OLTs)
 #
 # Serve o build estático do Vite (frontend/dist) e faz reverse proxy de

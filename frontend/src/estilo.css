@@ -548,3 +548,10 @@ a.motivo:hover b { background: var(--cor); color: var(--painel); }
 .motivo-sem_registro:is(a) { color: var(--sutil); }
 .filtro-motivo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.8rem; margin: 0 0 0.6rem;
   padding: 0.5rem 0.75rem; background: var(--painel); border-left: 4px solid var(--fibra); border-radius: var(--raio); }
+
+/* IPs liberados (Configurações) */
+.acl { margin-top: 1.5rem; }
+.acl textarea { width: 100%; max-width: 32rem; font: 500 0.95rem/1.5 var(--fonte); color: var(--tinta);
+  background: var(--painel); border: 1px solid var(--linha-forte); border-radius: var(--raio); padding: 0.5rem 0.7rem; }
+.acl-meu-ip { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; margin: 0 0 0.6rem; }
+.acoes-acl { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin: 0.6rem 0; }

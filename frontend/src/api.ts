@@ -160,6 +160,9 @@ export const api = {
     pedir<unknown>(`/olts/${id}?apagar_historico=${apagarHistorico}`, { method: 'DELETE' }),
   testarOlt: (d: Partial<CadastroOlt>) => pedir<ResultadoTeste>('/olts/testar', { method: 'POST', body: JSON.stringify(d) }),
   parametros: () => pedir<{ valores: Parametros; padrao: Parametros }>('/parametros'),
+  acesso: () => pedir<{ ip: string | null; local: boolean; liberado: boolean }>('/acesso'),
+  salvarAcl: (ips: string[]) =>
+    pedir<{ valores: Parametros; padrao: Parametros }>('/parametros', { method: 'PUT', body: JSON.stringify({ acl_ips: ips }) }),
   salvarParametros: (v: Parametros) =>
     pedir<{ valores: Parametros; padrao: Parametros }>('/parametros', { method: 'PUT', body: JSON.stringify(v) }),
 }
