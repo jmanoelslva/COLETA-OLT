@@ -384,8 +384,7 @@ if [ "$MODO" = "tecnico" ]; then
   # Token do backend do app técnico para /api/integracao/* (histórico da ONU
   # na tela do cliente). Gerado uma vez; o app técnico usa o mesmo valor.
   if ! grep -q "^COLETOR_SERVICO_TOKEN=." "$ENV_FILE"; then
-    definir_env COLETOR_SERVICO_TOKEN "$(head -c 32 /dev/urandom | od -An -tx1 | tr -d ' 
-')"
+    definir_env COLETOR_SERVICO_TOKEN "$(head -c 32 /dev/urandom | od -An -tx1 | tr -d ' \n')"
     ok "Token de integração com o app técnico gerado em $ENV_FILE."
   fi
 else
