@@ -174,7 +174,8 @@ MIGRACOES_OLTS = [
 MIGRACOES = {
     "olts": MIGRACOES_OLTS,
     "olt_status": [("sensores", "TEXT"), ("plataforma", "TEXT")],  # JSON (Datacom)
-    "onus": [("modelo_onu", "TEXT"), ("versao_onu", "TEXT")],
+    # sn_desde: quando o serial atual apareceu nesta posição (troca de ONU zera o histórico dela).
+    "onus": [("modelo_onu", "TEXT"), ("versao_onu", "TEXT"), ("sn_desde", "TEXT")],
     "pon_sfp": [("admin", "TEXT"), ("link", "TEXT")],  # estado da porta PON (Datacom)
 }
 

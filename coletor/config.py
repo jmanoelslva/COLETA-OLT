@@ -38,6 +38,8 @@ class Settings:
     auth_modo: str = ""
     tecnico_url: str = "http://127.0.0.1:8000"
     tecnico_cookie: str = "TECSESSION"
+    # Token do backend do app técnico para /api/integracao/* (vazio = integração desligada).
+    servico_token: str = ""
 
     @property
     def banco(self) -> Path:
@@ -61,6 +63,7 @@ def carregar_settings() -> Settings:
         auth_modo=os.environ.get("COLETOR_AUTH", "").strip().lower(),
         tecnico_url=os.environ.get("COLETOR_TECNICO_URL", "http://127.0.0.1:8000").rstrip("/"),
         tecnico_cookie=os.environ.get("COLETOR_TECNICO_COOKIE", "TECSESSION"),
+        servico_token=os.environ.get("COLETOR_SERVICO_TOKEN", "").strip(),
     )
 
 

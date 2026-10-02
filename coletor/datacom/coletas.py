@@ -147,14 +147,15 @@ def coletar_onus(s: SessaoDatacom, olt: OltConfig, banco: Banco, estado: EstadoO
             for o in lista:
                 c.execute(
                     """INSERT INTO onus (olt_id, porta, onu_id, sn, descricao, run_state, last_down_cause,
-                                         primeiro_visto, visto_em)
-                       VALUES (?,?,?,?,?,?,?,?,?)
+                                         primeiro_visto, visto_em, sn_desde)
+                       VALUES (?,?,?,?,?,?,?,?,?,?)
                        ON CONFLICT(olt_id, porta, onu_id) DO UPDATE SET
                          sn = excluded.sn, descricao = excluded.descricao, run_state = excluded.run_state,
                          last_down_cause = excluded.last_down_cause, visto_em = excluded.visto_em,
-                         detalhe_em = CASE WHEN onus.sn = excluded.sn THEN onus.detalhe_em END""",
+                         detalhe_em = CASE WHEN onus.sn = excluded.sn THEN onus.detalhe_em END,
+                         sn_desde = CASE WHEN onus.sn = excluded.sn THEN onus.sn_desde ELSE excluded.sn_desde END""",
                     (olt.id, porta, o["onu_id"], o["sn"], o["descricao"], o["run_state"], o["last_down_cause"],
-                     agora, agora),
+                     agora, agora, agora),
                 )
                 c.execute("INSERT INTO sinais_onu (olt_id, porta, onu_id, coletado_em, rx, tx) VALUES (?,?,?,?,?,?)",
                           (olt.id, porta, o["onu_id"], agora, o["rx"], o["tx"]))

@@ -97,6 +97,7 @@ Testes: `python -m pytest`.
 | `COLETOR_API_TOKEN` | vazio | se definido, a API exige `X-Api-Token` (obrigatório em produção) |
 | `COLETOR_HOST` / `COLETOR_PORTA` | `127.0.0.1` / `8090` | onde a API escuta |
 | `COLETOR_CORS` | `http://localhost:5174` | origens permitidas, separadas por vírgula |
+| `COLETOR_SERVICO_TOKEN` | vazio (o instalador gera no modo técnico) | token do backend do app técnico para `/api/integracao/*`; vazio desliga a integração |
 
 ## Segurança
 
@@ -120,3 +121,19 @@ Testes: `python -m pytest`.
 | GET | `/api/olts/{id}/onus/{porta}/{onu}/sinais?horas=` | série histórica |
 | POST | `/api/olts/{id}/coletar/{alarmes\|sistema\|onus\|rx_olt}?porta=` | força uma coleta |
 | GET/PUT | `/api/parametros` | intervalos, faixas, retenção |
+
+### Integração com o app técnico
+
+Para a tela do cliente no app técnico: o backend dele acha a ONU no Controllr
+e pede aqui, pelo serial (igual nos dois sistemas), o que o Controllr não
+guarda. Autenticação pelo cabeçalho `X-Servico-Token` (`COLETOR_SERVICO_TOKEN`);
+não usa o login do técnico nem o `X-Api-Token`.
+
+| Método | Caminho | |
+|---|---|---|
+| GET | `/api/integracao/onu?sn=&horas=72` | ONU avaliada, sinais (RX/TX da ONU e RX na OLT), quedas com motivo/hora/duração, eventos, alarmes ativos e situação da PON |
+| GET | `/api/integracao/onu?olt=&porta=&onu_id=` | o mesmo, pela posição (`olt` = id ou nome, como o `olt_name` do Controllr) |
+| POST | `/api/integracao/onu/atualizar?sn=` | lê só essa ONU na OLT agora e devolve o mesmo conteúdo |
+
+Se a ONU foi trocada na mesma posição, o histórico começa na troca
+(`historico_desde`), para não misturar o sinal do aparelho antigo.

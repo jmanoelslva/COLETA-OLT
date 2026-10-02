@@ -19,7 +19,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from . import alarmes as cat
-from . import __version__, acl, analise, inventario, sessao_tecnico
+from . import __version__, acl, analise, integracao, inventario, sessao_tecnico
 from .agendador import TIPOS, Agendador
 from .cdata.parsers import ErroCli
 from .cdata.sessao import ErroSessao
@@ -73,7 +73,9 @@ async def filtrar_por_ip(request: Request, call_next):
         # Login pelo PWA técnico. /api/saude fica aberto (só diz que o coletor
         # existe — o app técnico usa para mostrar o menu) e chamada local no
         # servidor (ip None, ex.: integração do backend do técnico) não precisa.
-        if settings.auth_modo == "tecnico" and ip is not None and request.url.path != "/api/saude":
+        # /api/integracao/* é do backend do técnico, autenticado pelo token de serviço.
+        if (settings.auth_modo == "tecnico" and ip is not None and request.url.path != "/api/saude"
+                and not request.url.path.startswith("/api/integracao/")):
             cookie = request.cookies.get(settings.tecnico_cookie)
             try:
                 tecnico = await run_in_threadpool(
@@ -139,6 +141,18 @@ def _ultimas_coletas(c, olt_id: str) -> dict:
 
 
 rotas = Depends(autenticar)
+
+
+def autenticar_servico(request: Request) -> None:
+    """Token de serviço do backend do app técnico (COLETOR_SERVICO_TOKEN)."""
+    if not settings.servico_token:
+        raise HTTPException(503, "integração desligada: defina COLETOR_SERVICO_TOKEN no coletor")
+    token = request.headers.get("x-servico-token", "")
+    if not secrets.compare_digest(token.encode(), settings.servico_token.encode()):
+        raise HTTPException(401, "token de serviço inválido")
+
+
+servico = Depends(autenticar_servico)
 
 
 # ------------------------------------------------------------------ OLTs
@@ -404,6 +418,85 @@ def sinais_onu(olt_id: str, porta: int, onu_id: int, horas: int = Query(72, ge=1
             "WHERE olt_id = ? AND porta = ? AND onu_id = ? AND coletado_em >= ? ORDER BY coletado_em",
             (olt_id, porta, onu_id, desde))]
     return {"onu": onu, "olt": olt, "limites": {k: v for k, v in banco.parametros().items() if k.startswith("rx_")}}
+
+
+# ------------------------------------------------------------------ integração (app técnico)
+
+
+def _historico_onu(sn: str | None, olt: str | None, porta: int | None, onu_id: int | None, horas: int) -> dict:
+    agora = agora_utc()
+    with banco.conexao() as c:
+        try:
+            onu = integracao.localizar(c, sn, olt, porta, onu_id)
+        except integracao.NaoEncontrada as e:
+            raise HTTPException(404, str(e))
+        except ValueError as e:
+            raise HTTPException(400, str(e))
+        olt_id, porta, onu_id = onu["olt_id"], onu["porta"], onu["onu_id"]
+        # Depois de uma troca de ONU na mesma posição, o que veio antes é de outro aparelho.
+        desde = max(iso(agora - timedelta(hours=horas)), onu.get("sn_desde") or "")
+        avaliada = next(o for o in _onus_avaliadas(c, olt_id, porta) if o["onu_id"] == onu_id)
+        sinais = {
+            "onu": [dict(r) for r in c.execute(
+                "SELECT coletado_em, rx, tx, temp, tensao, bias FROM sinais_onu "
+                "WHERE olt_id = ? AND porta = ? AND onu_id = ? AND coletado_em >= ? ORDER BY coletado_em",
+                (olt_id, porta, onu_id, desde))],
+            "olt": [dict(r) for r in c.execute(
+                "SELECT coletado_em, rx_olt FROM sinais_olt "
+                "WHERE olt_id = ? AND porta = ? AND onu_id = ? AND coletado_em >= ? ORDER BY coletado_em",
+                (olt_id, porta, onu_id, desde))],
+        }
+        eventos = integracao.eventos_da_onu(c, olt_id, porta, onu_id, desde)
+        ativos = [_enriquecer_evento(dict(r)) for r in c.execute(
+            "SELECT * FROM alarmes_ativos WHERE olt_id = ? AND porta = ? AND onu_id = ? ORDER BY data_olt DESC",
+            (olt_id, porta, onu_id))]
+        pon = integracao.situacao_pon(c, olt_id, porta, iso(agora - timedelta(minutes=15)))
+        coletas = _ultimas_coletas(c, olt_id)
+    return {
+        "olt": {"id": olt_id, "nome": onu["olt_nome"], "fabricante": onu["fabricante"]},
+        "onu": avaliada,
+        "historico_desde": desde,
+        "sinais": sinais,
+        "limites": {k: v for k, v in banco.parametros().items() if k.startswith("rx_")},
+        "quedas": integracao.quedas(eventos),
+        "eventos": eventos,
+        "alarmes_ativos": analise.agrupar_eventos([{**r, "id": r["chave"], "acao": "alarme"} for r in ativos]),
+        "pon": pon,
+        "atualizado_em": {t: coletas[t].get("ultimo_ok") for t in ("onus", "alarmes")},
+    }
+
+
+@app.get("/api/integracao/onu", dependencies=[servico])
+def integracao_onu(
+    sn: str | None = Query(None, description="Serial da ONU (igual ao do Controllr)"),
+    olt: str | None = Query(None, description="Sem serial: id ou nome da OLT (olt_name do Controllr)"),
+    porta: int | None = None,
+    onu_id: int | None = None,
+    horas: int = Query(72, ge=1, le=24 * 90),
+) -> dict:
+    """Tudo o que o coletor sabe de uma ONU, para a tela do cliente no app técnico."""
+    return _historico_onu(sn, olt, porta, onu_id, horas)
+
+
+@app.post("/api/integracao/onu/atualizar", dependencies=[servico])
+async def integracao_onu_atualizar(
+    sn: str | None = None, olt: str | None = None, porta: int | None = None, onu_id: int | None = None,
+    horas: int = Query(72, ge=1, le=24 * 90),
+) -> dict:
+    """Lê a ONU na OLT agora (só ela, sem reconectar a OLT) e devolve o histórico atualizado."""
+    with banco.conexao() as c:
+        try:
+            onu = integracao.localizar(c, sn, olt, porta, onu_id)
+        except integracao.NaoEncontrada as e:
+            raise HTTPException(404, str(e))
+        except ValueError as e:
+            raise HTTPException(400, str(e))
+    try:
+        futuro = _agendador().consultar_onu(onu["olt_id"], onu["porta"], onu["onu_id"])
+    except KeyError:
+        raise HTTPException(409, "a coleta desta OLT está pausada ou o fabricante ainda não é suportado")
+    await _esperar(futuro, 90)
+    return _historico_onu(None, onu["olt_id"], onu["porta"], onu["onu_id"], horas)
 
 
 # ------------------------------------------------------------------ coleta manual

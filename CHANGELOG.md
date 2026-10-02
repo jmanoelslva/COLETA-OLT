@@ -7,6 +7,21 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.5.0] - 2026-10-02
+
+### Adicionado
+
+- **Integração com o app técnico** (`/api/integracao/onu`): pelo serial da
+  ONU — igual no Controllr e na OLT — devolve o que o Controllr não guarda:
+  histórico de RX/TX da ONU e RX na OLT, quedas com motivo, hora, volta e
+  duração, alarmes ativos e a situação da PON (quantas caíram juntas nos
+  últimos 15 minutos). Também aceita OLT + porta + posição e tem
+  `POST /api/integracao/onu/atualizar` para ler a ONU na hora.
+- Token de serviço `COLETOR_SERVICO_TOKEN` (cabeçalho `X-Servico-Token`) só
+  para essas rotas; o instalador gera um no modo técnico, se ainda não houver.
+- O coletor registra quando o serial atual apareceu em cada posição
+  (`sn_desde`): após troca de ONU, o histórico entregue começa na troca.
+
 ## [1.4.1] - 2026-10-02
 
 ### Corrigido
@@ -178,7 +193,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.1...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.1...v1.5.0
 [1.4.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.3.0...v1.3.1

@@ -199,8 +199,8 @@ def coletar_onus(s: SessaoCData, olt: OltConfig, banco: Banco, estado: EstadoOlt
             for o in lista:
                 c.execute(
                     """INSERT INTO onus (olt_id, porta, onu_id, sn, descricao, control_flag, run_state, config_state,
-                                         match_state, last_down_cause, primeiro_visto, visto_em)
-                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+                                         match_state, last_down_cause, primeiro_visto, visto_em, sn_desde)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
                        ON CONFLICT(olt_id, porta, onu_id) DO UPDATE SET
                          sn = excluded.sn, control_flag = excluded.control_flag,
                          run_state = excluded.run_state, config_state = excluded.config_state,
@@ -210,10 +210,11 @@ def coletar_onus(s: SessaoCData, olt: OltConfig, banco: Banco, estado: EstadoOlt
                          -- (V3 traz a descrição na lista; V1 só no detalhe)
                          descricao = COALESCE(excluded.descricao,
                                               CASE WHEN onus.sn = excluded.sn THEN onus.descricao END),
-                         detalhe_em = CASE WHEN onus.sn = excluded.sn THEN onus.detalhe_em END""",
+                         detalhe_em = CASE WHEN onus.sn = excluded.sn THEN onus.detalhe_em END,
+                         sn_desde = CASE WHEN onus.sn = excluded.sn THEN onus.sn_desde ELSE excluded.sn_desde END""",
                     (olt.id, porta, o["onu_id"], o["sn"], o.get("descricao"), o["control_flag"], o["run_state"],
                      o["config_state"],
-                     o["match_state"], o["last_down_cause"], agora, agora),
+                     o["match_state"], o["last_down_cause"], agora, agora, agora),
                 )
             for sg in sinais:
                 c.execute(
