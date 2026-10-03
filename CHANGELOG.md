@@ -7,6 +7,16 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.6.2] - 2026-10-02
+
+### Alterado
+
+- Botão **voltar** do topo das páginas com cara de botão (seta e contorno,
+  área de toque maior) e dizendo para onde volta ("ONUs da PON 3", "OLTs").
+- Voltar retorna à tela anterior do jeito que estava: mesma PON, filtros,
+  busca e rolagem da lista de ONUs. Aberta por link direto, vai para a lista.
+- Depois de salvar ou excluir uma OLT, voltar não reabre o formulário.
+
 ## [1.6.1] - 2026-10-02
 
 ### Alterado
@@ -226,7 +236,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.1...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.2...HEAD
+[1.6.2]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.1...v1.6.0
 [1.5.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.0...v1.5.1

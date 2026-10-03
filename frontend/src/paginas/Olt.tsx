@@ -9,6 +9,7 @@ import { AbaDiagnostico } from './abas/AbaDiagnostico'
 import { AbaEquipamento } from './abas/AbaEquipamento'
 import { AbaHistorico } from './abas/AbaHistorico'
 import { AbaOnus } from './abas/AbaOnus'
+import { Voltar } from '../componentes/Voltar'
 
 const ABAS = [
   { id: 'diagnostico', nome: 'Diagnóstico' },
@@ -34,7 +35,7 @@ export function Olt() {
   return (
     <main className="pagina">
       <header className="topo">
-        <Link to="/" className="voltar">OLTs</Link>
+        <Voltar para="/" rotulo="OLTs" />
         <div className="topo-acoes">
           <h1>{olt?.nome ?? id}</h1>
           {admin && <Link to={`/olt/${id}/editar`} className="botao-sec">Editar cadastro</Link>}

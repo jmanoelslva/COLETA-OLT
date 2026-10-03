@@ -90,9 +90,17 @@ code { font-size: 0.9em; }
 .pagina { max-width: 1080px; margin: 0 auto; padding: 1.25rem 16px 4rem; }
 .topo { margin-bottom: 1.25rem; }
 .topo p { margin: 0.35rem 0 0; }
-.voltar { display: inline-block; color: var(--sutil); text-decoration: none; margin-bottom: 0.4rem; }
-.voltar::before { content: '‹ '; }
-.voltar:hover { color: var(--tinta); }
+.voltar {
+  display: inline-flex; align-items: center; gap: 0.3rem; min-height: 40px; max-width: 100%;
+  padding: 0.3rem 0.85rem 0.3rem 0.5rem; margin-bottom: 0.75rem;
+  border: 1px solid var(--linha-forte); border-radius: 999px; background: var(--painel);
+  color: var(--tinta); font-weight: 600; text-decoration: none;
+}
+.voltar span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.voltar svg { flex: none; color: var(--sutil); }
+.voltar:hover { border-color: var(--tinta); }
+.voltar:hover svg { color: var(--tinta); }
+.voltar:focus-visible { outline: 2px solid var(--fibra); outline-offset: 2px; }
 
 /* ---------- botões, chips, campos ---------- */
 

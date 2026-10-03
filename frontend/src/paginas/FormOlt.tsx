@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { api, ErroApi, type CadastroOlt, type Fabricante, type ResultadoTeste } from '../api'
+import { Voltar } from '../componentes/Voltar'
 
 const VAZIO: CadastroOlt = {
   id: '', nome: '', fabricante: 'cdata', modelo: '', host: '', porta_ssh: 22, usuario: '',
@@ -81,7 +82,7 @@ export function FormOlt() {
     setSalvando(true)
     try {
       const r = novo ? await api.criarOlt(dados) : await api.editarOlt(dados)
-      navegar(`/olt/${r.id}`)
+      navegar(`/olt/${r.id}`, { replace: true })  // voltar não reabre o formulário
     } catch (err) {
       if (err instanceof ErroApi && err.campos) setErros(err.campos)
       setMsg(err instanceof Error ? err.message : String(err))
@@ -107,7 +108,7 @@ export function FormOlt() {
   const confirmarExclusao = async () => {
     try {
       await api.excluirOlt(f.id, apagarHist)
-      navegar('/')
+      navegar('/', { replace: true })
     } catch (err) {
       setMsg(err instanceof Error ? err.message : String(err))
     }
@@ -118,7 +119,7 @@ export function FormOlt() {
   return (
     <main className="pagina">
       <header className="topo">
-        <Link to={novo ? '/' : `/olt/${id}`} className="voltar">{novo ? 'OLTs' : f.nome || id}</Link>
+        <Voltar para={novo ? '/' : `/olt/${id}`} rotulo={novo ? 'OLTs' : f.nome || id || 'OLT'} />
         <h1>{novo ? 'Cadastrar OLT' : 'Editar OLT'}</h1>
       </header>
 

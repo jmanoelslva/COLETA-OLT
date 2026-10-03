@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { api } from '../api'
 import { GraficoSinal } from '../componentes/GraficoSinal'
 import { Estado, useDados } from '../componentes/comum'
 import { ROTULO_CLASSE, dbm, duracao, ha, num } from '../formatos'
 import { useParametros } from '../parametros'
 import { AbaHistorico } from './abas/AbaHistorico'
+import { Voltar } from '../componentes/Voltar'
 
 const PERIODOS = [{ h: 24, nome: '24 h' }, { h: 72, nome: '3 dias' }, { h: 24 * 7, nome: '7 dias' }, { h: 24 * 30, nome: '30 dias' }, { h: 24 * 90, nome: '90 dias' }]
 
@@ -36,7 +37,7 @@ export function Onu() {
   return (
     <main className="pagina">
       <header className="topo">
-        <Link to={`/olt/${id}?aba=onus&porta=${porta}`} className="voltar">PON {porta}</Link>
+        <Voltar para={`/olt/${id}?aba=onus&porta=${porta}`} rotulo={`ONUs da PON ${porta}`} />
         <h1>{onu?.descricao ?? `ONU ${porta}/${onuId}`}</h1>
         {onu && (
           <p className="sutil">

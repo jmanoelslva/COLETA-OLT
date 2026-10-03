@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { TrocarSenhaAdmin } from '../admin'
 import { api, ErroApi, type Parametros as P } from '../api'
 import { useParametros } from '../parametros'
+import { Voltar } from '../componentes/Voltar'
 
 interface Campo { chave: string; nome: string; unidade: string; passo?: number; ajuda?: string }
 
@@ -123,7 +123,7 @@ export function Parametros() {
   return (
     <main className="pagina">
       <header className="topo">
-        <Link to="/" className="voltar">OLTs</Link>
+        <Voltar para="/" rotulo="OLTs" />
         <h1>Configurações</h1>
         <p className="sutil">Coletor de OLTs, versão {__VERSAO__}</p>
       </header>
