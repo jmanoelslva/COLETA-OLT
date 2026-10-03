@@ -7,6 +7,16 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.6.1] - 2026-10-02
+
+### Alterado
+
+- Lista de ONUs sem as barras de sinal: cada linha mostra só o RX ONU (▼) e o
+  RX OLT (▲) com a cor da faixa. O gráfico do sinal no tempo fica na tela da
+  ONU, aberta ao tocar na linha, com todos os detalhes.
+- Tela da ONU sem a barra de sinal: as leituras atuais e, logo abaixo, o
+  gráfico.
+
 ## [1.6.0] - 2026-10-02
 
 ### Adicionado
@@ -216,7 +226,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.0...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.1...HEAD
+[1.6.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.1...v1.6.0
 [1.5.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.1...v1.5.0

@@ -259,8 +259,8 @@ input[type='search'] { flex: 1 1 260px; }
 .onu-quem { display: flex; flex-direction: column; min-width: 0; }
 .onu-quem strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .onu-quem .sutil { font-size: 0.82rem; }
-.onu-sinal { grid-column: 2; display: grid; grid-template-columns: 1fr auto; gap: 0.75rem; align-items: center; }
-.onu-valores { display: flex; flex-direction: column; font: 600 0.92rem var(--fonte-cond); text-align: right; min-width: 4.8rem; }
+.onu-sinal { grid-column: 2; display: flex; gap: 1.25rem; font: 600 0.95rem var(--fonte-cond); }
+.onu-sinal span { min-width: 4.6rem; }
 .onu-off { grid-column: 2; color: var(--sutil); font-weight: 600; }
 .onu-alerta { grid-column: 2; font-size: 0.88rem; color: var(--sutil); }
 .grav-3 .onu-alerta { color: var(--critico); }
@@ -276,18 +276,6 @@ input[type='search'] { flex: 1 1 260px; }
 .v-critico { color: var(--critico); }
 .v-saturado { color: var(--saturado); }
 .v-sem_leitura { color: var(--sutil); }
-
-/* ---------- régua de sinal ---------- */
-
-.regua { display: block; overflow: visible; }
-.z-bom { fill: var(--z-bom); }
-.z-atencao { fill: var(--z-atencao); }
-.z-critico { fill: var(--z-critico); }
-.z-saturado { fill: var(--z-saturado); }
-.marcador { fill: var(--tinta); stroke: var(--painel); stroke-width: 1; }
-.regua-tique { stroke: var(--linha-forte); }
-.regua-num { fill: var(--sutil); font: 500 11px var(--fonte); }
-.regua-grande { margin: 1rem 0 0.5rem; }
 
 /* ---------- ONU detalhe ---------- */
 

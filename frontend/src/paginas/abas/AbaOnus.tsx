@@ -2,9 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { api, type DetalheOlt, type Onu } from '../../api'
 import { Estado, useDados } from '../../componentes/comum'
-import { Regua } from '../../componentes/Regua'
 import { ROTULO_CLASSE, ROTULO_MOTIVO, dbm, motivoOffline, type MotivoOffline } from '../../formatos'
-import { useParametros } from '../../parametros'
 
 type Filtro = 'todas' | 'problemas' | 'offline'
 
@@ -19,7 +17,6 @@ export function AbaOnus({ olt }: { olt: DetalheOlt }) {
   const [texto, setTexto] = useState('')
   // Buscando cliente/serial: procura na OLT inteira, não só na porta aberta.
   const buscandoTudo = texto.trim().length >= 2
-  const { limites } = useParametros()
   const alvo = buscandoTudo ? undefined : porta
   const { dados, erro, carregando, recarregar } = useDados(() => api.onus(olt.id, alvo), [olt.id, alvo], 60_000)
 
@@ -83,6 +80,7 @@ export function AbaOnus({ olt }: { olt: DetalheOlt }) {
         {buscandoTudo && <span>Resultado da busca em todas as PONs.</span>}
         <span className="marca-desc">▼</span> RX ONU, sinal que chega na ONU
         <span className="marca-sub">▲</span> RX OLT, sinal da ONU que chega na OLT
+        <span>Toque numa ONU para ver o gráfico do sinal e todos os detalhes.</span>
       </p>
       <Estado erro={erro} carregando={carregando} vazio={!dados} tentar={recarregar}>
         {lista.length === 0 && (
@@ -93,13 +91,13 @@ export function AbaOnus({ olt }: { olt: DetalheOlt }) {
           </p>
         )}
         <ul className="lista-onus">
-          {lista.map(o => <LinhaOnu key={`${o.porta}/${o.onu_id}`} o={o} oltId={olt.id} limites={limites} />)}
+          {lista.map(o => <LinhaOnu key={`${o.porta}/${o.onu_id}`} o={o} oltId={olt.id} />)}
         </ul>
       </Estado>
     </>
   )
 }
-function LinhaOnu({ o, oltId, limites }: { o: Onu; oltId: string; limites: ReturnType<typeof useParametros>['limites'] }) {
+function LinhaOnu({ o, oltId }: { o: Onu; oltId: string }) {
   return (
     <li>
       <Link to={`/olt/${oltId}/onu/${o.porta}/${o.onu_id}`} className={`onu-linha grav-${o.gravidade}`}>
@@ -110,11 +108,8 @@ function LinhaOnu({ o, oltId, limites }: { o: Onu; oltId: string; limites: Retur
         </span>
         {o.online ? (
           <span className="onu-sinal">
-            <Regua rx={o.rx} rxOlt={o.rx_olt} limites={limites} />
-            <span className="onu-valores">
-              <span className={`v-${o.classe_rx}`} title={ROTULO_CLASSE[o.classe_rx]}>▼ {dbm(o.rx)}</span>
-              <span className={`v-${o.classe_rx_olt}`} title={ROTULO_CLASSE[o.classe_rx_olt]}>▲ {dbm(o.rx_olt)}</span>
-            </span>
+            <span className={`v-${o.classe_rx}`} title={`RX ONU: ${ROTULO_CLASSE[o.classe_rx]}`}>▼ {dbm(o.rx)}</span>
+            <span className={`v-${o.classe_rx_olt}`} title={`RX OLT: ${ROTULO_CLASSE[o.classe_rx_olt]}`}>▲ {dbm(o.rx_olt)}</span>
           </span>
         ) : (
           <span className="onu-off">Offline{o.last_down_cause ? `: ${o.last_down_cause}` : ''}</span>

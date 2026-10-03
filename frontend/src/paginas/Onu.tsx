@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { api } from '../api'
 import { GraficoSinal } from '../componentes/GraficoSinal'
-import { Regua } from '../componentes/Regua'
 import { Estado, useDados } from '../componentes/comum'
 import { ROTULO_CLASSE, dbm, duracao, ha, num } from '../formatos'
 import { useParametros } from '../parametros'
@@ -63,7 +62,6 @@ export function Onu() {
 
               {onu.online && (
                 <>
-                  <Regua rx={onu.rx} rxOlt={onu.rx_olt} limites={limites} grande />
                   <dl className="leituras">
                     <div className={`v-${onu.classe_rx}`}>
                       <dt>▼ RX ONU</dt><dd>{dbm(onu.rx)}<small> dBm</small></dd>
