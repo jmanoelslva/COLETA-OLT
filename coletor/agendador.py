@@ -110,7 +110,8 @@ class ColetorOlt(threading.Thread):
     def _vencimentos(self) -> dict[str, float]:
         par = self.banco.parametros()
         venc = {t: self.ultima.get(t, 0.0) + float(par[self.driver.tipos[t][1]]) for t in self.driver.tipos}
-        venc["rx_olt"] = self.ultima.get("rx_olt", 0.0) + float(par["intervalo_rx_olt_s"])
+        if self.driver.coleta_rx_olt:
+            venc["rx_olt"] = self.ultima.get("rx_olt", 0.0) + float(par["intervalo_rx_olt_s"])
         return venc
 
     def _prioridade(self, tipo: str) -> float:
@@ -303,6 +304,9 @@ class Agendador:
 
     def forcar(self, olt_id: str, tipo: str, **kwargs) -> Future:
         c = self._coletor(olt_id)
+        if tipo == "rx_olt" and not c.driver.coleta_rx_olt:
+            raise ValueError("A coleta de RX OLT está desligada para este fabricante (pesava na CPU da OLT). "
+                             "Na C-DATA V3 o RX OLT vem junto da coleta de ONUs.")
         if tipo == "rx_olt":
             n = c.reiniciar_ciclo_rx(kwargs.get("portas"))
             f: Future = Future()

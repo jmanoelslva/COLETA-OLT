@@ -44,3 +44,20 @@ def test_porta_sem_ont(ambiente):
     with banco.conexao() as c:
         r = c.execute("SELECT total, online FROM pon_resumo WHERE olt_id = 'cd' AND porta = 2").fetchone()
     assert (r["total"], r["online"]) == (0, 0)
+
+
+def test_rx_olt_desligado_na_cdata(tmp_path):
+    from coletor import agendador as ag
+    from coletor.config import Settings
+    from coletor.drivers import DRIVERS
+
+    assert not DRIVERS["cdata"].coleta_rx_olt and DRIVERS["datacom"].coleta_rx_olt
+    b = db.Banco(tmp_path / "t.sqlite3")
+    olt = OltConfig(id="cd", nome="CD", host="x", usuario="u", senha="s", portas_pon=(1,))
+    s = Settings(dados=tmp_path, arquivo_olts=tmp_path / "x.toml", api_token="", cors_origens=())
+    c = ag.ColetorOlt(olt, b, s, coletas.EstadoOlt())
+    assert "rx_olt" not in c._vencimentos()
+    a = ag.Agendador([], b, s)
+    a.coletores["cd"] = c
+    with pytest.raises(ValueError):
+        a.forcar("cd", "rx_olt")

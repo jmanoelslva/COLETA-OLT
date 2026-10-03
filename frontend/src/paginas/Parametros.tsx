@@ -14,7 +14,7 @@ const GRUPOS: { titulo: string; texto: string; campos: Campo[] }[] = [
       { chave: 'intervalo_alarmes_s', nome: 'Alarmes', unidade: 'min' },
       { chave: 'intervalo_sistema_s', nome: 'Equipamento (CPU, temperatura, SFP)', unidade: 'min' },
       { chave: 'intervalo_onus_s', nome: 'ONUs e RX ONU', unidade: 'min' },
-      { chave: 'intervalo_rx_olt_s', nome: 'RX OLT', unidade: 'min', ajuda: 'Leva cerca de 1 min por porta PON.' },
+      { chave: 'intervalo_rx_olt_s', nome: 'RX OLT (Datacom)', unidade: 'min', ajuda: 'Na C-DATA fica desligado (pesava na CPU da OLT); na V3 o RX OLT vem junto das ONUs.' },
     ],
   },
   {

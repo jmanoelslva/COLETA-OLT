@@ -18,7 +18,7 @@ export interface StatusOlt {
 export interface ResumoOlt {
   id: string; nome: string; modelo: string; host: string; hostname: string | null
   portas_pon: number[]; ativa: number
-  fabricante: string; fabricante_nome: string; coleta_suportada: boolean
+  fabricante: string; fabricante_nome: string; coleta_suportada: boolean; coleta_rx_olt: boolean
   status: StatusOlt | null
   alarmes_ativos: Partial<Record<Severidade, number>>
   onus: { total: number; online: number }

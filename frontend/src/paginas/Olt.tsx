@@ -128,7 +128,7 @@ function ColetarAgora({ olt, aoTerminar }: { olt: DetalheOlt; aoTerminar: () => 
         <div className="coletar-form">
           <fieldset>
             <legend>O que coletar</legend>
-            {TIPOS.map(t => (
+            {TIPOS.filter(t => t.id !== 'rx_olt' || olt.coleta_rx_olt).map(t => (
               <label key={t.id} className="opcao">
                 <input type="radio" name="tipo" value={t.id} checked={tipo === t.id} onChange={() => setTipo(t.id)} />
                 {t.nome} <span className="sutil">{t.dica}</span>

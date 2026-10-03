@@ -7,6 +7,19 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.6.6] - 2026-10-03
+
+### Alterado
+
+- **Coleta de RX OLT desligada nas OLTs C-DATA.** O `show port ddm-info
+  <porta> with-onu-optical` (firmware V1.x) sobrecarregava a CPU da OLT. Na
+  V3.x o RX OLT continua chegando junto da coleta de ONUs (`optical-info ...
+  all`), e o SFP da PON segue lido no ciclo de equipamento. Nas C-DATA V1 o
+  RX OLT deixa de ser atualizado (fica "—"); o RX ONU não muda. Na Datacom
+  nada muda.
+- "Coletar agora" não oferece RX OLT nas C-DATA, e o intervalo de RX OLT em
+  Configurações passa a dizer que vale só para a Datacom.
+
 ## [1.6.5] - 2026-10-02
 
 ### Alterado
@@ -265,7 +278,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.5...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.6...HEAD
+[1.6.6]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.5...v1.6.6
 [1.6.5]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.4...v1.6.5
 [1.6.4]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.3...v1.6.4
 [1.6.3]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.2...v1.6.3

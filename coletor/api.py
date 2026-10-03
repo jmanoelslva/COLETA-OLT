@@ -21,6 +21,7 @@ from fastapi.staticfiles import StaticFiles
 from . import alarmes as cat
 from . import __version__, acl, admin, analise, integracao, inventario, sessao_tecnico
 from .agendador import TIPOS, Agendador
+from .drivers import DRIVERS
 from .cdata.parsers import ErroCli
 from .cdata.sessao import ErroSessao
 from .cofre import Cofre
@@ -113,6 +114,8 @@ def _publico(r) -> dict:
     fab = inventario.FABRICANTES.get(o.get("fabricante", ""), {})
     o["fabricante_nome"] = fab.get("nome", o.get("fabricante"))
     o["coleta_suportada"] = bool(fab.get("coleta"))
+    driver = DRIVERS.get(o.get("fabricante", ""))
+    o["coleta_rx_olt"] = bool(driver and driver.coleta_rx_olt)
     return o
 
 
@@ -128,7 +131,11 @@ def _status_mais_recente(c, olt_id: str) -> dict | None:
 
 def _ultimas_coletas(c, olt_id: str) -> dict:
     out = {}
+    fab = c.execute("SELECT fabricante FROM olts WHERE id = ?", (olt_id,)).fetchone()
+    driver = DRIVERS.get(fab["fabricante"]) if fab else None
     for t in TIPOS:
+        if t == "rx_olt" and not (driver and driver.coleta_rx_olt):
+            continue  # desligado (C-DATA): uma falha antiga não fica aparecendo
         r = c.execute(
             "SELECT inicio, fim, ok, erro FROM coletas WHERE olt_id = ? AND tipo = ? ORDER BY inicio DESC LIMIT 1",
             (olt_id, t),
@@ -582,6 +589,8 @@ async def coletar_agora(olt_id: str, tipo: str, porta: int | None = None, espera
         futuro = _agendador().forcar(olt_id, tipo, **kwargs)
     except KeyError:
         raise HTTPException(409, "a coleta desta OLT está pausada ou o fabricante ainda não é suportado")
+    except ValueError as e:
+        raise HTTPException(409, str(e))
     if not esperar:
         return {"enfileirado": True}
     return await _esperar(futuro, 900 if tipo == "rx_olt" else 300)

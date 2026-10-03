@@ -23,6 +23,8 @@ class Driver:
     itens_rx: Callable[..., list[dict]]
     funcao_rx: Rotina
     consultar_onu: Rotina
+    # Ciclo próprio de "RX OLT" ligado? (C-DATA: desligado, ver abaixo)
+    coleta_rx_olt: bool = True
 
 
 CDATA = Driver(
@@ -36,6 +38,10 @@ CDATA = Driver(
     itens_rx=lambda olt, banco, estado, portas=None: [{"portas": [p]} for p in (portas or olt.portas_pon)],
     funcao_rx=cdata.coletar_rx_olt,
     consultar_onu=cdata.consultar_onu,
+    # Desligado: na V1.x o `ddm-info ... with-onu-optical` sobrecarrega a CPU
+    # da OLT. Na V3.x o RX OLT já vem no ciclo de ONUs (`optical-info ... all`),
+    # e o SFP da PON é lido no ciclo de equipamento.
+    coleta_rx_olt=False,
 )
 
 DATACOM = Driver(
