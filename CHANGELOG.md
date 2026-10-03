@@ -7,6 +7,19 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.6.3] - 2026-10-02
+
+### Corrigido
+
+- Instalador aceitava qualquer número como porta local do coletor (ex.: "1"
+  digitado por engano) e o serviço não subia (porta abaixo de 1024 precisa de
+  root). Agora só aceita de 1024 a 65535, e uma porta inválida salva numa
+  instalação anterior não volta como padrão (usa 8090).
+- Instalador não percebia que tinha sido atualizado quando rodado do próprio
+  repositório (`/opt/coletor-olt/deploy/install.sh`, o uso normal): comparava
+  o arquivo com ele mesmo depois do `git pull`. Agora compara o conteúdo de
+  antes e depois do pull e, se mudou, continua pela versão nova.
+
 ## [1.6.2] - 2026-10-02
 
 ### Alterado
@@ -236,7 +249,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.2...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.3...HEAD
+[1.6.3]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.2...v1.6.3
 [1.6.2]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.1...v1.6.0

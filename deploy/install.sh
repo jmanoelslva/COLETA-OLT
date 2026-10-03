@@ -120,7 +120,13 @@ if [ -d "$INSTALL_DIR/.git" ] && [ -z "${COLETOR_INSTALADOR_NOVO:-}" ] && comman
   git_pre() { git -c safe.directory="$INSTALL_DIR" -C "$INSTALL_DIR" "$@"; }
   info "Buscando a versão mais recente do coletor..."
   [ -z "$(git_pre status --porcelain --untracked-files=no)" ] || git_pre checkout -- .
-  if git_pre pull --ff-only --quiet && ! cmp -s "$0" "$INSTALL_DIR/deploy/install.sh"; then
+  # Rodando o próprio arquivo do repositório (o normal), o "git pull" troca
+  # esse arquivo: compara o conteúdo de antes e depois do pull. Rodando uma
+  # cópia de outro lugar, compara a cópia com o do repositório.
+  ANTES="$(git_pre hash-object deploy/install.sh 2>/dev/null || true)"
+  git_pre pull --ff-only --quiet || true
+  DEPOIS="$(git_pre hash-object deploy/install.sh 2>/dev/null || true)"
+  if [ "$ANTES" != "$DEPOIS" ] || ! cmp -s "$0" "$INSTALL_DIR/deploy/install.sh"; then
     info "O instalador foi atualizado; continuando pela versão nova..."
     trap - ERR
     exec env COLETOR_INSTALADOR_NOVO=1 bash "$INSTALL_DIR/deploy/install.sh" "$@"
@@ -185,9 +191,13 @@ else
   fi
 fi
 
+porta_valida() { [[ "$1" =~ ^[0-9]+$ ]] && [ "$1" -ge 1024 ] && [ "$1" -le 65535 ]; }
+# Resposta salva inválida (ex.: "1" digitado por engano numa instalação
+# anterior) não vira padrão de novo.
+porta_valida "$DEFAULT_PORT" || DEFAULT_PORT="8090"
 read -rp "Porta local do coletor (Enter para usar '$DEFAULT_PORT'): " BACKEND_PORT
 BACKEND_PORT="${BACKEND_PORT:-$DEFAULT_PORT}"
-[[ "$BACKEND_PORT" =~ ^[0-9]+$ ]] || err "Porta inválida: '$BACKEND_PORT'."
+porta_valida "$BACKEND_PORT" || err "Porta inválida: '$BACKEND_PORT'. Use um número de 1024 a 65535 (o normal é 8090)."
 [ "$BACKEND_PORT" = "$TEC_PORTA" ] && err "A porta $BACKEND_PORT é a do backend do app técnico. Escolha outra."
 
 echo "IPs/redes (IPv4 ou IPv6) que podem abrir o coletor, separados por espaço (ex: 177.85.130.0/24 2804:abc::/32)."
