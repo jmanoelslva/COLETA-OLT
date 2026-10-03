@@ -576,7 +576,7 @@ a.motivo:hover b { background: var(--cor); color: var(--painel); }
 .voltar-tecnico:hover { border-color: var(--fibra); }
 .voltar-tecnico:hover svg { color: var(--fibra); }
 .voltar-tecnico:focus-visible { outline: 2px solid var(--fibra); outline-offset: 2px; }
-@media (max-width: 480px) { .barra-esquerda .marca-nome { display: none; } }
+@media (max-width: 480px) { .marca-empresa { display: none; } }
 .barra-usuario { font-size: 0.85rem; opacity: 0.75; }
 @media (max-width: 480px) { .barra-usuario { display: none; } }
 

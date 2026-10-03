@@ -7,6 +7,13 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.6.5] - 2026-10-02
+
+### Alterado
+
+- No celular, a barra mostra "OLTs" ao lado do ícone (antes só o ícone); o
+  "HOTNET" continua só em telas maiores.
+
 ## [1.6.4] - 2026-10-02
 
 ### Alterado
@@ -258,7 +265,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.4...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.5...HEAD
+[1.6.5]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.4...v1.6.5
 [1.6.4]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.3...v1.6.4
 [1.6.3]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.2...v1.6.3
 [1.6.2]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.1...v1.6.2

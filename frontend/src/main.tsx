@@ -44,7 +44,7 @@ function App() {
             <path d="M3 22c6 0 8-12 14-12h12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
             <circle cx="27" cy="10" r="3.2" className="marca-ponto" />
           </svg>
-          <span className="marca-nome">OLTs HOTNET</span>
+          <span>OLTs<span className="marca-empresa"> HOTNET</span></span>
         </Link>
         </span>
         <span className="barra-direita">
