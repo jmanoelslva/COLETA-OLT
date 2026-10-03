@@ -432,6 +432,13 @@ systemctl is-active --quiet "$SERVICE_NAME" \
   || err "O serviço $SERVICE_NAME não subiu — veja 'journalctl -u $SERVICE_NAME -n 50'."
 ok "Coletor rodando em 127.0.0.1:$BACKEND_PORT."
 
+# Admin do coletor: só ele cadastra/edita/exclui OLTs e muda as Configurações.
+# Pergunta só na primeira vez (depois, troca pela tela ou com o comando abaixo).
+ADMIN_CMD="cd $INSTALL_DIR && sudo -u $SERVICE_USER env COLETOR_DADOS=$DATA_DIR .venv/bin/python -m coletor.admin"
+if ! ( cd "$INSTALL_DIR" && sudo -H -u "$SERVICE_USER" env COLETOR_DADOS="$DATA_DIR" .venv/bin/python -m coletor.admin --se-vazio ); then
+  warn "Admin do coletor não definido. Sem ele ninguém cadastra OLTs. Defina com: $ADMIN_CMD"
+fi
+
 # --------------------------------------------------------------------------
 # 11. Build do frontend (em /olt/ quando vai dentro do app técnico)
 # --------------------------------------------------------------------------
@@ -619,13 +626,15 @@ cat <<RESUMO
   Logs:             journalctl -u $SERVICE_NAME -f
   Dados:            $DATA_DIR  (banco SQLite e chave.key — faça backup dos dois)
   Configuração:     $ENV_FILE
+  Admin do coletor: botão "Admin" no alto da tela (cadastro de OLTs e Configurações)
+                    trocar usuário/senha pelo servidor: $ADMIN_CMD
 
   IMPORTANTE: as OLTs precisam aceitar SSH vindo deste servidor.
   IP de saída deste servidor: $IP_SAIDA
   Libere esse IP na ACL/firewall de gerência de cada OLT antes de cadastrar.
 
-  Próximo passo: abra o coletor e cadastre as OLTs em "Cadastrar OLT"
-  (use "Testar acesso" antes de salvar).
+  Próximo passo: abra o coletor, entre em "Admin" e cadastre as OLTs em
+  "Cadastrar OLT" (use "Testar acesso" antes de salvar).
 
   Para atualizar depois, rode este mesmo script de novo.
 

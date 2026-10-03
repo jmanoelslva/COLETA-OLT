@@ -138,7 +138,15 @@ async function pedir<T>(caminho: string, init?: RequestInit): Promise<T> {
   return r.json() as Promise<T>
 }
 
+export type EstadoAdmin = { configurado: boolean; logado: boolean; usuario: string | null }
+
 export const api = {
+  admin: () => pedir<EstadoAdmin>('/admin'),
+  entrarAdmin: (usuario: string, senha: string) =>
+    pedir<EstadoAdmin>('/admin/entrar', { method: 'POST', body: JSON.stringify({ usuario, senha }) }),
+  sairAdmin: () => pedir<EstadoAdmin>('/admin/sair', { method: 'POST' }),
+  trocarSenhaAdmin: (d: { usuario: string; senha_atual: string; nova_senha: string }) =>
+    pedir<EstadoAdmin>('/admin/senha', { method: 'PUT', body: JSON.stringify(d) }),
   olts: () => pedir<ResumoOlt[]>('/olts'),
   olt: (id: string) => pedir<DetalheOlt>(`/olts/${id}`),
   statusHistorico: (id: string, horas = 24) =>

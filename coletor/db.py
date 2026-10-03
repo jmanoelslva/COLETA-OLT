@@ -21,6 +21,14 @@ CREATE TABLE IF NOT EXISTS olts (
 );
 -- Demais colunas de olts (fabricante, credenciais...) vêm de MIGRACOES_OLTS.
 
+-- Admin do coletor (uma linha só). Senha só como hash scrypt (ver coletor/admin.py).
+CREATE TABLE IF NOT EXISTS admin (
+    id INTEGER PRIMARY KEY CHECK (id = 1),
+    usuario TEXT NOT NULL,
+    senha_hash TEXT NOT NULL,
+    atualizado_em TEXT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS parametros (
     chave TEXT PRIMARY KEY,
     valor TEXT NOT NULL                -- JSON

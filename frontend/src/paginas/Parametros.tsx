@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { TrocarSenhaAdmin } from '../admin'
 import { api, ErroApi, type Parametros as P } from '../api'
 import { useParametros } from '../parametros'
 
@@ -181,6 +182,7 @@ export function Parametros() {
         </form>
       )}
       {valores && <AclIps atual={aclDe(valores)} aoSalvar={v => { aplicar(v) }} />}
+      <TrocarSenhaAdmin />
       {!valores && msg && <p className="aviso-erro">{msg.texto}</p>}
     </main>
   )

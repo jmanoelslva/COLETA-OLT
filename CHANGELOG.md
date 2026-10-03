@@ -7,6 +7,21 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.6.0] - 2026-10-02
+
+### Adicionado
+
+- **Acesso de admin.** Botão **Admin** no alto da tela, com usuário e senha
+  próprios do coletor. Só o admin cadastra, edita e exclui OLTs, vê o
+  cadastro (credenciais), testa acesso e muda as Configurações (intervalos,
+  faixas, IPs liberados). Os técnicos continuam vendo tudo e forçando coletas.
+  O servidor confere em toda ação (403 sem o login de admin).
+- Senha do admin guardada só como hash scrypt; sessão de 8 h em cookie
+  HttpOnly/SameSite=Strict; 5 tentativas erradas bloqueiam o IP por 15
+  minutos; trocar usuário/senha encerra as outras sessões de admin.
+- Troca de usuário/senha em Configurações → Acesso de admin, ou pelo servidor
+  com `python -m coletor.admin`. O instalador pergunta o admin na primeira vez.
+
 ## [1.5.1] - 2026-10-02
 
 ### Corrigido
@@ -201,7 +216,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.1...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.1...v1.6.0
 [1.5.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.1...v1.5.0
 [1.4.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.4.0...v1.4.1

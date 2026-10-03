@@ -576,3 +576,27 @@ a.motivo:hover b { background: var(--cor); color: var(--painel); }
 
 /* Cadastro de OLT: cada campo ocupa só a altura do próprio conteúdo (sem esticar o input). */
 .form-olt .campo { align-content: start; }
+
+/* ---------- admin ---------- */
+
+.barra-botao { background: none; border: none; color: inherit; padding: 0; min-height: 44px; }
+.barra-admin { display: inline-flex; align-items: center; gap: 0.75rem; }
+.barra-admin-selo {
+  font: 600 0.8rem var(--fonte-cond); padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--fibra); color: #16202a;
+}
+.janela {
+  border: 1px solid var(--linha-forte); border-radius: var(--raio); padding: 0;
+  background: var(--painel); color: var(--tinta); width: min(92vw, 380px);
+}
+.janela::backdrop { background: rgb(0 0 0 / 45%); }
+.janela-form { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.25rem; }
+.janela-form h2 { margin: 0; font: 600 1.2rem var(--fonte-cond); }
+.janela-form label, .campos-admin label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 600; }
+.janela-form input, .campos-admin input {
+  font: inherit; padding: 0.55rem 0.7rem; min-height: 44px; border-radius: var(--raio);
+  border: 1px solid var(--linha-forte); background: var(--fundo); color: var(--tinta);
+}
+.janela-form code { font-size: 0.85em; word-break: break-all; }
+.janela-acoes { display: flex; justify-content: flex-end; gap: 0.5rem; }
+.campos-admin { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; margin-bottom: 0.75rem; }

@@ -101,6 +101,15 @@ Testes: `python -m pytest`.
 
 ## Segurança
 
+- **Admin do coletor**: ver as OLTs, alarmes e ONUs e forçar coletas é para
+  qualquer técnico; cadastrar, editar e excluir OLTs, ver o cadastro
+  (credenciais), testar acesso e mudar as Configurações (intervalos, faixas,
+  IPs liberados) só com o login de admin — botão **Admin** no alto da tela.
+  Usuário e senha próprios, guardados só como hash scrypt; sessão de 8 h em
+  cookie HttpOnly; 5 tentativas erradas bloqueiam o IP por 15 minutos. O
+  instalador pergunta na primeira vez; para trocar pelo servidor:
+  `cd /opt/coletor-olt && sudo -u coletor-olt env COLETOR_DADOS=/var/lib/coletor-olt .venv/bin/python -m coletor.admin`
+  (ou em Configurações → Acesso de admin).
 - Só comandos de leitura (`show ...`) e navegação entre views são enviados.
 - A primeira conexão grava a chave SSH da OLT em `dados/known_hosts`; se
   ela mudar depois, a conexão é recusada.
@@ -120,7 +129,13 @@ Testes: `python -m pytest`.
 | POST | `/api/olts/{id}/onus/{porta}/{onu}/atualizar` | lê a ONU na OLT agora |
 | GET | `/api/olts/{id}/onus/{porta}/{onu}/sinais?horas=` | série histórica |
 | POST | `/api/olts/{id}/coletar/{alarmes\|sistema\|onus\|rx_olt}?porta=` | força uma coleta |
-| GET/PUT | `/api/parametros` | intervalos, faixas, retenção |
+| GET/PUT | `/api/parametros` | intervalos, faixas, retenção (PUT só admin) |
+| GET | `/api/admin` | se há admin definido e se esta sessão é de admin |
+| POST | `/api/admin/entrar` / `/api/admin/sair` | login de admin (cookie `coletor_admin`) |
+| PUT | `/api/admin/senha` | troca usuário/senha do admin (pede a senha atual) |
+
+Só admin: `POST /api/olts`, `PUT`/`DELETE /api/olts/{id}`, `GET /api/olts/{id}/cadastro`,
+`POST /api/olts/testar` e `PUT /api/parametros` (403 sem o login de admin).
 
 ### Integração com o app técnico
 

@@ -15,11 +15,11 @@ from typing import Any
 from fastapi import Depends, FastAPI, HTTPException, Query, Request
 from fastapi.concurrency import run_in_threadpool
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from . import alarmes as cat
-from . import __version__, acl, analise, integracao, inventario, sessao_tecnico
+from . import __version__, acl, admin, analise, integracao, inventario, sessao_tecnico
 from .agendador import TIPOS, Agendador
 from .cdata.parsers import ErroCli
 from .cdata.sessao import ErroSessao
@@ -153,6 +153,76 @@ def autenticar_servico(request: Request) -> None:
 
 
 servico = Depends(autenticar_servico)
+
+# ------------------------------------------------------------------ admin
+
+COOKIE_ADMIN = "coletor_admin"
+sessoes_admin = admin.Sessoes()
+
+
+def _usuario_admin(request: Request) -> str | None:
+    return sessoes_admin.validar(request.cookies.get(COOKIE_ADMIN), admin.marca(banco))
+
+
+def exigir_admin(request: Request) -> None:
+    """Cadastro de OLTs e Configurações: só com o login de admin do coletor."""
+    if _usuario_admin(request) is None:
+        # 403 (e não 401): 401 faz a interface mandar para o login do app técnico.
+        raise HTTPException(403, "Só o admin do coletor pode fazer isso. Entre em Admin, no alto da tela.")
+
+
+so_admin = Depends(exigir_admin)
+
+
+@app.get("/api/admin", dependencies=[rotas])
+def estado_admin(request: Request) -> dict:
+    usuario = _usuario_admin(request)
+    return {"configurado": admin.configurado(banco), "logado": usuario is not None, "usuario": usuario}
+
+
+@app.post("/api/admin/entrar", dependencies=[rotas])
+def entrar_admin(corpo: dict[str, Any], request: Request, response: Response) -> dict:
+    chave = acl.ip_do_pedido(request) or "local"
+    if sessoes_admin.bloqueado(chave):
+        raise HTTPException(429, "Muitas tentativas erradas. Espere 15 minutos e tente de novo.")
+    if not admin.configurado(banco):
+        raise HTTPException(409, "Admin ainda não definido. No servidor: sudo bash /opt/coletor-olt/deploy/install.sh")
+    usuario, senha = str(corpo.get("usuario") or ""), str(corpo.get("senha") or "")
+    if not admin.conferir(banco, usuario, senha):
+        sessoes_admin.falhou(chave)
+        log.warning("login de admin recusado (IP %s, usuário %r)", chave, usuario[:64])
+        raise HTTPException(401, "Usuário ou senha de admin incorretos.")
+    sessoes_admin.acertou(chave)
+    token = sessoes_admin.criar(usuario.strip(), admin.marca(banco) or "")
+    https = request.url.scheme == "https" or request.headers.get("x-forwarded-proto") == "https"
+    response.set_cookie(COOKIE_ADMIN, token, max_age=admin.SESSAO_S, httponly=True, secure=https,
+                        samesite="strict", path="/")
+    log.info("admin %s entrou (IP %s)", usuario.strip(), chave)
+    return {"configurado": True, "logado": True, "usuario": usuario.strip()}
+
+
+@app.post("/api/admin/sair", dependencies=[rotas])
+def sair_admin(request: Request, response: Response) -> dict:
+    sessoes_admin.encerrar(request.cookies.get(COOKIE_ADMIN))
+    response.delete_cookie(COOKIE_ADMIN, path="/")
+    return {"configurado": admin.configurado(banco), "logado": False, "usuario": None}
+
+
+@app.put("/api/admin/senha", dependencies=[rotas, so_admin])
+def trocar_senha_admin(corpo: dict[str, Any], request: Request, response: Response) -> dict:
+    """Troca usuário/senha do admin (pede a senha atual). Encerra as outras sessões."""
+    atual = admin.usuario_atual(banco) or ""
+    if not admin.conferir(banco, atual, str(corpo.get("senha_atual") or "")):
+        raise HTTPException(422, {"senha_atual": "senha atual incorreta"})
+    novo_usuario = str(corpo.get("usuario") or atual).strip()
+    nova = str(corpo.get("nova_senha") or "")
+    erros = admin.validar_credenciais(novo_usuario, nova)
+    if erros:
+        raise HTTPException(422, {"nova_senha" if k == "senha" else k: v for k, v in erros.items()})
+    admin.definir(banco, novo_usuario, nova)
+    sessoes_admin.encerrar_todas()
+    log.info("usuário/senha do admin trocados")
+    return entrar_admin({"usuario": novo_usuario, "senha": nova}, request, response)
 
 
 # ------------------------------------------------------------------ OLTs
@@ -551,7 +621,7 @@ def fabricantes() -> dict:
     return inventario.FABRICANTES
 
 
-@app.get("/api/olts/{olt_id}/cadastro", dependencies=[rotas])
+@app.get("/api/olts/{olt_id}/cadastro", dependencies=[rotas, so_admin])
 def ler_cadastro(olt_id: str) -> dict:
     d = inventario.cadastro_publico(banco, olt_id)
     if not d:
@@ -567,7 +637,7 @@ def _corpo_olt(corpo: dict[str, Any], olt_id: str | None) -> dict:
     return dados
 
 
-@app.post("/api/olts", dependencies=[rotas], status_code=201)
+@app.post("/api/olts", dependencies=[rotas, so_admin], status_code=201)
 def criar_olt(corpo: dict[str, Any]) -> dict:
     dados = _corpo_olt(corpo, None)
     erros = inventario.validar(dados, novo=True)
@@ -580,7 +650,7 @@ def criar_olt(corpo: dict[str, Any]) -> dict:
     return inventario.cadastro_publico(banco, dados["id"])
 
 
-@app.put("/api/olts/{olt_id}", dependencies=[rotas])
+@app.put("/api/olts/{olt_id}", dependencies=[rotas, so_admin])
 def editar_olt(olt_id: str, corpo: dict[str, Any]) -> dict:
     if not inventario.cadastro_publico(banco, olt_id):
         raise HTTPException(404, "OLT não encontrada")
@@ -593,7 +663,7 @@ def editar_olt(olt_id: str, corpo: dict[str, Any]) -> dict:
     return inventario.cadastro_publico(banco, olt_id)
 
 
-@app.delete("/api/olts/{olt_id}", dependencies=[rotas])
+@app.delete("/api/olts/{olt_id}", dependencies=[rotas, so_admin])
 def excluir_olt(olt_id: str, apagar_historico: bool = False) -> dict:
     if not inventario.cadastro_publico(banco, olt_id):
         raise HTTPException(404, "OLT não encontrada")
@@ -602,7 +672,7 @@ def excluir_olt(olt_id: str, apagar_historico: bool = False) -> dict:
     return {"excluida": olt_id, "historico_apagado": apagar_historico}
 
 
-@app.post("/api/olts/testar", dependencies=[rotas])
+@app.post("/api/olts/testar", dependencies=[rotas, so_admin])
 async def testar_conexao(corpo: dict[str, Any]) -> dict:
     """Testa com os dados do formulário. Senha em branco + `id` de OLT existente
     usa a senha guardada."""
@@ -651,7 +721,7 @@ def meu_acesso(request: Request) -> dict:
             "usuario": tecnico.usuario if tecnico else None}
 
 
-@app.put("/api/parametros", dependencies=[rotas])
+@app.put("/api/parametros", dependencies=[rotas, so_admin])
 def salvar_parametros(novos: dict[str, Any], request: Request) -> dict:
     erros = {}
     limpos = {}

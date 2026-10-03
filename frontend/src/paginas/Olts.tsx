@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useAdmin } from '../admin'
 import { api, type Incidente, type ResumoOlt } from '../api'
 import { Estado, Sev, useDados } from '../componentes/comum'
 import { duracao, ha, num } from '../formatos'
@@ -28,16 +29,17 @@ function saudeDa(o: ResumoOlt, inc: Incidente[] | undefined): Saude {
 export function Olts() {
   const { dados, erro, carregando, recarregar } = useDados(api.olts, [], 30_000)
   const incidentes = useIncidentes(dados)
+  const { admin } = useAdmin()
 
   return (
     <main className="pagina inicio">
       <header className="topo topo-acoes">
         <h1>Rede</h1>
-        <Link to="/olts/nova" className="botao-sec">Cadastrar OLT</Link>
+        {admin && <Link to="/olts/nova" className="botao-sec">Cadastrar OLT</Link>}
       </header>
       <Estado erro={erro} carregando={carregando} vazio={!dados} tentar={recarregar}>
         {dados?.length === 0 && (
-          <p className="vazio">Nenhuma OLT cadastrada ainda. Use Cadastrar OLT para incluir a primeira.</p>
+          <p className="vazio">Nenhuma OLT cadastrada ainda. O admin do coletor cadastra em Cadastrar OLT (entre em Admin, no alto da tela).</p>
         )}
         {dados && dados.length > 0 && (
           <>

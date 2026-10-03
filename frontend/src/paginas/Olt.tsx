@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
+import { useAdmin } from '../admin'
 import { api, type DetalheOlt } from '../api'
 import { Estado, useDados } from '../componentes/comum'
 import { duracao, ha, quando } from '../formatos'
@@ -22,6 +23,7 @@ export function Olt() {
   const [busca, setBusca] = useSearchParams()
   const aba = busca.get('aba') ?? 'diagnostico'
   const { dados: olt, erro, carregando, recarregar } = useDados(() => api.olt(id), [id], 20_000)
+  const { admin } = useAdmin()
 
   const trocar = (a: string) => {
     const n = new URLSearchParams(busca)
@@ -35,7 +37,7 @@ export function Olt() {
         <Link to="/" className="voltar">OLTs</Link>
         <div className="topo-acoes">
           <h1>{olt?.nome ?? id}</h1>
-          <Link to={`/olt/${id}/editar`} className="botao-sec">Editar cadastro</Link>
+          {admin && <Link to={`/olt/${id}/editar`} className="botao-sec">Editar cadastro</Link>}
         </div>
         {olt && <Resumo olt={olt} />}
       </header>

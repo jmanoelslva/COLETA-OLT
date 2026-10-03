@@ -7,6 +7,7 @@ import { Olts } from './paginas/Olts'
 import { Onu } from './paginas/Onu'
 import { Parametros } from './paginas/Parametros'
 import { api, DENTRO_DO_TECNICO } from './api'
+import { BotaoAdmin, ProvedorAdmin, SoAdmin, useAdmin } from './admin'
 import { ProvedorParametros } from './parametros'
 import './estilo.css'
 
@@ -17,8 +18,15 @@ function UsuarioTecnico() {
   return usuario ? <span className="barra-usuario">{usuario}</span> : null
 }
 
+/** Configurações só aparece para o admin. */
+function LinkConfiguracoes() {
+  const { admin } = useAdmin()
+  return admin ? <NavLink to="/configuracoes" className="barra-link">Configurações</NavLink> : null
+}
+
 function App() {
   return (
+    <ProvedorAdmin>
     <ProvedorParametros>
       <div className="barra">
         <Link to="/" className="marca" aria-label="Início">
@@ -31,19 +39,21 @@ function App() {
         <span className="barra-direita">
           {DENTRO_DO_TECNICO && <UsuarioTecnico />}
           {DENTRO_DO_TECNICO && <a href="/" className="barra-link">‹ App técnico</a>}
-          <NavLink to="/configuracoes" className="barra-link">Configurações</NavLink>
+          <LinkConfiguracoes />
+          <BotaoAdmin />
         </span>
       </div>
       <Routes>
         <Route path="/" element={<Olts />} />
-        <Route path="/olts/nova" element={<FormOlt />} />
-        <Route path="/olt/:id/editar" element={<FormOlt />} />
+        <Route path="/olts/nova" element={<SoAdmin><FormOlt /></SoAdmin>} />
+        <Route path="/olt/:id/editar" element={<SoAdmin><FormOlt /></SoAdmin>} />
         <Route path="/olt/:id" element={<Olt />} />
         <Route path="/olt/:id/onu/:porta/:onu" element={<Onu />} />
-        <Route path="/configuracoes" element={<Parametros />} />
+        <Route path="/configuracoes" element={<SoAdmin><Parametros /></SoAdmin>} />
         <Route path="*" element={<main className="pagina"><p className="vazio">Página não encontrada. <Link to="/">Voltar às OLTs</Link></p></main>} />
       </Routes>
     </ProvedorParametros>
+    </ProvedorAdmin>
   )
 }
 
