@@ -29,16 +29,26 @@ function App() {
     <ProvedorAdmin>
     <ProvedorParametros>
       <div className="barra">
+        <span className="barra-esquerda">
+        {/* Dentro do app técnico: volta para ele (sai do coletor, recarrega o PWA). */}
+        {DENTRO_DO_TECNICO && (
+          <a href="/" className="voltar-tecnico" aria-label="Voltar para o app técnico">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <span>App técnico</span>
+          </a>
+        )}
         <Link to="/" className="marca" aria-label="Início">
           <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
             <path d="M3 22c6 0 8-12 14-12h12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
             <circle cx="27" cy="10" r="3.2" className="marca-ponto" />
           </svg>
-          OLTs HOTNET
+          <span className="marca-nome">OLTs HOTNET</span>
         </Link>
+        </span>
         <span className="barra-direita">
           {DENTRO_DO_TECNICO && <UsuarioTecnico />}
-          {DENTRO_DO_TECNICO && <a href="/" className="barra-link">‹ App técnico</a>}
           <LinkConfiguracoes />
           <BotaoAdmin />
         </span>

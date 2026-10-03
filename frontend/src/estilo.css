@@ -567,6 +567,16 @@ a.motivo:hover b { background: var(--cor); color: var(--painel); }
 
 /* Barra de cima: atalhos à direita (App técnico, usuário, Configurações). */
 .barra-direita { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: flex-end; }
+.barra-esquerda { display: flex; align-items: center; gap: 0.75rem; min-width: 0; }
+.voltar-tecnico {
+  display: inline-flex; align-items: center; gap: 0.25rem; min-height: 40px; flex: none;
+  padding: 0.25rem 0.8rem 0.25rem 0.45rem; border-radius: 999px;
+  border: 1px solid rgb(255 255 255 / 35%); color: inherit; font-weight: 600; text-decoration: none;
+}
+.voltar-tecnico:hover { border-color: var(--fibra); }
+.voltar-tecnico:hover svg { color: var(--fibra); }
+.voltar-tecnico:focus-visible { outline: 2px solid var(--fibra); outline-offset: 2px; }
+@media (max-width: 480px) { .barra-esquerda .marca-nome { display: none; } }
 .barra-usuario { font-size: 0.85rem; opacity: 0.75; }
 @media (max-width: 480px) { .barra-usuario { display: none; } }
 

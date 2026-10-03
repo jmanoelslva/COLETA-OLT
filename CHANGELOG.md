@@ -7,6 +7,15 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Não lançado]
 
+## [1.6.4] - 2026-10-02
+
+### Alterado
+
+- Botão **App técnico** (voltar para o app técnico, no coletor publicado em
+  `/olt/`) passa para a esquerda da barra, no mesmo formato do voltar das
+  páginas: seta, contorno e área de toque maior. No celular, o nome "OLTs
+  HOTNET" some para caber (fica o ícone).
+
 ## [1.6.3] - 2026-10-02
 
 ### Corrigido
@@ -249,7 +258,8 @@ SQLite e interface web para o técnico.
 - Testes dos parsers e das coletas contra saídas reais anonimizadas
   (`tests/fixtures`), simulador e OLT de desenvolvimento (`tools/`).
 
-[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.3...HEAD
+[Não lançado]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.4...HEAD
+[1.6.4]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.3...v1.6.4
 [1.6.3]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.2...v1.6.3
 [1.6.2]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/jmanoelslva/COLETA-OLT/compare/v1.6.0...v1.6.1
